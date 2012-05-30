@@ -1,0 +1,74 @@
+//= require smoke
+//= require smoke-theme
+
+// Active Admin CSS Styles
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// To customize the Active Admin interfaces, add your
+// styles here:
+
+// Do not show Active Admin footer text
+#footer p { display: none; }
+
+// Fix horizontal scroll issue which appears after hidding footer
+#wrapper  { overflow: hidden; }
+
+#header #tabs {
+    #admins, #dashboard {
+        margin-right: 20px;
+    }
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="url"], form input[type="tel"], form textarea {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+//
+// Blog post editor
+//
+
+// NOT USED ANYMORE
+
+//#post_excerpt_input {
+//    label { width: 100%; margin-bottom: 10px; }
+//}
+//
+//#post_body_input {
+//    label { width: 100%; margin-bottom: 10px; }
+//}
+
+
+#post_preview {
+    background: white;
+    width:      590px;
+    //margin:     0 auto;
+    padding:    20px;
+}
+
+.index_as_block {
+    .gallery_image {
+        float:          left;
+        margin-right:   20px;
+        margin-bottom:  20px;
+
+        -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+           -moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+
+        padding:        4px;
+
+        a {
+            display:    block;
+            width:      200px;
+            height:     160px;
+        }
+    }
+}
+
+.jcarousel-item {
+    img {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,18 @@
+.images {
+    min-height:     455px;
+    background:     #fff;
+    padding-bottom: 5px;
+}
+
+.images img {
+    margin-top:     5px;
+    margin-left:    5px;
+}
+.images img:hover {
+    opacity:        0.8;
+    cursor:         pointer;
+}
+
+.loading {
+    background: #fff url("../img/ajax-loader.gif") no-repeat center center;
+}

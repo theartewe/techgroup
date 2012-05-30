@@ -1,0 +1,1 @@
+(function(a){a.fn.equalHeight=function(){tallest=0;widest=0;this.each(function(){thisHeight=a(this).height();if(thisHeight>tallest){tallest=thisHeight}widest=a(this).width()});this.each(function(){a(this).height(tallest)});a(".chart").width(widest);a(".chart").height(tallest)}})(jQuery);

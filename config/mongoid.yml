@@ -1,0 +1,10 @@
+development:
+  host: localhost
+  database: levant
+
+test:
+  host: localhost
+  database: levant_test
+
+production:
+  uri: <%= ENV["MONGOHQ_URL"] %>

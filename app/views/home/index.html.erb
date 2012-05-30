@@ -1,0 +1,19 @@
+    <section class="home">
+      <%= render "slides" %>
+      <%= render "services" %>
+
+      <div class="content">
+        <% @sections.each_with_index do |s, index| %>
+        <section>
+          <div>
+            <% if @arabic %>
+            <aside><h4><%= s[:title] %></h4><span><%= index + 1 %></span></aside>
+            <% else %>
+            <aside><span><%= index + 1 %></span><h4><%= s[:title] %></h4></aside>
+            <% end %>
+            <%= wrap_in_p(s[:text]) %>
+          </div>
+        </section>
+      <% end %>
+      </div><!-- End .Content -->
+    </section><!-- End .Home -->

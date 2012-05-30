@@ -1,0 +1,50 @@
+        <section>
+          <div>
+            <h3 class="mid-divide" role="title"><span class="white-bg"><%= t(:contact_us) %></span></h3>
+            <form method="post" action="/submit" id="contact_form">
+              <fieldset>
+                <label><%= t(:your_name) %>
+                <input type="text" required name="name" /></label>
+                <label><%= t(:your_email) %>
+                <input type="email" required name="email" /></label>
+                <label><%= t(:country) %>
+                <select required name="country">
+                  <option disabled="disabled"><%= t(:choose_country) %></option>
+                  <% if @arabic %>
+                      <option value="Lebanon">لبنان</option>
+                      <option value="United States">الولايات المتحدة</option>
+                      <option value="Iraq">العراق</option>
+                      <option value="Afghanistan">أفغانستان</option>
+                      <option value="United Arab Emirates">الإمارات العربية المتّحدة</option>
+                      <option value="Qatar">الدوحة, قطر</option>
+                      <option value="Saudi Arabia">الرياض, السعودية</option>
+                      <option value="Morocco">المغرب</option>
+                      <option value="Egypt">مصر</option>
+                      <option value="Jordan">الأردن</option>
+                      <option value="Oman">عُمان</option>
+                  <% else %>
+                      <option value="Lebanon">Lebanon</option>
+                      <option value="United States">United States</option>
+                      <option value="Iraq">Iraq</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Jordan">Jordan</option>
+                      <option value="Oman">Oman</option>
+                  <% end %>
+                </select></label>
+              </fieldset>
+              <fieldset class="message">
+                <label><%= t(:your_message) %>
+                <textarea name="message" required></textarea></label>
+              </fieldset>
+              <fieldset class="mid-divide">
+                  <input type="submit" value="<%= t(:submit_form) %>" class="button" />
+                  <span class="thank-you"><%= t(:thank_you) %></span>
+              </fieldset>
+            </form>
+          </div>
+        </section>

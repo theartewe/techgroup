@@ -1,0 +1,32 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  about:    "About"
+  services: "Services"
+  news:     "News"
+  contact:  "Contact"
+  social:   "Social"
+
+  jhg_clients:  "JHG clients"
+
+  connect:      "Connect"
+  categories:   "Categories"
+  search_news:  "Search News"
+  posted_in:    "Posted In"
+  read_more:    "Read More"
+  searching_for:    "Searching for"
+  listed_in:        "Listed in"
+  view_more_posts:  "View More Posts"
+
+  subscribe:    "Subscribe"
+  return_home:  "Return Home"
+
+  contact_us:       "Contact Us"
+  thank_you:        "Thank you!"
+  your_message:     "Your Message"
+  choose_country:   "Choose Country"
+  country:          "Country"
+  your_email:       "Your Email"
+  your_name:        "Your Name"
+  submit_form:      "Submit Form"

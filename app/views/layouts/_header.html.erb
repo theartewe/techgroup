@@ -1,0 +1,37 @@
+<div class="switcher">
+  <div class="container">
+    <% if @arabic %>
+        <a href="<%= @path %>" title="Change Language" class="right">English</a>
+    <% else %>
+        <a href="/ar<%= @path %>" title="العربية" class="right">العربية</a>
+    <% end %>
+  </div>
+</div><!-- End .Switcher -->
+
+<header role="header">
+  <div class="container">
+    <nav role="navigation">
+      <a href="<%= @ar %>/" title="<%= t(:return_home) %>" class="logo">
+        <%= image_tag("images/logo.png", :alt=>"Levant Digital") %>
+      </a>
+      <ul>
+        <li class="about">
+          <a href="<%= @ar %>/about"    title="<%= t(:about) %>"
+             <% if @location == "about" %>class="current"<% end %>><%= t(:about) %></a>
+        </li>
+        <li class="services">
+          <a href="<%= @ar %>/services" title="<%= t(:services) %>"
+             <% if @location == "services" %>class="current"<% end %>><%= t(:services) %></a>
+        </li>
+        <li class="news">
+          <a href="<%= @ar %>/news"     title="<%= t(:news) %>"
+             <% if @location == "news" %>class="current"<% end %>><%= t(:news) %></a>
+        </li>
+        <li class="contact">
+          <a href="<%= @ar %>/contact"  title="<%= t(:contact) %>"
+             <% if @location == "contact" %>class="current"<% end %>><%= t(:contact) %></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

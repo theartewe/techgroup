@@ -1,0 +1,46 @@
+    <section class="about">
+      <div class="banner green">
+        <div class="container">
+          <h2><%= @sections['01-header'][:title] %></h2>
+          <%= wrap_in_p(@sections['01-header'][:text]) %>
+        </div>
+      </div><!-- End .Slider -->
+      
+      <div class="content">
+        <section>
+          <div>
+            <aside>
+            <h4><%= @sections['02-text'][:title] %></h4>
+            </aside>
+            <%= wrap_in_p(@sections['02-text'][:text]) %>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 class="mid-divide" role="title"><span class="grey-bg"><%= t(:jhg_clients) %></span></h3>
+            <ul class="logos">
+              <% @clients.each do |c| %>
+                <li><%= image_tag(c[:image_url], :alt => c[:title]) %></li>
+              <% end %>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <aside>
+            <h4><%= @sections['15-text'][:title] %></h4>
+            </aside>
+            <%= wrap_in_p(@sections['15-text'][:text]) %>
+          </div>
+        </section>
+        <section class="cta">
+          <div>
+            <h4><%= @sections['16-button'][:text] %></h4>
+            <a href="/services" title="<%= @sections['16-button'][:title] %>" class="button">
+              <%= @sections['16-button'][:title] %>
+            </a>
+          </div>
+        </section>
+      </div><!-- End .Content -->
+      
+    </section><!-- End .Home -->

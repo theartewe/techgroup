@@ -1,0 +1,36 @@
+<section class="news">
+  <%= render :partial => "header", :locals => { :sections => @sections } %>
+  <div class="content">
+    <section class="postings">
+      <div>
+        <aside class="search">
+          <%= render "search" %>
+        </aside>
+
+        <% if @arabic %>
+            <% if @category %>
+                <h1><span class="category"><%= @category %></span>: <%= t(:listed_in) %></h1>
+            <% elsif @search %>
+                <h1><span class="category"><%= @search %></span>: <%= t(:searching_for) %></h1>
+            <% end %>
+        <% else %>
+            <% if @category %>
+                <h1><%= t(:listed_in) %>: <span class="category"><%= @category %></span></h1>
+            <% elsif @search %>
+                <h1><%= t(:searching_for) %>: <span class="category"><%= @search %></span></h1>
+            <% end %>
+        <% end %>
+
+        <section class="posts-wrapper">
+          <%= render :partial => 'post', :collection => @posts, :locals => { :categories => @categories, :full => false } %>
+        </section>
+
+        <% if not @search %>
+          <%= paginate @posts %>
+        <% end %>
+
+        <%= render "sidebar" %>
+      </div>
+    </section>
+  </div>
+</section>

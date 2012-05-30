@@ -1,0 +1,58 @@
+#= require active_admin/base
+#= require libs/smoke
+#= require libs/underscore-min
+
+# Attaching tinymce
+script      = document.createElement("script")
+script.type = "text/javascript"
+script.src  = "/tinymce/jquery.tinymce.js"
+document.head.appendChild(script)
+
+# Attaching carousel
+#script      = document.createElement("script")
+#script.type = "text/javascript"
+#script.src  = "/jcarousel/lib/jquery.jcarousel.min.js"
+#document.head.appendChild(script)
+
+style       = document.createElement("link")
+style.type  = "text/css"
+style.rel   = "stylesheet"
+style.media = "screen"
+style.href  = "/jcarousel/skins/tango/skin.css"
+document.head.appendChild(style)
+
+
+# Application
+
+$ ->
+    $('.panel .page_section').submit ->
+        url     = $(this).attr('action')
+        params  = $(this).serialize()
+        $.post url, params, (data) ->
+            smoke.signal('Page section is saved.')
+        return false
+
+    $(window).load ->
+        $('.editor').tinymce
+            script_url:     '/tinymce/tiny_mce.js'
+            theme:          'advanced'
+            plugins:        'autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist,insertimage'
+            theme_advanced_buttons1: 'code,|,link,unlink,|,bold,italic,underline,strikethrough,formatselect,fontselect,fontsizeselect,|,insertimage'
+            theme_advanced_buttons2: ''
+            theme_advanced_buttons3: ''
+            theme_advanced_toolbar_location:    'top'
+            theme_advanced_toolbar_align:       'left'
+            theme_advanced_statusbar_location:  'bottom'
+
+    # Check if we are on the blog post edit page
+    if $('#post_excerpt').length > 0 and $('#post_body').length > 0
+        # Handler to modify content before submit
+        $('.commit .update').click (e) ->
+            editors = tinymce.EditorManager.get()
+
+            _.each [0, 1], (index) ->
+                _.each editors[index].dom.select('img'), (img) ->
+                    editors[index].dom.addClass(img.parentNode, 'image')
+
+        add_gallery_after('#post_excerpt_input')
+

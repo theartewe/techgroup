@@ -1,0 +1,23 @@
+<aside class="sidebar">
+  <div class="categories">
+    <h5><%= t(:categories) %></h5>
+    <ul>
+      <% for category in @categories %>
+          <% if @arabic %>
+              <li><a href="/ar/news/<%= category.slug %>" alt="<%= t(:view_more_posts) %>"><%= category.arabic_title %></a></li>
+          <% else %>
+              <li><a href="/news/<%= category.slug %>" alt="<%= t(:view_more_posts) %>"><%= category.english_title %></a></li>
+          <% end %>
+      <% end %>
+    </ul>
+  </div>
+  <div class="connect">
+    <h5><%= t(:connect) %></h5>
+    <ul>
+      <li class="rss"><a href="" alt="<%= t(:subscribe) %>"><%= t(:subscribe) %></a></li>
+      <li class="facebook"><a href="http://www.facebook.com/pages/Levant-Digital/211297422219199" alt="Facebook">Facebook</a></li>
+      <li class="twitter"><a href="http://twitter.com/levantdigital" alt="Twitter">Twitter</a></li>
+      <li class="linkedin"><a href="http://www.linkedin.com/company/2140092" alt="LinkedIn">LinkedIn</a></li>
+    </ul>
+  </div>
+</aside>

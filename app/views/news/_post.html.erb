@@ -1,0 +1,25 @@
+<article>
+  <h4><%= post.title %></h4>
+  <div class="meta">
+    <div class="date"><%= post.date.strftime("%B %d, %Y") %></div>
+    <div class="tags">
+      <span><%= t(:posted_in) %>:</span>
+      <ul>
+        <% for category in post.category_objects(categories) %>
+          <% if @arabic %>
+            <li><a href="/ar/news/<%= category.slug %>" alt="<%= t(:view_more_posts) %>"><%= category.arabic_title %></a>
+          <% else %>
+            <li><a href="/news/<%= category.slug %>" alt="<%= t(:view_more_posts) %>"><%= category.english_title %></a>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <%= post.excerpt.html_safe %>
+  <% if full %>
+    <%= post.body.html_safe %>
+  <% else %>
+    <a href="/news/posts/<%= post.slug %>" alt="<%= t(:read_more) %>" class="read-more"><%= t(:read_more) %></a>
+  <% end %>
+</article>

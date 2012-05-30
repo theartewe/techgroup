@@ -1,0 +1,44 @@
+    <section class="services">
+      <%= render "nav" %>
+      <div class="banner <%= @sections['00-header'][:image_url] %>">
+        <div class="container">
+          <h2><%= @sections['00-header'][:title] %></h2>
+          <%= wrap_in_p(@sections['00-header'][:text]) %>
+        </div>
+      </div><!-- End .Slider -->
+      <div class="content">
+        <section>
+          <div>
+            <aside>
+              <%= image_tag(@sections['02-image'][:image_url], :alt=>@sections['02-image'][:title]) %>
+            </aside>
+            <h4><%= @sections['01-text'][:title] %></h4>
+            <%= wrap_in_p(@sections['01-text'][:text]) %>
+          </div>
+        </section>
+
+        <% if not @sections['03-text'].nil? %>
+        <section>
+          <div>
+            <aside>
+              <%= image_tag(@sections['04-image'][:image_url], :alt=>@sections['04-image'][:title]) %>
+            </aside>
+            <h4><%= @sections['03-text'][:title] %></h4>
+            <%= wrap_in_p(@sections['03-text'][:text]) %>
+          </div>
+        </section>
+        <% end %>
+
+        <% if not @sections['05-text'].nil? %>
+        <section>
+          <div>
+            <aside>
+              <%= image_tag(@sections['06-image'][:image_url], :alt=>@sections['06-image'][:title]) %>
+            </aside>
+            <h4><%= @sections['05-text'][:title] %></h4>
+            <%= wrap_in_p(@sections['05-text'][:text]) %>
+          </div>
+        </section>
+        <% end %>
+      </div><!-- End .Content -->
+    </section><!-- End .Home -->

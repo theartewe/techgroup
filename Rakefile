@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Levant::Application.load_tasks
+Techgroup::Application.load_tasks

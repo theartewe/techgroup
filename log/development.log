@@ -443,3 +443,70 @@ Served asset /libs/underscore-min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
 Served asset /active_admin.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-31 18:13:57 +0300
+  Processing by HomeController#index as HTML
+MONGODB techgroup['system.namespaces'].find({})
+MONGODB techgroup['$cmd'].find({:create=>"pages"}).limit(-1)
+MONGODB techgroup['pages'].find({:path=>"/"}).limit(-1).sort([[:path, :asc]])
+MONGODB techgroup['pages'].find({}).sort([:created_at, :asc])
+MONGODB techgroup['system.namespaces'].find({})
+MONGODB techgroup['$cmd'].find({:create=>"page_sections"}).limit(-1)
+MONGODB techgroup['page_sections'].find({:name=>"02-address"}).limit(-1).sort([[:page_id, :asc], [:name, :asc]])
+Completed 500 Internal Server Error in 1572ms
+
+NoMethodError (undefined method `get_property' for nil:NilClass):
+  app/controllers/website_controller.rb:98:in `set_address'
+
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-05-31 18:14:22 +0300
+  Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 26ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-05-31 18:14:22 +0300
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/devise-1.5.2/app/views/devise/shared/_links.erb (2.6ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (31.2ms)
+Completed 200 OK in 257ms (Views: 234.9ms)
+
+
+Started GET "/assets/smoke.css?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /smoke.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/smoke-theme.css?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /smoke-theme.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /active_admin/vendor.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/libs/smoke.js?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /libs/smoke.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/underscore-min.js?body=1" for 127.0.0.1 at 2012-05-31 18:14:23 +0300
+Served asset /libs/underscore-min.js - 304 Not Modified (4ms)

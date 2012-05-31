@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389660.1334023:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%07ba45a0a593fe2ffa402db345b2a20bI"logical_path;
+FI"2images/home-service_icon-seo_optimization.png;
+TI"pathname;
+FI"C$root/app/assets/images/home-service_icon-seo_optimization.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"	2867;
+FI"digest;
+F"%612a681f879084a69b64876d515a28a3I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

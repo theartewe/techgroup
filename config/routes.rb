@@ -1,4 +1,4 @@
-Levant::Application.routes.draw do
+Techgroup::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

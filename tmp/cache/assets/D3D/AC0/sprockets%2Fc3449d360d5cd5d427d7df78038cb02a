@@ -1,0 +1,117 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389784.9857697:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%d321fd16d8dfa6d94bf0c69518762c50I"logical_path;
+FI"active_admin.js;
+FI"pathname;
+FI"<$root/app/assets/javascripts/active_admin.js.coffee.erb;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"	body;
+FI"ì(function() {
+  var script, style;
+
+  script = document.createElement("script");
+
+  script.type = "text/javascript";
+
+  script.src = "/tinymce/jquery.tinymce.js";
+
+  document.head.appendChild(script);
+
+  style = document.createElement("link");
+
+  style.type = "text/css";
+
+  style.rel = "stylesheet";
+
+  style.media = "screen";
+
+  style.href = "/jcarousel/skins/tango/skin.css";
+
+  document.head.appendChild(style);
+
+  $(function() {
+    $('.panel .page_section').submit(function() {
+      var params, url;
+      url = $(this).attr('action');
+      params = $(this).serialize();
+      $.post(url, params, function(data) {
+        return smoke.signal('Page section is saved.');
+      });
+      return false;
+    });
+    $(window).load(function() {
+      return $('.editor').tinymce({
+        script_url: '/tinymce/tiny_mce.js',
+        theme: 'advanced',
+        plugins: 'autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist,insertimage',
+        theme_advanced_buttons1: 'code,|,link,unlink,|,bold,italic,underline,strikethrough,formatselect,fontselect,fontsizeselect,|,insertimage',
+        theme_advanced_buttons2: '',
+        theme_advanced_buttons3: '',
+        theme_advanced_toolbar_location: 'top',
+        theme_advanced_toolbar_align: 'left',
+        theme_advanced_statusbar_location: 'bottom'
+      });
+    });
+    if ($('#post_excerpt').length > 0 && $('#post_body').length > 0) {
+      $('.commit .update').click(function(e) {
+        var editors;
+        editors = tinymce.EditorManager.get();
+        return _.each([0, 1], function(index) {
+          return _.each(editors[index].dom.select('img'), function(img) {
+            return editors[index].dom.addClass(img.parentNode, 'image');
+          });
+        });
+      });
+      return add_gallery_after('#post_excerpt_input');
+    }
+  });
+
+}).call(this);
+;
+TI"asset_paths;
+F[
+"p/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/vendor.js"n/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/base.jsI"/$root/app/assets/javascripts/libs/smoke.js;
+FI"8$root/app/assets/javascripts/libs/underscore-min.js;
+FI"<$root/app/assets/javascripts/active_admin.js.coffee.erb;
+FI"dependency_paths;
+F[
+{I"	path;
+FI"<$root/app/assets/javascripts/active_admin.js.coffee.erb;
+FI"
+mtime;
+FIu:	TimeÍ€Î×
+:@_zoneI"	EEST;
+T:nano_numi$:nano_deni:submicro"€@:offseti0*I"hexdigest;
+F"%570fb53a6ee9079e5df5805ef3e1481d{I"	path;
+F"p/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/vendor.jsI"
+mtime;
+FIu;Ð€RË}f
+;I"	EEST;
+T;i};i;"8;i0*I"hexdigest;
+F"%4d63462f82e1080117e76a26dc2037f3{I"	path;
+F"n/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/base.jsI"
+mtime;
+FIu;Ð€RË}f
+;I"	EEST;
+T;i};i;"8;i0*I"hexdigest;
+F"%82984936d95e0bb60b12379f5f2504d1{I"	path;
+FI"/$root/app/assets/javascripts/libs/smoke.js;
+FI"
+mtime;
+FIu;Í€Î×
+;I"	EEST;
+T;i$;i;"€@;i0*I"hexdigest;
+F"%5483513f380eb5c4b92de45cff87fd07{I"	path;
+FI"8$root/app/assets/javascripts/libs/underscore-min.js;
+FI"
+mtime;
+FIu;Í€Î×
+;I"	EEST;
+T;i$;i;"€@;i0*I"hexdigest;
+F"%8e86ed3b5cd43a1fe3b01b4596fad5f6I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

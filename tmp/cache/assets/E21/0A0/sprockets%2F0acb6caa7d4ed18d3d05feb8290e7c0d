@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389660.4201117:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%1d9280ab1421997fa8a42ea0474e4d81I"logical_path;
+FI"images/nav-divider.png;
+TI"pathname;
+FI",$root/app/assets/images/nav-divider.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"	1351;
+FI"digest;
+F"%f01b7e582ac500e49d8abe984e3e115cI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

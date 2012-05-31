@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389660.0854943:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%e41334a370451fa14c1669d2a79e200dI"logical_path;
+FI"9images/home-service_icon-conversion_optimization.png;
+TI"pathname;
+FI"J$root/app/assets/images/home-service_icon-conversion_optimization.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"	3240;
+FI"digest;
+F"%e86137797925dc39dc377424ec9e27d6I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

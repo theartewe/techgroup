@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389661.5771232:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%8cac9fd401d49beaf472f734c0c8312bI"logical_path;
+FI"$images/home-slider_bg-steel.jpg;
+TI"pathname;
+FI"5$root/app/assets/images/home-slider_bg-steel.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"
+23419;
+FI"digest;
+F"%114e0eca7581326e7985a84bcbef59d9I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

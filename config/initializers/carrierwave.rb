@@ -9,14 +9,11 @@ CarrierWave.configure do |config|
   }
 
   case Rails.env.to_sym
-
   when :development
-    config.fog_directory = 'levant.media'
-    config.fog_host       = 'http://levant.media.s3.amazonaws.com'
+    config.fog_directory = 'techgroup-media'
+    config.fog_host       = '//techgroup-media.s3.amazonaws.com'
   when :production
-    config.fog_directory = 'levant.media'
-    config.fog_host       = 'http://levant.media.s3.amazonaws.com'
-    #config.fog_host       = 'http://cdn.media.madegoods.com'
-    #config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
+    config.fog_directory = 'techgroup-media'
+    config.fog_host       = '//techgroup-media.s3.amazonaws.com'
   end
 end

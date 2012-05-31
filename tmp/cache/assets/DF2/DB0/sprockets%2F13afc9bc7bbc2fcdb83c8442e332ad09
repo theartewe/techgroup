@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389660.4377706:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%a2a573d4b59bfa63fa18c6fff05a7b1aI"logical_path;
+FI"images/footer-sprite.png;
+TI"pathname;
+FI".$root/app/assets/images/footer-sprite.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"
+18376;
+FI"digest;
+F"%89036d652f5a67dd2ca4186e81a919c8I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,51 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389658.9897132:@value{	I"length:EFilI"digest;
+F"%73fb9b16aa237a9279c50265918396f6I"source;
+FI"l/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+/* line 8, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+.news section.postings article:last-child {
+  border-bottom: none;
+}
+
+/* line 13, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+.news h1 {
+  font-size: 1.625em;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.25em;
+  border-bottom: 1px solid #E5E5E5;
+  float: left;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+/* line 25, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+.news h1 .category {
+  font-size: 1.125em;
+}
+
+@media (min-width:461px) {
+  /* line 32, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+  .news h1 {
+    width: 73.737374%;
+  }
+
+  /* line 36, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+  .news .posts-wrapper {
+    min-height: 600px;
+  }
+}
+/* line 42, /home/maksym/techgroup/app/assets/stylesheets/application.css.scss */
+#contact_form .thank-you {
+  margin-left: 10px;
+  padding: 10px;
+  background: white;
+  display: none;
+}
+;
+FI"_version;
+F"%28c9c22d7530b9924045cc3d3e3d6968

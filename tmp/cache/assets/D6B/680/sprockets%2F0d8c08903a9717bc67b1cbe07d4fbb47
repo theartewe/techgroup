@@ -1,0 +1,56 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389659.3600736:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%75de1c60b032b597b95be86fe13bf6d6I"logical_path;
+F"libs/jquery.retina.jsI"pathname;
+FI"7$root/app/assets/javascripts/libs/jquery.retina.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"	body;
+FI"
+/*
+	Author: Troy Mcilvena (http://troymcilvena.com)
+	Twitter: @mcilvena
+	Date: 23 August 2010
+	Version: 1.0
+	
+	Revision History:
+		1.0 (23/08/2010)	- Initial release.
+*/
+
+
+jQuery.fn.retina = function(retina_part) {
+	// Set default retina file part to '-2x'
+	// Eg. some_image.jpg will become some_image-2x.jpg
+	var settings = {'retina_part': '-2x'};
+	if(retina_part) jQuery.extend(config, settings);
+		
+	if(window.devicePixelRatio >= 2) {
+		this.each(function(index, element) {
+			if(!$(element).attr('src')) return;
+			
+			var new_image_src = $(element).attr('src').replace(/(.+)(\.\w{3,4})$/, "$1"+ settings['retina_part'] +"$2");
+			$.ajax({url: new_image_src, type: "HEAD", success: function() {
+				$(element).attr('src', new_image_src);
+			}});
+		});
+	}
+	return this;
+}
+;
+;
+FI"asset_paths;
+F[I"7$root/app/assets/javascripts/libs/jquery.retina.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"7$root/app/assets/javascripts/libs/jquery.retina.js;
+FI"
+mtime;
+FIu:	TimeÍ€Î×
+:@_zoneI"	EEST;
+T:nano_numi$:nano_deni:submicro"€@:offseti0*I"hexdigest;
+F"%e9ee777e014173b1ecceeca05b15b966I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

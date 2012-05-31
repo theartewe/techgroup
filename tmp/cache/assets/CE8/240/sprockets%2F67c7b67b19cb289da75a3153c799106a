@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389659.8719606:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%bc46469e814325f620a07a178fbcea97I"logical_path;
+FI"(images/home-slider-case_hp_logo.png;
+TI"pathname;
+FI"9$root/app/assets/images/home-slider-case_hp_logo.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"	5718;
+FI"digest;
+F"%5c75e2d3fe78144318d301f638a8ab60I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389784.9771922:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%7c5c0c7bac603ae7f17b546cdf426459I"logical_path;
+F"active_admin/base.jsI"pathname;
+F"n/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/base.jsI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-04-06T19:25:39+03:00;
+FI"	body;
+FI"Ê
+/* Active Admin JS */
+
+
+$(function(){
+  $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+
+  $(".clear_filters_btn").click(function(){
+    window.location.search = "";
+    return false;
+  });
+});
+;
+FI"asset_paths;
+F["p/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/vendor.js"n/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/base.jsI"dependency_paths;
+F[{I"	path;
+F"n/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/base.jsI"
+mtime;
+FIu:	TimeÐ€RË}f
+:@_zoneI"	EEST;
+T:nano_numi}:nano_deni:submicro"8:offseti0*I"hexdigest;
+F"%82984936d95e0bb60b12379f5f2504d1{I"	path;
+F"p/home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/assets/javascripts/active_admin/vendor.jsI"
+mtime;
+FIu;Ð€RË}f
+;I"	EEST;
+T;i};i;"8;i0*I"hexdigest;
+F"%4d63462f82e1080117e76a26dc2037f3I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

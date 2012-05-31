@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389661.4447372:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%03ba257d5fab5f7fbe36cbf93adebd6fI"logical_path;
+FI"images/slide-arrows.png;
+TI"pathname;
+FI"-$root/app/assets/images/slide-arrows.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-05-30T16:53:49+03:00;
+FI"length;
+FI"	3205;
+FI"digest;
+F"%b2174e60e0c628f797530e2a1fda3400I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

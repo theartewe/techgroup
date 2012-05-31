@@ -1,0 +1,445 @@
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/checkout" for 127.0.0.1 at 2012-05-30 17:48:01 +0300
+
+ActionController::RoutingError (No route matches [GET] "/checkout"):
+  
+
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-30 17:48:04 +0300
+  Processing by HomeController#index as HTML
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['$cmd'].find({:create=>"pages"}).limit(-1)
+MONGODB levant['pages'].find({:path=>"/"}).limit(-1).sort([[:path, :asc]])
+MONGODB levant['pages'].find({}).sort([:created_at, :asc])
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['$cmd'].find({:create=>"page_sections"}).limit(-1)
+MONGODB levant['page_sections'].find({:name=>"02-address"}).limit(-1).sort([[:page_id, :asc], [:name, :asc]])
+Completed 500 Internal Server Error in 1450ms
+
+NoMethodError (undefined method `get_property' for nil:NilClass):
+  app/controllers/website_controller.rb:98:in `set_address'
+
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-30 17:48:50 +0300
+  Processing by HomeController#index as HTML
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['pages'].find({:path=>"/"}).limit(-1).sort([[:path, :asc]])
+MONGODB levant['pages'].find({}).sort([:created_at, :asc])
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['page_sections'].find({:name=>"02-address"}).limit(-1).sort([[:page_id, :asc], [:name, :asc]])
+Completed 500 Internal Server Error in 110ms
+
+NoMethodError (undefined method `get_property' for nil:NilClass):
+  app/controllers/website_controller.rb:98:in `set_address'
+
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-30 17:48:54 +0300
+  Processing by HomeController#index as HTML
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['pages'].find({:path=>"/"}).limit(-1).sort([[:path, :asc]])
+MONGODB levant['pages'].find({}).sort([:created_at, :asc])
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['page_sections'].find({:name=>"02-address"}).limit(-1).sort([[:page_id, :asc], [:name, :asc]])
+Completed 500 Internal Server Error in 113ms
+
+NoMethodError (undefined method `get_property' for nil:NilClass):
+  app/controllers/website_controller.rb:98:in `set_address'
+
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-30 17:54:17 +0300
+  Processing by HomeController#index as HTML
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['pages'].find({:path=>"/"}).limit(-1).sort([[:path, :asc]])
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['page_sections'].find({"page_id"=>BSON::ObjectId('4f0c33faacef4a184f00000c')}).sort([[:page_id, :asc], [:name, :asc]])
+MONGODB levant['pages'].find({}).sort([:created_at, :asc])
+MONGODB levant['page_sections'].find({:name=>"02-address"}).limit(-1).sort([[:page_id, :asc], [:name, :asc]])
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['slides'].find({})
+Rendered home/_slides.html.erb (2.2ms)
+Rendered home/_services.html.erb (23.5ms)
+Rendered home/index.html.erb within layouts/application (106.5ms)
+Compiled style.css  (1140ms)  (pid 11385)
+Compiled application.css  (6ms)  (pid 11385)
+Compiled modernizr.min  (0ms)  (pid 11385)
+Compiled respond.min  (0ms)  (pid 11385)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Compiled application.js  (309ms)  (pid 11385)
+Compiled jquery.js  (23ms)  (pid 11385)
+Compiled jquery_ujs.js  (1ms)  (pid 11385)
+Compiled libs/jquery.retina.js  (0ms)  (pid 11385)
+Compiled libs/jquery.flexslider-min.js  (0ms)  (pid 11385)
+Compiled libs/equalize.js  (0ms)  (pid 11385)
+Compiled libs/selectivizr-min.js  (0ms)  (pid 11385)
+Completed 200 OK in 1886ms (Views: 1873.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/modernizr.min?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /modernizr.min - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /jquery.js - 200 OK (41ms)
+
+
+Started GET "/assets/respond.min?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /respond.min - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/images/logo.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/logo.png - 200 OK (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/images/home-slider-intro_logos.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-intro_logos.png - 200 OK (17ms)
+
+
+Started GET "/assets/images/home-slider-package_souq.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-package_souq.png - 200 OK (79ms)
+
+
+Started GET "/assets/libs/jquery.retina.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /libs/jquery.retina.js - 200 OK (6ms)
+
+
+Started GET "/assets/libs/jquery.flexslider-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /libs/jquery.flexslider-min.js - 200 OK (3ms)
+
+
+Started GET "/assets/libs/equalize.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /libs/equalize.js - 200 OK (4ms)
+
+
+Started GET "/assets/libs/selectivizr-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /libs/selectivizr-min.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/images/home-slider-case_hp_logo.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_hp_logo.png - 200 OK (10ms)
+
+
+Started GET "/assets/images/home-slider-case_toms_logo.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_toms_logo.png - 200 OK (12ms)
+
+
+Started GET "/assets/images/home-slider-case_toms_browser.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_toms_browser.png - 200 OK (18ms)
+
+
+Started GET "/assets/images/home-slider-case_hp_browser.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_hp_browser.png - 200 OK (30ms)
+
+
+Started GET "/assets/images/home-slider-case_vans_logo.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_vans_logo.png - 200 OK (8ms)
+
+
+Started GET "/assets/images/home-slider-case_vans_browser.png" for 127.0.0.1 at 2012-05-30 17:54:19 +0300
+Served asset /images/home-slider-case_vans_browser.png - 200 OK (88ms)
+
+
+Started GET "/assets/images/home-service_icon-conversion_optimization.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-conversion_optimization.png - 200 OK (16ms)
+
+
+Started GET "/assets/images/home-service_icon-media_buying.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-media_buying.png - 200 OK (7ms)
+
+
+Started GET "/assets/images/home-service_icon-crisis_communication.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-crisis_communication.png - 200 OK (8ms)
+
+
+Started GET "/assets/images/home-service_icon-ppc_management.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-ppc_management.png - 200 OK (7ms)
+
+
+Started GET "/assets/images/home-service_icon-seo_optimization.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-seo_optimization.png - 200 OK (9ms)
+
+
+Started GET "/assets/images/home-service_icon-social_media.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/home-service_icon-social_media.png - 200 OK (8ms)
+
+
+Started GET "/assets/images/bg-pattern.jpg" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/bg-pattern.jpg - 200 OK (4ms)
+
+
+Started GET "/assets/images/nav-divider.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/nav-divider.png - 200 OK (6ms)
+
+
+Started GET "/assets/images/h3-title-bg.gif" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/h3-title-bg.gif - 200 OK (4ms)
+
+
+Started GET "/assets/images/footer-sprite.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/footer-sprite.png - 200 OK (6ms)
+
+
+Started GET "/assets/images/footer-logo.png" for 127.0.0.1 at 2012-05-30 17:54:20 +0300
+Served asset /images/footer-logo.png - 200 OK (5ms)
+
+
+Started GET "/assets/images/slide-arrows.png" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/slide-arrows.png - 200 OK (104ms)
+
+
+Started GET "/assets/images/home-slider_bg-blue.jpg" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider_bg-blue.jpg - 200 OK (12ms)
+
+
+Started GET "/assets/images/blockquote-arrow.png" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/blockquote-arrow.png - 200 OK (5ms)
+
+
+Started GET "/assets/images/home-slider_bg-orange.jpg" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider_bg-orange.jpg - 200 OK (6ms)
+
+
+Started GET "/assets/images/button-arrow.png" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/button-arrow.png - 200 OK (6ms)
+
+
+Started GET "/assets/images/home-slider_bg-steel.jpg" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider_bg-steel.jpg - 200 OK (5ms)
+
+
+Started GET "/assets/images/home-slider-blockquote-arrow.png" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider-blockquote-arrow.png - 200 OK (13ms)
+
+
+Started GET "/assets/images/home-slider_bg-black.jpg" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider_bg-black.jpg - 200 OK (8ms)
+
+
+Started GET "/assets/images/home-slider-li_bullet.png" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider-li_bullet.png - 200 OK (4ms)
+
+
+Started GET "/assets/images/home-slider_bg-red.jpg" for 127.0.0.1 at 2012-05-30 17:54:21 +0300
+Served asset /images/home-slider_bg-red.jpg - 200 OK (5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-05-30 17:56:23 +0300
+  Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 24ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-05-30 17:56:23 +0300
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/devise-1.5.2/app/views/devise/shared/_links.erb (1.5ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (17.6ms)
+Compiled active_admin.css  (1104ms)  (pid 11385)
+Compiled smoke.css  (0ms)  (pid 11385)
+Compiled smoke-theme.css  (0ms)  (pid 11385)
+Compiled active_admin.js  (143ms)  (pid 11385)
+Compiled active_admin/base.js  (33ms)  (pid 11385)
+Compiled active_admin/vendor.js  (2ms)  (pid 11385)
+Compiled libs/smoke.js  (0ms)  (pid 11385)
+Compiled libs/underscore-min.js  (0ms)  (pid 11385)
+Completed 200 OK in 1503ms (Views: 1478.3ms)
+
+
+Started GET "/assets/smoke.css?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /smoke.css - 200 OK (3ms)
+
+
+Started GET "/assets/smoke-theme.css?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /smoke-theme.css - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /active_admin/base.js - 200 OK (6ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /active_admin/vendor.js - 200 OK (6ms)
+
+
+Started GET "/assets/libs/smoke.js?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /libs/smoke.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /active_admin.css - 200 OK (0ms)
+
+
+Started GET "/assets/libs/underscore-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /libs/underscore-min.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-30 17:56:25 +0300
+Served asset /active_admin.js - 200 OK (0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+  Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"maxim@slatestudio.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['admin_users'].find({:email=>"maxim@slatestudio.com"}).limit(-1).sort([[:_id, :asc]])
+Completed 401 Unauthorized in 122ms
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"maxim@slatestudio.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/devise-1.5.2/app/views/devise/shared/_links.erb (0.6ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (8.5ms)
+Completed 200 OK in 113ms (Views: 21.1ms)
+
+
+Started GET "/assets/smoke.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /smoke.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /active_admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoke-theme.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /smoke-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/smoke.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /libs/smoke.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/underscore-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /libs/underscore-min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:26 +0300
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+  Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"alex@slatestudio.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['admin_users'].find({:email=>"alex@slatestudio.com"}).limit(-1).sort([[:_id, :asc]])
+Completed 401 Unauthorized in 30ms
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"alex@slatestudio.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/devise-1.5.2/app/views/devise/shared/_links.erb (0.7ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (9.1ms)
+Completed 200 OK in 108ms (Views: 21.3ms)
+
+
+Started GET "/assets/smoke.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /smoke.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/smoke-theme.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /smoke-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/smoke.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /libs/smoke.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/underscore-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /libs/underscore-min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:33 +0300
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+  Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+MONGODB levant['system.namespaces'].find({})
+MONGODB levant['admin_users'].find({:email=>"admin@example.com"}).limit(-1).sort([[:_id, :asc]])
+Completed 401 Unauthorized in 97ms
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"stob3QUagixlxXQF4N6ta7DzDLLcNM1Sk2Hp8HnBK9E=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/devise-1.5.2/app/views/devise/shared/_links.erb (0.5ms)
+Rendered /home/maksym/.rvm/gems/ruby-1.9.3-p125/gems/activeadmin-0.3.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (7.6ms)
+Completed 200 OK in 114ms (Views: 20.7ms)
+
+
+Started GET "/assets/smoke.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /smoke.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoke-theme.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /smoke-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/smoke.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /libs/smoke.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/libs/underscore-min.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /libs/underscore-min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-30 17:58:40 +0300
+Served asset /active_admin.js - 304 Not Modified (0ms)

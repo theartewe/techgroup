@@ -29,6 +29,8 @@ gem 'rmagick'
 gem 'rack-cache' #, :require => 'rack/cache'
 gem 'dalli'
 
+gem "formtastic", "~> 2.1.1"
+
 # Active Admin 
 gem 'activeadmin-mongoid'
 

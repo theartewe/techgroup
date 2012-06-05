@@ -1,4 +1,5 @@
 ActiveAdmin.register Post do
+    menu :parent 	=> "Media"
 
     scope :all, :default => true
     scope :english

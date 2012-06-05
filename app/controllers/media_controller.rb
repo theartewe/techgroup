@@ -1,4 +1,4 @@
-class NewsController < WebsiteController
+class MediaController < WebsiteController
     before_filter :set_categories
 
     def set_categories
@@ -18,7 +18,7 @@ class NewsController < WebsiteController
 
         raise ActionController::RoutingError.new('Not Found') unless @post
 
-        @title  = "#{@post.title} - Levant Digital"
+        @title  = "#{@post.title} - Tech Group"
     end
 
     def category
@@ -34,7 +34,7 @@ class NewsController < WebsiteController
             @category   = @category.english_title
         end
 
-        @title      = "#{@category} - Levant Digital"
+        @title      = "#{@category} - Tech Group"
         render 'index'
     end
 
@@ -78,7 +78,7 @@ class NewsController < WebsiteController
         result_ids = counters.keys.select{ |key| counters[key] == keys.size }.uniq
 
         @posts = @query.find(result_ids)#.page(params[:page])
-        @title = "Search - Levant Digital"
+        @title = "Search - Tech Group"
         render 'index'
     end
 end

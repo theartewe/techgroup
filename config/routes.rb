@@ -11,10 +11,10 @@ Techgroup::Application.routes.draw do
   match 'services'  => 'services#index'
   match 'contact'   => 'contact#index'
 
-  match 'news'             => 'news#index'
-  match 'news/posts/:slug' => 'news#show'
-  match 'news/search'      => 'news#search'
-  match 'news/:category'   => 'news#category'
+  match 'media'             => 'media#index'
+  match 'media/posts/:slug' => 'media#show'
+  match 'media/search'      => 'media#search'
+  match 'meida/:category'   => 'media#category'
 
   match 'services/conversion-optimization' => 'services#conversion_optimization'
   match 'services/crisis-communication'    => 'services#crisis_communication'

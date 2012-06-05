@@ -1,9 +1,8 @@
-    <section class="home">
-      <%= render "services" %>
-
-      <div class="content">
-        <% @sections.each_with_index do |s, index| %>
-        <section>
+<section class="home">
+  <div class="content">
+    <section class="companies">
+      <% @sections.each_with_index do |s, index| %>
+        <section class="company">
           <div>
             <% if @arabic %>
             <aside><h4><%= s[:title] %></h4><span><%= index + 1 %></span></aside>
@@ -14,5 +13,79 @@
           </div>
         </section>
       <% end %>
-      </div><!-- End .Content -->
-    </section><!-- End .Home -->
+    </section>
+    <section class="home-cta-container">
+      <a href="#" class="home-cta">
+        <div class="image">
+          <img src="">
+          </img>
+        </div>
+        <h3>
+          Mission + Vision
+        </h3>
+        <p>
+          Tech Group is comprised of various operating companies that are well-known and highly respected.
+        </p>
+        <span class="more">
+          more
+        </span>
+      </a>
+      <a href="#" class="home-cta">
+        <div class="image">
+          <img src="">
+          </img>
+        </div>
+        <h3>
+          Our Companies
+        </h3>
+        <p>
+          Tech Group is comprised of various operating companies that are well-known and highly respected.
+        </p>
+        <span class="more">
+          more
+        </span>
+      </a>
+      <a href="#" class="home-cta">
+        <div class="image">
+          <img src="">
+          </img>
+        </div>
+        <h3>
+          Partners
+        </h3>
+        <p>
+          Tech Group is comprised of various operating companies that are well-known and highly respected.
+        </p>
+        <span class="more">
+          more
+        </span>
+      </a>
+      <a href="#" class="home-cta">
+        <div class="image">
+          <img src="">
+          </img>
+        </div>
+        <h3>
+          Offices
+        </h3>
+        <p>
+          Tech Group is comprised of various operating companies that are well-known and highly respected.
+        </p>
+        <span class="more">
+          more
+        </span>
+      </a>
+    </section>
+    <section class="home-secondary-cta-container">
+      <a href="" class="home-secondary-cta">
+        Tech Group Corporate Video
+      </a>
+      <a href="" class="home-secondary-cta">
+        Tech Group Corporate Video
+      </a>
+      <a href="" class="home-secondary-cta">
+        Tech Group Corporate Video
+      </a>
+    </section>
+  </div><!-- End .Content -->
+</section><!-- End .Home -->

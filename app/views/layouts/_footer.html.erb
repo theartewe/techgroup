@@ -1,33 +1,30 @@
-    <footer role="footer">
-      <div class="container">
-        <ul>
-          <li class="contact"><h5><%= t(:contact) %></h5>
-            <ul>
-              <%= @address %>
-            </ul>
-          </li><!-- End .Contact -->
-          <li class="social"><h5><%= t(:social) %></h5>
-            <ul>
-              <li class="facebook"><a href="http://www.facebook.com/pages/Levant-Digital/211297422219199" title="Facebook" target="_blank">Facebook</a></li>
-              <li class="twitter"><a href="http://twitter.com/levantdigital" title="Twitter" target="_blank">Twitter</a></li>
-              <li class="linkedin"><a href="http://www.linkedin.com/company/2140092" title="Linked In" target="_blank">Linked In</a></li>
-            </ul>
-          </li><!-- End .Social -->
-          <li class="services"><h5><%= t(:services) %></h5>
-            <ul>
-              <% @services.each do |s| %>
-              <li class="<%= s[:class] %>">
-                <a href="<%= @ar %><%= s[:path] %>" title="<%= s[:title] %>"><%= s[:label] %></a>
-              </li>
-              <% end %>
-            </ul>
-          </li><!-- End .Services -->
-        </ul>
-      </div>
-      <footer>
-        <div class="container">
-          <p>© 2011 Levant Digital Inc, A JHG Holding Company <a href="http://jhgholding.com/" title="Learn More About JHG Holding" target="_blank">About JHG Holding</a><span class="facebook"><iframe src="http://www.facebook.com/plugins/like.php?app_id=205961139463506&amp;href=http%3A%2F%2Fww.levantdigital.com&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></span></p>
-          <span class="icon"></span>
-        </div>
-      </footer>
-    </footer>
+<footer role="footer">
+    <div class="container">
+      <p>&copy; #{ DateTime.current().strftime("%Y") } Tech Group </p>
+      <ul class="footer-nav">
+        <li class="careers">
+          <a href="<%= @ar %>/careers"    title="<%= t(:careers) %>"
+             <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %></a>
+        </li>
+        <li class="terms_and_conditions">
+          <a href="<%= @ar %>/terms_and_conditions" title="<%= t(:terms_and_conditions) %>"
+             <% if @location == "terms_and_conditions" %>class="current"<% end %>><%= t(:terms_and_conditions) %></a>
+        </li>
+        <li class="privacy_policy">
+          <a href="<%= @ar %>/privacy_policy" title="<%= t(:privacy_policy) %>"
+             <% if @location == "privacy_policy" %>class="current"<% end %>><%= t(:privacy_policy) %></a>
+        </li>
+        <li class="feedback">
+          <a href="<%= @ar %>/feedback"  title="<%= t(:feedback) %>"
+             <% if @location == "feedback" %>class="current"<% end %>><%= t(:feedback) %></a>
+        </li>
+        <li class="switcher">
+          <% if @arabic %>
+              <a href="<%= @path %>" title="Change Language" class="right">English</a>
+          <% else %>
+              <a href="/ar<%= @path %>" title="العربية" class="right">العربية</a>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+</footer>

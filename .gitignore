@@ -16,3 +16,5 @@
 
 # MacOS stuff
 .DS_Store
+
+log/development.log

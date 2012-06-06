@@ -1,6 +1,6 @@
 <footer role="footer">
     <div class="container">
-      <p>&copy; #{ DateTime.current().strftime("%Y") } Tech Group </p>
+      <p>&copy; <%= DateTime.current().strftime("%Y") %> Tech Group </p>
       <ul class="footer-nav">
         <li class="careers">
           <a href="<%= @ar %>/careers"    title="<%= t(:careers) %>"

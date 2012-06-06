@@ -63,9 +63,9 @@ puts '>>> EMPTY THE MONGODB DATABASE'
 Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
 
 puts '>>> SETTING UP DEFAULT ADMIN USER'
-AdminUser.create!(:email                  => 'admin@levantdigital.com',
-                  :password               => 'admin@levantdigital.com',
-                  :password_confirmation  => 'admin@levantdigital.com')
+AdminUser.create!(:email                  => 'admin@techgroup.com',
+                  :password               => 'admin@techgroup.com',
+                  :password_confirmation  => 'admin@techgroup.com')
 
 puts '>>> CREATE CATEGORIES'
 Category.create!(:english_title => 'Search Engine Marketing',
@@ -204,29 +204,57 @@ page = Page.first(conditions: {:path => "/"})
 
 PageSection.create!(:page_id              => page.id,
                     :name                 => "01-text",
-                    :english_title        => "Why Levant Digital Stands Out from the Rest",
-                    :english_text         => "<p>For the best in PPC Management, Search Engine Optimization and Media Buying in the Middle East, there is no greater option than Levant Digital. We have years of experience with paid search, SEO and PPC Adwords campaigns, which we've paired with the expertise of Wpromote, the #1 ranked search engine marketing firm in the United States. Through this one-of-a-kind partnership, Levant Digital is able to offer the very best in SEO, PPC Management, Social Media and website design to all our clients in the Middle East.</p>",
+                    :english_title        => "construction",
+                    :english_text         => "tech llc",
                     :arabic_title         => "",
                     :arabic_text          => "")
 
 PageSection.create!(:page_id              => page.id,
                     :name                 => "02-text",
-                    :english_title        => "First-Class Online Marketing with Results",
-                    :english_text         => "<p>Levant Digital offers first-class online marketing for every business, no matter how large or small. Due to our decades of experience in the business world, the added knowledge of Wpromote's expert team, and the use of highly advanced technology tools, Levant Digital knows the winning formula your company needs to strengthen its online presence and improve the bottom line. We always work closely with your business and learn the subtleties of each specific industry in order to collect the most useful data and deliver the best results.</p>",
+                    :english_title        => "block",
+                    :english_text         => "tech llc",
                     :arabic_title         => "",
                     :arabic_text          => "")
 
 PageSection.create!(:page_id              => page.id,
                     :name                 => "03-text",
-                    :english_title        => "The Perfect Mix of Data and Technology",
-                    :english_text         => "<p>For your PPC campaign, we are fully aware that computers and technology are not able to do everything for us. By adding real human knowledge and understanding to the mix of data and technology, we are able to create the perfect recipe for quality scores and click-through rates. Identifying the essential balance between all the options there are for research, strategy, data and marketing savvy are integral to the success of any PPC campaign - which is why human experience remains such an important element of the equation.</p>",
+                    :english_title        => "Elevators",
+                    :english_text         => "tech llc",
                     :arabic_title         => "",
                     :arabic_text          => "")
 
 PageSection.create!(:page_id              => page.id,
                     :name                 => "04-text",
-                    :english_title        => "SEO Requires Real Creativity and Awareness",
-                    :english_text         => "<p>The same truths apply to SEO as well - Search Engine Optimization requires real creativity and awareness, and cannot simply be gained by paying for good results. In order to build your audience and clout within your industry, we employ cutting-edge tactics and rely on our comprehensive understanding of search engines and how they work. We also know that SEO results are hard to predict and even harder to make permanent, which is why we perform consistent data collection, analysis and reviews of campaign performance. By always doing this, we can deliver the boosted rankings, enhanced analytics, and long term growth that your company is seeking.</p>",
+                    :english_title        => "aluglass",
+                    :english_text         => "tech llc",
+                    :arabic_title         => "",
+                    :arabic_text          => "")
+
+PageSection.create!(:page_id              => page.id,
+                    :name                 => "05-text",
+                    :english_title        => "aluglass",
+                    :english_text         => "tech llc",
+                    :arabic_title         => "",
+                    :arabic_text          => "")
+
+PageSection.create!(:page_id              => page.id,
+                    :name                 => "06-text",
+                    :english_title        => "wood",
+                    :english_text         => "tech llc",
+                    :arabic_title         => "",
+                    :arabic_text          => "")
+
+PageSection.create!(:page_id              => page.id,
+                    :name                 => "07-text",
+                    :english_title        => "property",
+                    :english_text         => "tech llc",
+                    :arabic_title         => "",
+                    :arabic_text          => "")
+
+PageSection.create!(:page_id              => page.id,
+                    :name                 => "08-text",
+                    :english_title        => "remix",
+                    :english_text         => "tech llc",
                     :arabic_title         => "",
                     :arabic_text          => "")
 

@@ -1,30 +1,33 @@
 <footer role="footer">
-    <div class="container">
-      <p>&copy; <%= DateTime.current().strftime("%Y") %> Tech Group </p>
-      <ul class="footer-nav">
-        <li class="careers">
-          <a href="<%= @ar %>/careers"    title="<%= t(:careers) %>"
-             <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %></a>
-        </li>
-        <li class="terms_and_conditions">
-          <a href="<%= @ar %>/terms_and_conditions" title="<%= t(:terms_and_conditions) %>"
-             <% if @location == "terms_and_conditions" %>class="current"<% end %>><%= t(:terms_and_conditions) %></a>
-        </li>
-        <li class="privacy_policy">
-          <a href="<%= @ar %>/privacy_policy" title="<%= t(:privacy_policy) %>"
-             <% if @location == "privacy_policy" %>class="current"<% end %>><%= t(:privacy_policy) %></a>
-        </li>
-        <li class="feedback">
-          <a href="<%= @ar %>/feedback"  title="<%= t(:feedback) %>"
-             <% if @location == "feedback" %>class="current"<% end %>><%= t(:feedback) %></a>
-        </li>
-        <li class="switcher">
-          <% if @arabic %>
-              <a href="<%= @path %>" title="Change Language" class="right">English</a>
-          <% else %>
-              <a href="/ar<%= @path %>" title="العربية" class="right">العربية</a>
-          <% end %>
-        </li>
-      </ul>
-    </div>
+  <section class="footer-cta clear">
+    <a href="" class="corporate-video-cta"><img src="images/footer_icon-corporate_video.svg" alt="View" /> Tech Group Corporate Video</a>
+    <a href="" class="business-brochure-cta"><img src="images/footer_icon-business_brochure.svg" alt="View" /> Tech Group Business Brochure</a>
+    <a href="" class="contact-cta"><img src="images/footer_icon-contact.svg" alt="View" /> Contact Tech Group Today</a>
+  </section>
+  <div class="container clear">
+    <% if @arabic %>
+        <a href="<%= @path %>" title="Change Language" class="switcher">English</a>
+    <% else %>
+        <a href="/ar<%= @path %>" title="العربية" class="switcher">العربية</a>
+    <% end %>
+    <ul class="footer-nav">
+      <li class="careers">
+        <a href="<%= @ar %>/careers"    title="<%= t(:careers) %>"
+           <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %></a>
+      </li>
+      <li class="terms_and_conditions">
+        <a href="<%= @ar %>/terms_and_conditions" title="<%= t(:terms_and_conditions) %>"
+           <% if @location == "terms_and_conditions" %>class="current"<% end %>><%= t(:terms_and_conditions) %></a>
+      </li>
+      <li class="privacy_policy">
+        <a href="<%= @ar %>/privacy_policy" title="<%= t(:privacy_policy) %>"
+           <% if @location == "privacy_policy" %>class="current"<% end %>><%= t(:privacy_policy) %></a>
+      </li>
+      <li class="feedback">
+        <a href="<%= @ar %>/feedback"  title="<%= t(:feedback) %>"
+           <% if @location == "feedback" %>class="current"<% end %>><%= t(:feedback) %></a>
+      </li>
+    </ul>
+    <p class="copyright"><%= DateTime.current().strftime("%Y") %> Tech Group PJSC. All Rights Reserved.</p>
+  </div>
 </footer>

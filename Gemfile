@@ -38,6 +38,7 @@ gem 'activeadmin-mongoid'
 gem 'kaminari'
 
 group :development do
+  gem 'foreman'
   gem 'heroku-rails'
   gem 'unicorn'
 end

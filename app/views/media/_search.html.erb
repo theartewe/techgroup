@@ -1,8 +1,0 @@
-<% if @arabic %>
-<form method="GET" action="/ar/news/search">
-<% else %>
-<form method="GET" action="/news/search">
-<% end %>
-    <input type="text" placeholder="<%= t(:search_news) %>" name="q" />
-    <input type="submit" />
-</form>

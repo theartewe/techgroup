@@ -1,0 +1,26 @@
+<article>
+  <h4><%= object.title %></h4>
+  <div class="meta">
+    <div class="date"><%= object.created_at.strftime("%B %d, %Y") %></div>
+    <div class="body">
+      <%= object.description %>
+    </div>
+    <div class="tags">
+      <span><%= t(:posted_under) %>:</span>
+      <ul>
+        <li>
+          <a href="/media/<%= object.media_category.slug %>" alt="<%= t(:view_more_objects) %>">
+            <%= object.media_category.title %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="other-media">
+      <a href="#">pdf</a>
+      <span class="separator">&nbsp;</span>
+      <a href="#">print</a>
+      <span class="separator">&nbsp;</span>
+      <a href="#">email</a>
+    </div>
+  </div>
+</article>

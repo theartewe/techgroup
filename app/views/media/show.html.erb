@@ -3,10 +3,6 @@
   <div class="content">
     <section class="postings">
       <div>
-        <aside class="search">
-          <%= render "search" %>
-        </aside>
-
         <section>
           <%= render :partial => 'post', :locals => { :post => @post, :categories => @categories, :full => true } %>
         </section>

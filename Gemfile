@@ -15,6 +15,8 @@ gem 'jquery-rails'
 # ORM
 gem 'bson_ext'
 gem 'mongoid'
+gem 'mongoid_slug', :require => 'mongoid/slug'
+gem 'mongoid_globalize'
 
 # Media storage
 gem 'aws-s3'

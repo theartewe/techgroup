@@ -1,6 +1,6 @@
 Techgroup::Application.routes.draw do
 
-  resources :media
+  resources :media, :only => [:index,:show]
 
   resources :companies
 
@@ -17,10 +17,9 @@ Techgroup::Application.routes.draw do
     match 'services'  => 'services#index'
     match 'contact'   => 'contact#index'
 
-    match 'media'             => 'media#index'
     match 'media/posts/:slug' => 'media#show'
     match 'media/search'      => 'media#search'
-    match 'meida/:category'   => 'media#category'
+    match 'media/:category'   => 'media#category'
 
     match 'services/conversion-optimization' => 'services#conversion_optimization'
     match 'services/crisis-communication'    => 'services#crisis_communication'

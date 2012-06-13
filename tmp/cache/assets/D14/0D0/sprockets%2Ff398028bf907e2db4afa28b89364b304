@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389659.9706545:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%b14f0e8329b3f6ab4e87ab19bf2646f2I"logical_path;
-FI"*images/home-slider-case_vans_logo.png;
-TI"pathname;
-FI";$root/app/assets/images/home-slider-case_vans_logo.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-05-30T16:53:49+03:00;
-FI"length;
-FI"	5401;
-FI"digest;
-F"%f9e25d330ec6432d66d3b0fe40e37bfbI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

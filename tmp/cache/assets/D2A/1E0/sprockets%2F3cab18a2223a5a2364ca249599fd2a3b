@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389661.6162093:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%aaff9b2139c0cc54c4b1d5100d2963c2I"logical_path;
-FI"%images/home-slider-li_bullet.png;
-TI"pathname;
-FI"6$root/app/assets/images/home-slider-li_bullet.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-05-30T16:53:49+03:00;
-FI"length;
-FI"929;
-FI"digest;
-F"%9141d620afc5223cf7116f20a52c5073I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

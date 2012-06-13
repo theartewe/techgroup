@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389659.8892953:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%2a5f6d3fab2a30db13fbee15a842c886I"logical_path;
-FI"*images/home-slider-case_toms_logo.png;
-TI"pathname;
-FI";$root/app/assets/images/home-slider-case_toms_logo.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-05-30T16:53:49+03:00;
-FI"length;
-FI"	5454;
-FI"digest;
-F"%d19810796f8fff94c603182a095bd492I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

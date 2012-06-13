@@ -1,18 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389659.9389014:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%aa7177bc6b9e6e11de8e16d0c4207013I"logical_path;
-FI"+images/home-slider-case_hp_browser.png;
-TI"pathname;
-FI"<$root/app/assets/images/home-slider-case_hp_browser.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-05-30T16:53:49+03:00;
-FI"length;
-FI"
-84521;
-FI"digest;
-F"%5d02e9b347fc7c3c3e43e7345863fca5I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

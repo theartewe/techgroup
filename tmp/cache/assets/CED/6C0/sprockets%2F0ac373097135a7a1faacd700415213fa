@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1338389661.5468225:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%b3fd8ee1f79437a0b33cb5c750ff5196I"logical_path;
-FI" images/blockquote-arrow.png;
-TI"pathname;
-FI"1$root/app/assets/images/blockquote-arrow.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-05-30T16:53:49+03:00;
-FI"length;
-FI"961;
-FI"digest;
-F"%2e60c5b15358a1694c5177f27e16f369I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,101 +1,45 @@
 Techgroup::Application.routes.draw do
+
+  resources :media
+
+  resources :companies
+
   ActiveAdmin.routes(self)
+  
+  match "change-locale" => 'flatpages#change_locale', :as => :change_locale
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  scope "(:locale)", :locale => /en|fr|ar/ do
+    
+    devise_for :admin_users, ActiveAdmin::Devise.config
+    
+    root  :to         => 'home#index'
+    match 'about'     => 'about#index'
+    match 'services'  => 'services#index'
+    match 'contact'   => 'contact#index'
 
-  #
-  # Default English
-  #
-  root  :to         => 'home#index'
-  match 'about'     => 'about#index'
-  match 'services'  => 'services#index'
-  match 'contact'   => 'contact#index'
+    match 'media'             => 'media#index'
+    match 'media/posts/:slug' => 'media#show'
+    match 'media/search'      => 'media#search'
+    match 'meida/:category'   => 'media#category'
 
-  match 'media'             => 'media#index'
-  match 'media/posts/:slug' => 'media#show'
-  match 'media/search'      => 'media#search'
-  match 'meida/:category'   => 'media#category'
-
-  match 'services/conversion-optimization' => 'services#conversion_optimization'
-  match 'services/crisis-communication'    => 'services#crisis_communication'
-  match 'services/media-buying'            => 'services#media_buying'
-  match 'services/ppc-management'          => 'services#ppc_management'
-  match 'services/seo-optimization'        => 'services#seo_optimization'
-  match 'services/social-media'            => 'services#social_media'
-
-  #
-  # Arabic
-  #
-  match 'ar'            => 'home#index'
-  match 'ar/about'      => 'about#index'
-  match 'ar/services'   => 'services#index'
-  match 'ar/contact'    => 'contact#index'
-
-  match 'ar/news'             => 'news#index'
-  match 'ar/news/posts/:slug' => 'news#show'
-  match 'ar/news/search'      => 'news#search'
-  match 'ar/news/:category'   => 'news#category'
-
-  match 'ar/services/conversion-optimization' => 'services#conversion_optimization'
-  match 'ar/services/crisis-communication'    => 'services#crisis_communication'
-  match 'ar/services/media-buying'            => 'services#media_buying'
-  match 'ar/services/ppc-management'          => 'services#ppc_management'
-  match 'ar/services/seo-optimization'        => 'services#seo_optimization'
-  match 'ar/services/social-media'            => 'services#social_media'
-
+    match 'services/conversion-optimization' => 'services#conversion_optimization'
+    match 'services/crisis-communication'    => 'services#crisis_communication'
+    match 'services/media-buying'            => 'services#media_buying'
+    match 'services/ppc-management'          => 'services#ppc_management'
+    match 'services/seo-optimization'        => 'services#seo_optimization'
+    match 'services/social-media'            => 'services#social_media'
+    
+    #flatpages
+    match "privacy_policy" => 'flatpages#privacy_policy', :as => :privacy_policy
+    match "terms_of_use" => 'flatpages#terms_of_use', :as => :terms_of_use
+    match "about_us" => 'flatpages#about_us', :as => :about_us
+    match "contact_us" => 'flatpages#contact_us', :as => :contact_us
+    match "faq" => 'flatpages#faq', :as => :faq
+    
+    resources :porfolio, :only => [:index,:show]
+  end
+  
   # Generic
   post  'submit'    => "contact#submit"
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
 end

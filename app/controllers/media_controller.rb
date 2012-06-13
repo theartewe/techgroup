@@ -2,19 +2,15 @@ class MediaController < WebsiteController
     before_filter :set_categories
 
     def set_categories
-        @categories = Category.all()
+      @media_categories = MediaCategory.all()
     end
 
     def index
-        if @arabic
-            @posts  = Post.arabic_published().page(params[:page])
-        else
-            @posts  = Post.english_published().page(params[:page])
-        end
+      @objects  = MediaObject.is_published().page(params[:page])
     end
 
     def show
-        @post   = Post.first(conditions: { slug:  params[:slug], language: @language.capitalize })
+        @object   = MediaObject.first(conditions: { slug:params[:slug]})
 
         raise ActionController::RoutingError.new('Not Found') unless @post
 
@@ -26,13 +22,8 @@ class MediaController < WebsiteController
         @category   = @categories.select{ |c| c.slug == slug }.first()
         raise ActionController::RoutingError.new('Not Found') unless @category
 
-        if @arabic
-            @posts      = @category.arabic_posts(params[:page])
-            @category   = @category.arabic_title
-        else
-            @posts      = @category.english_posts(params[:page])
-            @category   = @category.english_title
-        end
+        @posts      = @category.media_objects(params[:page])
+        @category   = @category.title
 
         @title      = "#{@category} - Tech Group"
         render 'index'
@@ -42,11 +33,8 @@ class MediaController < WebsiteController
         q       = params[:q]
         @search = q
 
-        if @arabic
-            @query  = Post.arabic_published()
-        else
-            @query  = Post.english_published()
-        end
+        @query  = MediaObject.is_published()
+        
 
         #
         # NOTE: According to this:
@@ -77,7 +65,7 @@ class MediaController < WebsiteController
         ids.each{ |id| counters[id] += 1 }
         result_ids = counters.keys.select{ |key| counters[key] == keys.size }.uniq
 
-        @posts = @query.find(result_ids)#.page(params[:page])
+        @objects = @query.find(result_ids)#.page(params[:page])
         @title = "Search - Tech Group"
         render 'index'
     end

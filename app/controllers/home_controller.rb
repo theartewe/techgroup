@@ -1,6 +1,5 @@
 class HomeController < WebsiteController
   def index
-    @sections = @sections.values
 
     language  = "english"
     @slides = Slide.all.collect do |s|

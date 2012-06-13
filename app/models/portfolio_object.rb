@@ -1,10 +1,5 @@
-class Slide
+class PortfolioObject
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Globalize
-  
-  translates do
-    field :text
-  end
-
 end

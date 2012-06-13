@@ -1,6 +1,7 @@
 class Post
   include Mongoid::Document
   include Mongoid::Timestamps
+  include Mongoid::Globalize
 
   field :language,      :default    => "English"
   field :slug

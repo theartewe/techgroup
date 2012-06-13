@@ -1,15 +1,16 @@
 class Page
   include Mongoid::Document
   include Mongoid::Timestamps
-
+  include Mongoid::Globalize
+  
   field :name
   field :path
-
-  field :english_title
-  field :english_description
-
-  field :arabic_title
-  field :arabic_description
+  
+  translates do
+    field :title
+    field :description
+    fallbacks_for_empty_translations!
+  end
 
   has_many :page_sections
 

@@ -40,7 +40,7 @@ Slide.create!(:english_text1 => "SEO Requires Real Creativity and Awareness",
 
 
 puts '>>> EMPTY THE MONGODB DATABASE'
-Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
+#Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
 
 puts '>>> SETTING UP DEFAULT ADMIN USER'
 AdminUser.create!(:email                  => 'admin@techgroup.com',

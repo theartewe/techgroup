@@ -48,6 +48,7 @@ module Techgroup
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.paths << File.join(Rails.root, 'app', 'assets')
+    config.assets.compress = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

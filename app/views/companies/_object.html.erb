@@ -1,0 +1,11 @@
+<article>
+  <div class="logo">
+    <a href="<%= url_for company_path(object) %>">
+      <%= image_tag(object.logo) %>
+    </a>
+  </div>
+  <div class="description">
+    <%= object.description %>
+    <%= link_to object.url, object.url %>
+  </div>
+</article>

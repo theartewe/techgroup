@@ -11,20 +11,20 @@
              <%= t(:corporation) %>
           </a>
         </li>
-        <li class="our_companies">
-          <a href="<%= @ar %>/our_companies" title="<%= t(:our_companies) %>"
+        <li class="companies">
+          <a href="<%= companies_path %>" title="<%= t(:our_companies) %>"
              <% if @location == "our_companies" %>class="current"<% end %>><%= t(:our_companies) %></a>
         </li>
         <li class="portfolio">
-          <a href="<%= @ar %>/portfolio" title="<%= t(:portfolio) %>"
+          <a href="/portfolio" title="<%= t(:portfolio) %>"
              <% if @location == "portfolio" %>class="current"<% end %>><%= t(:portfolio) %></a>
         </li>
         <li class="media">
-          <a href="<%= @ar %>/media" title="<%= t(:media) %>"
+          <a href="/media" title="<%= t(:media) %>"
              <% if @location == "media" %>class="current"<% end %>><%= t(:media) %></a>
         </li>
         <li class="contact">
-          <a href="<%= @ar %>/contact" title="<%= t(:contact) %>"
+          <a href="/contact" title="<%= t(:contact) %>"
              <% if @location == "contact" %>class="current"<% end %>><%= t(:contact) %></a>
         </li>
         <li class="switcher">

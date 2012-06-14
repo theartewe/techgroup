@@ -1,34 +1,34 @@
-    <section class="contact">
-      <div class="banner forest">
-        <div class="container">
-          <h2><%= @sections['01-header'][:title].html_safe %></h2>
-          <%= wrap_in_p(@sections['01-header'][:text]) %>
-        </div>
-      </div><!-- End .Slider -->
-      <div class="content">
-        <section>
-          <div>
-            <aside>
-              <ul>
-                <li><strong><%= @sections['02-address'][:title].html_safe %></strong></li>
-                <%= @sections['02-address'][:text].html_safe %>
-              </ul>
-            </aside>
-            <h4><%= @sections['03-address-text'][:title].html_safe %></h4>
-            <%= wrap_in_p(@sections['03-address-text'][:text]) %>
-          </div>
-        </section>
-        <section>
-          <div>
-            <aside>
-              <h5><%= @sections['04-office'][:title].html_safe %></h5>
-              <ol <% if @arabic %>dir="rtl"<% end %>>
-                <%= @sections['04-office'][:text].html_safe %>
-              </ol>
-            </aside>
-            <%= wrap_in_p(@sections['05-office-text'][:text]) %>
-          </div>
-        </section>
-        <%= render "form" %>
-      </div><!-- End .Content -->
-    </section><!-- End .Home -->
+<section class="contact">
+  <div class="banner forest">
+    <div class="container">
+      <h2><%= @sections['01-header'][:title].html_safe %></h2>
+      <%= wrap_in_p(@sections['01-header'][:text]) %>
+    </div>
+  </div><!-- End .Slider -->
+  <div class="content">
+    <section>
+      <div>
+        <aside>
+          <ul>
+            <li><strong><%= @sections['02-address'][:title].html_safe %></strong></li>
+            <%= @sections['02-address'][:text].html_safe %>
+          </ul>
+        </aside>
+        <h4><%= @sections['03-address-text'][:title].html_safe %></h4>
+        <%= wrap_in_p(@sections['03-address-text'][:text]) %>
+      </div>
+    </section>
+    <section>
+      <div>
+        <aside>
+          <h5><%= @sections['04-office'][:title].html_safe %></h5>
+          <ol <% if @arabic %>dir="rtl"<% end %>>
+            <%= @sections['04-office'][:text].html_safe %>
+          </ol>
+        </aside>
+        <%= wrap_in_p(@sections['05-office-text'][:text]) %>
+      </div>
+    </section>
+    <%= render "form" %>
+  </div><!-- End .Content -->
+</section><!-- End .Home -->

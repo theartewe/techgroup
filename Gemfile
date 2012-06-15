@@ -43,6 +43,7 @@ group :development do
   gem 'foreman'
   gem 'heroku-rails'
   gem 'unicorn'
+  gem 'sextant'
 end
 
 group :production do

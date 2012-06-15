@@ -1,0 +1,37 @@
+<section class="corporation">
+  <%= render :partial => "header", :locals => { :sections => @sections } %>
+  <div class="content">
+    <%= render "sidebar" %>
+    <section class="overview">
+      <span class="orange">Tall oaks grow from little acorns. . .</span>
+      <p class="opening-text">
+        Compellingly promote enabled opportunities with plug-and-play relationships. Rapidiously envisioneer one-to-one potentialities vis-a-vis professional mindshare. Dramatically myocardinate state of the art information via leading-edge ROI. 
+      </p>
+      <p class="opening-text">
+        Intrinsicly productivate visionary markets with granular technologies. Completely negotiate front-end customer service before parallel vortals. Rapidiously strategize intuitive relationships before tactical products. 
+      </p>
+      <p>
+      Rapidiously evolve transparent partnerships vis-a-vis high-payoff portals. Holisticly network reliable products through client-based models. Holisticly innovate client-centric leadership skills via flexible functionalities.
+      </p>
+      <p>
+      Rapidiously evolve transparent partnerships vis-a-vis high-payoff portals. Holisticly network reliable products through client-based models. Holisticly innovate client-centric leadership skills via flexible functionalities.
+      </p>
+      <section class="coporation-blubs">
+        <section class="blurb">
+          <h4>Our Vision<h4>
+          <p>Energistically scale collaborative solutions whereas client-centered outsourcing. Enthusiastically optimize strategic customer service without cost effective sources. Completely implement long-term high-impact infomediaries through interdependent relationships.</p>
+        </section>
+        <section class="blurb">
+          <h4>Our Mission<h4>
+          <p>Energistically scale collaborative solutions whereas client-centered outsourcing. Enthusiastically optimize strategic customer service without cost effective sources. Completely implement long-term high-impact infomediaries through interdependent relationships.</p>
+        </section>
+      </section>
+    </section>
+    <section class="history-wrapper">
+      <h4>Our History</h4>
+      <section class="history-objects">
+        <%= render :partial => 'history_object', :collection => @objects %>
+      </section>
+    </section>
+  </div>
+</section>

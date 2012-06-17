@@ -1,4 +1,4 @@
-class CompaniesController < InheritedResources::Base
+class CompaniesController < WebsiteController
   def index
     @objects  = Company.all
   end

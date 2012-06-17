@@ -193,7 +193,7 @@ a.switcher {
             width:24px;
             height:21px;
             padding:6px 0;
-            background:url('../images/breadcrumb-divider.png') no-repeat center center;
+            background:image-url('breadcrumb-divider.png') no-repeat center center;
             display:block;
             float:right;
           }
@@ -504,7 +504,7 @@ footer[role="footer"] {
               content:"";
               width:24px;
               height:21px;
-              background:url('../images/breadcrumb-divider.png') no-repeat center center;
+              background:image-url('breadcrumb-divider.png') no-repeat center center;
               display:block;
               float:right;
             }

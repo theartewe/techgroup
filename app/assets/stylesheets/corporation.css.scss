@@ -1,0 +1,122 @@
+@import "compass/css3";
+@import "shared_vars";
+
+.corporation {
+  .banner {
+    @include single-box-shadow(rgba(0, 0, 0, 0.15), 0, 0, 0, 1px, inset);
+  }
+  
+  #proverb{
+    color:$orange;
+    font-size:1.15em; // 22/13
+    font-style:italic;
+    margin-bottom:10px;
+  }
+  
+  .overview {
+    width:74.747475%; // 740/990
+    
+    article {
+      margin-bottom:50px;
+    }
+    h4 {
+      font-size:1.692307em; // 22/13
+      color:$orange;
+      margin:0;
+      padding-bottom:0;
+      border-bottom:0;
+    }
+    .date {
+      font-size:0.923076em; // 12/13
+      font-style:italic;
+      color:#999;
+      margin-bottom:20px;
+    }
+
+    p {
+      margin-bottom:20px;
+      line-height:150%;
+      &.opening-text{
+        font-size:1.123076em;
+      }
+    }
+    
+    .missions{
+      margin-top:30px;
+      border-top: 1px solid #F2F2F2;
+      .mission{
+        margin-top:30px;
+        width:47%;
+        h3{
+          font-size:1.2em; // 12/13
+          padding-bottom:5px;
+          border:none;
+        }
+        &:first-child{
+          margin-right:6%;
+        }
+        float:left;
+        .p{
+          margin-bottom:5px;
+          line-height:50%;
+          margin-bottom:0px;
+        }
+      }
+    }  
+  }
+  
+  #history-wrapper{
+    margin-top:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-top: 1px solid #F2F2F2;
+    
+    h3{
+      font-size:1.2em; // 12/13
+      padding-bottom:5px;
+      border:none;
+    }
+  }
+  
+  .sidebar {
+    width:23.434343%; // 232/990
+    float:right;
+    margin-bottom:50px;
+    
+    ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      
+      li {
+        border-bottom:1px solid #e5e5e5;
+        font-family:$proximanova;
+        font-size:1em;
+        line-height:1em;
+        text-transform:uppercase;
+        
+        a {
+          padding:15px;
+          color:#666;
+          display:block;
+          
+          &:hover {
+            color:$orange;
+          }
+        }
+        &.active {
+          background:$orange;
+          
+          a {
+            color:#fff;
+            cursor:default;
+          }
+        }
+        &:last-child {
+          border-bottom:0;
+          margin-bottom:25px;
+        }
+      }
+    }
+  }
+}

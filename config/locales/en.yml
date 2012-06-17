@@ -2,11 +2,32 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  about:    "About"
-  services: "Services"
-  news:     "News"
-  contact:  "Contact"
-  social:   "Social"
+  #header
+  corporation: "corporation"
+  our_companies: "our companies"
+  portfolio: "portfolio"
+  media: "media"
+  contact:  "contact"
+  switch_language: العربية
+
+  #footer
+  careers: "careers"
+  terms_and_conditions: "terms and conditions"
+  privacy_policy: "privacy policy"
+  feedback: "feedback"
+  
+  #breadcrumb
+  home: "home"
+  
+  
+  #corporation
+  overview: "Overview"
+  corporation_banner: "Corporation Banner"
+  tall_oaks: "Tall oaks grow from little acorns. . ."
+  board_of_directors: "board of directors"
+  ceo_message: "ceo message"
+  clients: "clients"
+  corporate_partners: "corporate partners"
 
   jhg_clients:  "JHG clients"
 

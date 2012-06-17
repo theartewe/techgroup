@@ -1,9 +1,14 @@
-<section class="corporation">
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'corporation', :media => 'screen' %>
+<% end %>
+
+<section class="corporation main">
   <%= render :partial => "header" %>
-  <div class="content">
+  <div class="content clear">
+    <h2><%= t(:overview) %></h2>
+    <div id="proverb"><%= t(:tall_oaks) %></div>
     <%= render "sidebar" %>
     <section class="overview">
-      <span class="orange">Tall oaks grow from little acorns. . .</span>
       <p class="opening-text">
         Compellingly promote enabled opportunities with plug-and-play relationships. Rapidiously envisioneer one-to-one potentialities vis-a-vis professional mindshare. Dramatically myocardinate state of the art information via leading-edge ROI. 
       </p>
@@ -16,19 +21,19 @@
       <p>
       Rapidiously evolve transparent partnerships vis-a-vis high-payoff portals. Holisticly network reliable products through client-based models. Holisticly innovate client-centric leadership skills via flexible functionalities.
       </p>
-      <section class="coporation-blubs">
-        <section class="blurb">
-          <h4>Our Vision<h4>
+      <section class="missions clear">
+        <section class="mission">
+          <h3>Our Vision</h3>
           <p>Energistically scale collaborative solutions whereas client-centered outsourcing. Enthusiastically optimize strategic customer service without cost effective sources. Completely implement long-term high-impact infomediaries through interdependent relationships.</p>
         </section>
-        <section class="blurb">
-          <h4>Our Mission<h4>
+        <section class="mission">
+          <h3>Our Mission</h3>
           <p>Energistically scale collaborative solutions whereas client-centered outsourcing. Enthusiastically optimize strategic customer service without cost effective sources. Completely implement long-term high-impact infomediaries through interdependent relationships.</p>
         </section>
       </section>
     </section>
-    <section class="history-wrapper">
-      <h4>Our History</h4>
+    <section id="history-wrapper">
+      <h3>Our History</h3>
       <section class="history-objects">
         <%= render :partial => 'history_object', :collection => @objects %>
       </section>

@@ -3,22 +3,57 @@
   <div class="content clear">
     <h2><%= t(:our_offices) %></h2>
     <h3><%= t(:our_offices_text) %></h3>
-    <section class="contact-wrapper">
+      <section class="contact-wrapper">
+       <div class="form">
+        <h4 role="title">Contact Us</h4>
+        <form method="post" action="/submit" id="contact_form">
+          <fieldset>
+              <input type="text" required name="name" placeholder="Name" />
+              <input type="tel" required name="telephone" placeholder="Telephone" />
+              <input type="email" required name="email" placeholder="Email Address" />
+            <select required name="subject">
+              <option disabled="disabled">Choose Subject</option>
+            </select>
+            <textarea name="message" required placeholder="Message"></textarea>
+            <input type="submit" value="Submit Form" class="button" />
+          </fieldset>
+        </form>
+      </div>
       <div class="addresses">
-        <div class="form">
-          <%= render "form" %>
+        <div>
+          <h5><small>Tech Group PJSC</small> Ajman - UAE</h5>
+          <ul>
+            <li><b>Address</b> Al Rumaila, Corniche Road, Ajman, UAE</li>
+            <li><b>Telephone</b> +9716 747 5552</li>
+            <li><b>Fax</b> +9716 747 5553</li>
+            <li><b>Email</b> <a href="" title="Email Us">info@techgroup.ae</a></li>
+          </ul>
         </div>
-        <section>
-          <div>
-            <h5><small><%= t(:tech_group_pjsc) %></small> <%= t(:ajman_uae) %></h5>
-            <ul>
-              <li><b>Address</b> Al Rumaila, Corniche Road, Ajman, UAE</li>
-              <li><b>Telephone</b> +9716 747 5552</li>
-              <li><b>Fax</b> +9716 747 5553</li>
-              <li><b>Email</b> <a href="" title="Email Us">info@techgroup.ae</a></li>
-            </ul>
-          </div>
-        </section>
+        <div>
+          <h5><small>Tech Group</small> Khartoum - Sudan</h5>
+          <ul>
+            <li><b>Address</b> Al Ryad, Makkah Hospital Street</li>
+            <li><b>Fax</b> +244 991 232 7909</li>
+            <li><b>Email</b> <a href="" title="Email Us">e.siraj@pilingtech.ae</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5><small>Tech Group</small> Baghdad - Iraq</h5>
+          <ul>
+            <li><b>Address</b> Al Jadria, Bagdad</li>
+            <li><b>Telephone</b> +964 7700014444</li>
+            <li><b>Fax</b> +964 7800014444 </li>
+            <li><b>Email</b> <a href="" title="Email Us">a.khalik@techgroup.ae</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5><small>Tech Group</small> Abha - KSA</h5>
+          <ul>
+            <li><b>Address</b> Abha, Khamis Mushayt</li>
+            <li><b>Telephone</b> +966554492477</li>
+            <li><b>Email</b> <a href="" title="Email Us">k.mohamed@remixtech.ae</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </div><!-- End .Content -->

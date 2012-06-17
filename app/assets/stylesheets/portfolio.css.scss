@@ -1,3 +1,113 @@
-// Place all the styles related to the portfolio_items controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass/css3";
+@import "shared_vars";
+
+.portfolio {
+  .banner {
+    @include single-box-shadow(rgba(0, 0, 0, 0.15), 0, 0, 0, 1px, inset);
+  }
+  
+  .overview {
+    width:74.747475%; // 740/990
+    
+    article {
+      margin-bottom:50px;
+    }
+    
+    h3{
+      padding-bottom: 0px;
+      border-bottom: none;
+    }
+    
+    h4 {
+      font-size:1.692307em; // 22/13
+      color:$orange;
+      margin:0;
+      padding-bottom:0;
+      border-bottom:0;
+    }
+    .date {
+      font-size:0.923076em; // 12/13
+      font-style:italic;
+      color:#999;
+      margin-bottom:20px;
+    }
+
+    p {
+      margin-bottom:20px;
+      line-height:150%;
+      &.opening-text{
+        font-size:1.123076em;
+      }
+    }
+    
+    .projects{
+      margin-top:30px;
+      margin-bottom:40px;
+      border-top: 1px solid #F2F2F2;
+      .project{
+        margin-top:30px;
+        width:47%;
+        float:left;
+        h3{
+          font-size:1.2em; // 12/13
+          padding-bottom:5px;
+          border:none;
+        }
+        &:first-child{
+          margin-right:6%;
+        }
+        p{
+          margin-bottom:2px;
+          line-height:100%;
+        }
+        a{
+          font-size:.85em;
+          color:$orange;
+          text-transform:uppercase;
+        }
+      }
+    }  
+  }
+  
+  .sidebar {
+    width:23.434343%; // 232/990
+    float:right;
+    margin-bottom:50px;
+    
+    ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      
+      li {
+        border-bottom:1px solid #e5e5e5;
+        font-family:$proximanova;
+        font-size:1em;
+        line-height:1em;
+        text-transform:uppercase;
+        
+        a {
+          padding:15px;
+          color:#666;
+          display:block;
+          
+          &:hover {
+            color:$orange;
+          }
+        }
+        &.active {
+          background:$orange;
+          
+          a {
+            color:#fff;
+            cursor:default;
+          }
+        }
+        &:last-child {
+          border-bottom:0;
+          margin-bottom:25px;
+        }
+      }
+    }
+  }
+}

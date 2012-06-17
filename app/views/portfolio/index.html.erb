@@ -1,21 +1,27 @@
-<h1>Listing portfolio_items</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @portfolio_items.each do |portfolio_item| %>
-  <tr>
-    <td><%= link_to 'Show', portfolio_item %></td>
-    <td><%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %></td>
-    <td><%= link_to 'Destroy', portfolio_item, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'portfolio', :media => 'screen' %>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Portfolio item', new_portfolio_item_path %>
+<section class="portfolio main">
+  <%= render :partial => "header" %>
+  <div class="content clear">
+    <h2><%= t(:overview) %></h2>
+    
+    <%= render "sidebar" %>
+    <section class="overview">
+      <h3><%= t(:portfolio_overview_text) %></h3>
+      <section class="projects clear">
+        <section class="project">
+          <h3><%= t(:tech_group_projects_header) %></h3>
+          <p><%= t(:tech_group_projects_text) %></p>
+          <a href=""><%= t(:more) %></a>
+        </section>
+        <section class="project">
+          <h3><%= t(:tech_group_operations_header) %></h3>
+          <p><%= t(:tech_group_operations_text) %></p>
+          <a href=""><%= t(:more) %></a>
+        </section>
+      </section>
+    </section>
+  </div>
+</section>

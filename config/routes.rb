@@ -16,7 +16,14 @@ Techgroup::Application.routes.draw do
   resources :companies, :except => [:new,:edit,:delete] do
     
   end
-  resources :portfolio, :except => [:new,:edit,:delete]
+  
+  resources :portfolio, :except => [:new,:edit,:delete] do
+    collection do
+      match 'tech-group-projects'     => 'portfolio#projects',   :as => :projects
+      match 'tech-group-operations'   => 'portfolio#operations', :as => :operations
+    end
+  end
+  
   resources :media, :except => [:new,:edit,:delete] do
      get 'search'
      match ':category'   => 'media#category'

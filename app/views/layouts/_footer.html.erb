@@ -8,34 +8,36 @@
       <%= image_tag("footer_icon-business_brochure.svg", :alt=>"View") %>
       Tech Group Business Brochure
     </a>
-    <a href="" class="contact-cta">
+    <a href="<%= contact_path %>" class="contact-cta">
       <%= image_tag("footer_icon-contact.svg", :alt=>"View") %>
       Contact Tech Group Today
     </a>
   </section>
   <div class="container clear">
-    <% if @arabic %>
-        <a href="<%= @path %>" title="Change Language" class="switcher">English</a>
-    <% else %>
-        <a href="/ar<%= @path %>" title="العربية" class="switcher">العربية</a>
-    <% end %>
+    <a href="<%= change_locale_path %>" title="<%= t(:switch_language) %>" class="switcher">
+      <%= t(:switch_language) %>
+    </a>
     <ul class="footer-nav">
       <li class="careers">
-        <a href="" title="<%= t(:careers) %>"
-           <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %>
+        <a href="<%= career_index_path %>" title="<%= t(:careers) %>" <% if @location == "careers" %>class="current"<% end %>>
+          <%= t(:careers) %>
         </a>
       </li>
       <li class="terms_and_conditions">
-        <a href="" title="<%= t(:terms_and_conditions) %>"
-           <% if @location == "terms_and_conditions" %>class="current"<% end %>><%= t(:terms_and_conditions) %></a>
+        <a href="<%= terms_and_conditions_path %>" title="<%= t(:terms_and_conditions) %>" <% if @location == "terms_and_conditions" %>class="current"<% end %>>
+          <%= t(:terms_and_conditions) %>
+        </a>
       </li>
       <li class="privacy_policy">
-        <a href="" title="<%= t(:privacy_policy) %>"
-           <% if @location == "privacy_policy" %>class="current"<% end %>><%= t(:privacy_policy) %></a>
+        <a href="<%= privacy_policy_path %>" title="<%= t(:privacy_policy) %>"
+           <% if @location == "privacy_policy" %>class="current"<% end %>>
+          <%= t(:privacy_policy) %>
+        </a>
       </li>
       <li class="feedback">
-        <a href=""  title="<%= t(:feedback) %>"
-           <% if @location == "feedback" %>class="current"<% end %>><%= t(:feedback) %></a>
+        <a href="<%= feedback_path %>" title="<%= t(:feedback) %>" <% if @location == "feedback" %>class="current"<% end %>>
+          <%= t(:feedback) %>
+        </a>
       </li>
     </ul>
     <p class="copyright"><%= DateTime.current().strftime("%Y") %> Tech Group PJSC. All Rights Reserved.</p>

@@ -1,23 +1,15 @@
-<h3 class="mid-divide" role="title">
-  <span class="white-bg"><%= t(:contact_us) %></span>
-</h3>
-<form method="post" action="/submit" id="contact_form">
-  <fieldset>
-    <label><%= t(:name) %>
-      <input type="text" required name="name" />
-    </label>
-    <label><%= t(:telephone) %>
-      <input type="text" required name="telephone" />
-    </label>
-    <label><%= t(:email_address) %>
-      <input type="email" required name="email" />
-    </label>
-    <select required name="subject">
-      <option disabled="disabled"><%= t(:choose_subject) %></option>
-    </select>
-    <label><%= t(:your_message) %>
-      <textarea name="message" required></textarea>
-    </label>
-    <input type="submit" value="<%= t(:submit_form) %>" class="button" />
-  </fieldset>
-</form>
+<div class="form">
+  <h4 role="title">Contact Us</h4>
+  <form method="post" action="/submit" id="contact_form">
+    <fieldset>
+        <input type="text" required name="name" placeholder="Name" />
+        <input type="tel" required name="telephone" placeholder="Telephone" />
+        <input type="email" required name="email" placeholder="Email Address" />
+      <select required name="subject">
+        <option disabled="disabled">Choose Subject</option>
+      </select>
+      <textarea name="message" required placeholder="Message"></textarea>
+      <input type="submit" value="Submit Form" class="button" />
+    </fieldset>
+  </form>
+</div>

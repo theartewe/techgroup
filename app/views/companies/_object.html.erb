@@ -1,11 +1,8 @@
-<article>
+<a href="<%= url_for company_path(object) %>" class="clear">
   <div class="logo">
-    <a href="<%= url_for company_path(object) %>">
-      <%= image_tag(object.logo) %>
-    </a>
+    <%= image_tag(object.logo) %>
   </div>
   <div class="description">
-    <%= object.description %>
-    <%= link_to object.url, object.url %>
+    <p><%= object.description %> <span class="orange"><%= link_to object.url, object.url %></span></p>
   </div>
-</article>
+</a>

@@ -1,86 +1,25 @@
-<section class="contact">
-  <div class="banner">
-    <img src=""/>
-    <h1><%= t(:our_offices) %></h1>
-    <p><%= t(:our_offices_text) %></p>
-  </div><!-- End .Slider -->
-  <div class="content">
-    <div class="addresses">
-      <section>
-        <h3>
-          <%= t(:tech_group_pjsc) %>
-          <%= t(:ajman_uae) %>
-        <h3>
-        <div class="info-container">
-          <div class="info">
-            <span class="bold"><%= t(:address) %></span>
-            <p>Al Rumaila, Corniche Road, Ajman, UAE</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:telephone) %></span>
-            <p>+9716 747 5552</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:fax) %></span>
-            <p>+9716 747 5553</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:email) %></span>
-            <p>info@techgroup.com</p>
-          </div>
+<section class="main contact">
+  <%= render :partial => "header" %>
+  <div class="content clear">
+    <h2><%= t(:our_offices) %></h2>
+    <h3><%= t(:our_offices_text) %></h3>
+    <section class="contact-wrapper">
+      <div class="addresses">
+        <div class="form">
+          <%= render "form" %>
         </div>
-      </section>
-      <section>
-        <h3>
-          <%= t(:tech_group_pjsc) %>
-          <%= t(:ajman_uae) %>
-        <h3>
-        <div class="info-container">
-          <div class="info">
-            <span class="bold"><%= t(:address) %></span>
-            <p>Al Rumaila, Corniche Road, Ajman, UAE</p>
+        <section>
+          <div>
+            <h5><small><%= t(:tech_group_pjsc) %></small> <%= t(:ajman_uae) %></h5>
+            <ul>
+              <li><b>Address</b> Al Rumaila, Corniche Road, Ajman, UAE</li>
+              <li><b>Telephone</b> +9716 747 5552</li>
+              <li><b>Fax</b> +9716 747 5553</li>
+              <li><b>Email</b> <a href="" title="Email Us">info@techgroup.ae</a></li>
+            </ul>
           </div>
-          <div class="info">
-            <span class="bold"><%= t(:telephone) %></span>
-            <p>+9716 747 5552</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:fax) %></span>
-            <p>+9716 747 5553</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:email) %></span>
-            <p>info@techgroup.com</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h3>
-          <%= t(:tech_group_pjsc) %>
-          <%= t(:ajman_uae) %>
-        <h3>
-        <div class="info-container">
-          <div class="info">
-            <span class="bold"><%= t(:address) %></span>
-            <p>Al Rumaila, Corniche Road, Ajman, UAE</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:telephone) %></span>
-            <p>+9716 747 5552</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:fax) %></span>
-            <p>+9716 747 5553</p>
-          </div>
-          <div class="info">
-            <span class="bold"><%= t(:email) %></span>
-            <p>info@techgroup.com</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="form">
-      <%= render "form" %>
-    </div>
+        </section>
+      </div>
+    </section>
   </div><!-- End .Content -->
 </section><!-- End .Home -->

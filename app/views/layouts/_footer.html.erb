@@ -1,8 +1,17 @@
 <footer role="footer">
   <section class="footer-cta clear">
-    <a href="" class="corporate-video-cta"><img src="images/footer_icon-corporate_video.svg" alt="View" /> Tech Group Corporate Video</a>
-    <a href="" class="business-brochure-cta"><img src="images/footer_icon-business_brochure.svg" alt="View" /> Tech Group Business Brochure</a>
-    <a href="" class="contact-cta"><img src="images/footer_icon-contact.svg" alt="View" /> Contact Tech Group Today</a>
+    <a href="" class="corporate-video-cta">
+      <%= image_tag("footer_icon-corporate_video.svg", :alt=>"View") %>
+      Tech Group Corporate Video
+    </a>
+    <a href="" class="business-brochure-cta">
+      <%= image_tag("footer_icon-business_brochure.svg", :alt=>"View") %>
+      Tech Group Business Brochure
+    </a>
+    <a href="" class="contact-cta">
+      <%= image_tag("footer_icon-contact.svg", :alt=>"View") %>
+      Contact Tech Group Today
+    </a>
   </section>
   <div class="container clear">
     <% if @arabic %>
@@ -12,19 +21,20 @@
     <% end %>
     <ul class="footer-nav">
       <li class="careers">
-        <a href="<%= @ar %>/careers"    title="<%= t(:careers) %>"
-           <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %></a>
+        <a href="" title="<%= t(:careers) %>"
+           <% if @location == "careers" %>class="current"<% end %>><%= t(:careers) %>
+        </a>
       </li>
       <li class="terms_and_conditions">
-        <a href="<%= @ar %>/terms_and_conditions" title="<%= t(:terms_and_conditions) %>"
+        <a href="" title="<%= t(:terms_and_conditions) %>"
            <% if @location == "terms_and_conditions" %>class="current"<% end %>><%= t(:terms_and_conditions) %></a>
       </li>
       <li class="privacy_policy">
-        <a href="<%= @ar %>/privacy_policy" title="<%= t(:privacy_policy) %>"
+        <a href="" title="<%= t(:privacy_policy) %>"
            <% if @location == "privacy_policy" %>class="current"<% end %>><%= t(:privacy_policy) %></a>
       </li>
       <li class="feedback">
-        <a href="<%= @ar %>/feedback"  title="<%= t(:feedback) %>"
+        <a href=""  title="<%= t(:feedback) %>"
            <% if @location == "feedback" %>class="current"<% end %>><%= t(:feedback) %></a>
       </li>
     </ul>

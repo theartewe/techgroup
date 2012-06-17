@@ -18,9 +18,22 @@ is_home = ->
 $ ->
   $(window).load ->
     if is_home()
-      $('#carousel').flexslider
+      $('#hero').flexslider
+        animation: "slide"
+        easing: "easeInOutCirc"
+        useCSS: false
         controlNav: false
-    $('.slider').flexslider()
+        directionNav: false
+        
+      $('#companies').flexslider
+        animation: "slide"
+        easing: "easeInOutCirc"
+        useCSS: false
+        slideshow: false
+        directionNav: false
+        controlNav: true
+        controlsContainer: ".flex-direction-nav"
+        manualControls: ".flex-direction-nav li"
 
   if is_home()
     $(window).bind "load resize", ->

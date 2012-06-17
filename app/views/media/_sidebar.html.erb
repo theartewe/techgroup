@@ -1,19 +1,18 @@
 <aside class="sidebar">
   <div class="categories">
     <ul>
-      <li><a href="/media/" alt="<%= t(:all) %>">All</a></li>
+      <li class="active"><a href="/media/" alt="View More Posts">All</a></li>
       <% @media_categories.each do |cat| %>
         <li><a href="/media/<%= cat.title %>" alt="<%= t(:view_more_posts) %>"><%= cat.title %></a></li>
       <% end %>
     </ul>
   </div>
   <div class="search-wrapper">
-    <!-- I realize this will probably need changing later -->
     <form method="GET" action="/news/search">
-      <div class="search">
-        <input type="text" name="search" value="" id="search"/>
-        <input type="submit" />
-      </div>
+      <fieldset>
+        <input type="text" name="search" value="" id="search" placeholder="Search Media" />
+        <input type="image" src="<%= image_path('sidebar-search_submit.svg')%>" />
+      </fieldset>
     </form>
   </div>
 </aside>

@@ -1,10 +1,20 @@
 <article>
   <h4><%= object.title %></h4>
-  <div class="meta">
-    <div class="date"><%= object.created_at.strftime("%B %d, %Y") %></div>
-    <div class="body">
-      <%= object.description %>
+  <div class="date"><%= object.created_at.strftime("%B %d, %Y") %></div>
+  <div class="body">
+    <div class="image">
+      <%= image_tag("sample-media_post-image.jpg", :alt=>"Sample Image") %>
+      <p class="caption">Ali Ghaleb Jaber, Tech Group CEO</p>
     </div>
+    <%= object.description %>
+    <p>Piling Tech has won its first oil sector contract in Iraq, valued at $10 million from Lukoil, Russia’s second-largest oil producer.</p>
+    <p>Under the terms of the agreement, Piling Tech will be involved in the installation of piles, foundations and wells for the West Qurna-2 oil field in southern Iraq.</p>
+    <p>Lukoil, Russia’s largest private oil firm along with Norway’s Statoil and Iraq’s state-owned South Oil Company is prospecting for oil in West Qurna-2 after its won the contract in Iraq’s second licensing round in December 2009.</p>
+    <p>"The West Qurna-2 deal is a milestone development for Piling Tech on two counts: First, it is our first foray into the oil and gas sector of Iraq; and second, the deal signifies Piling Tech’s growing business footprints across various redevelopment projects in Iraq," Tech Group chief executive officer Ali Ghaleb Jaber said.</p>
+    <p>"Thanks to the technical expertise of our companies and credentials of the group as a leader in the construction sector, we have always maintained a steady growth in winning contracts across the UAE as well as the region despite the economic fluctuations. Our growing presence in Iraq is a testimony to our strategic approach to business expansion to chase opportunities with full awareness of risk and rewards," the chief executive added.</p>
+    <p>READ MORE: <a href="" title="">Khaleej Times</a> | <a href="" title="">Iraq Business News</a> | <a href="" title="">Iraq Daily Journal</a></p>
+  </div>
+  <div class="meta clear">
     <div class="tags">
       <span><%= t(:posted_under) %>:</span>
       <ul>
@@ -16,11 +26,11 @@
       </ul>
     </div>
     <div class="other-media">
-      <a href="#">pdf</a>
-      <span class="separator">&nbsp;</span>
-      <a href="#">print</a>
-      <span class="separator">&nbsp;</span>
-      <a href="#">email</a>
+      <ul>
+        <li><a href="#">pdf</a></li>
+        <li><a href="#">print</a></li>
+        <li><a href="#">email</a></li>
+      </ul>
     </div>
   </div>
 </article>

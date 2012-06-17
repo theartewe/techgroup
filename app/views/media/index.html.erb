@@ -1,19 +1,13 @@
-<section class="media">
-  <%= render :partial => "header", :locals => { :sections => @sections } %>
-  <div class="content">
-    <section class="postings">
-      <div>
-        <%= render "sidebar" %>
-        
-        <section class="posts-wrapper">
-          <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories, :full => false } %>
-        </section>
-
-        <% if not @search %>
-          <%= paginate @objects %>
-        <% end %>
-        
-      </div>
+<section class="media main">
+  <%= render :partial => "header" %>
+  <div class="content clear">
+    <h2>Media</h2>
+    <%= render "sidebar" %>
+    <section class="posts-wrapper">
+      <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
     </section>
+    <% if not @search %>
+      <%= paginate @objects %>
+    <% end %>
   </div>
 </section>

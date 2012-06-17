@@ -42,6 +42,19 @@ en:
   tech_group_projects_full_text: "With the prestigious projects in the UAE and the GCC that are credited to Tech Group, the organization has earned the distinction as one of the pillars of development in the country."
   tech_group_operations_full_text: "Within its sphere of operations, Tech Group is represented by its member companies which are known for their patent expertise in quality procedures, processes and machinery operations"
   
+  #media
+  all: "all"
+  search_media: "Search Media"
+  view_more_posts: "view more posts"
+  posted_under: "posted under"
+  
+  #careers
+  
+  #terms and conditions
+  
+  #privacy policy
+  
+  #feedback
 
   subscribe:    "Subscribe"
   return_home:  "Return Home"

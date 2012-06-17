@@ -25,9 +25,12 @@ Techgroup::Application.routes.draw do
   end
   
   resources :media, :except => [:new,:edit,:delete] do
-     get 'search'
-     match ':category'   => 'media#category'
+    collection do
+      get 'search'
+      match ':category'   => 'media#category', :as => :category
+    end
   end
+  
   match 'contact'   => 'contact#index'
 
   scope "(:locale)", :locale => /en|ar/ do
@@ -38,7 +41,6 @@ Techgroup::Application.routes.draw do
     
     #header
    
-    
     #footer
     resources :career, :except => [:new,:edit,:delete]
     match "terms-and-conditions" => 'flatpages#terms_and_conditions', :as => :terms_and_conditions

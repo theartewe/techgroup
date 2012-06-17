@@ -16,7 +16,7 @@ Techgroup::Application.routes.draw do
   resources :companies, :except => [:new,:edit,:delete] do
     
   end
-  resources :porfolio, :except => [:new,:edit,:delete]
+  resources :portfolio, :except => [:new,:edit,:delete]
   resources :media, :except => [:new,:edit,:delete] do
      get 'search'
      match ':category'   => 'media#category'

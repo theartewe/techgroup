@@ -1,17 +1,17 @@
-      <nav class="services">
-        <div class="container">
-          <h3 class="mid-divide" role="title"><span class="grey-bg"><%= t(:services ) %></span></h3>
-          <ul>
-            <% @services.each do |s| %>
-            <li>
-              <a href="<%= @ar %><%= s[:path] %>" title="<%= s[:title] %>">
-                <span class="left">
-                  <%= image_tag("images/home-service_icon-#{s[:icon_name]}.png", :alt=>s[:title]) %>
-                </span>
-                <span class="right"><h3><%= s[:title] %></h3><p><%= s[:text] %></p></span>
-              </a>
-            </li>
-            <% end %>
-          </ul>
-        </div>
-      </nav><!-- End .Services -->
+<nav class="services">
+  <div class="container">
+    <h3 class="mid-divide" role="title"><span class="grey-bg"><%= t(:services ) %></span></h3>
+    <ul>
+      <% @services.each do |s| %>
+        <li>
+          <a href="<%= @ar %><%= s[:path] %>" title="<%= s[:title] %>">
+            <span class="left">
+              <%= image_tag("images/home-service_icon-#{s[:icon_name]}.png", :alt=>s[:title]) %>
+            </span>
+            <span class="right"><h3><%= s[:title] %></h3><p><%= s[:text] %></p></span>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav><!-- End .Services -->

@@ -1,6 +1,6 @@
-<article>
-  <div class="date"><%= object.year %></div>
+<article class="<%= history_object_counter == history_object_count ? "last" : "" %>">
+  <div class="date"><%= history_object.year %></div>
   <div class="body">
-    <%= object.text %>
+    <%= history_object.text %>
   </div>
 </article>

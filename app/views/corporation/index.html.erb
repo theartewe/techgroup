@@ -34,8 +34,11 @@
     </section>
     <section id="history-wrapper">
       <h3>Our History</h3>
-      <section class="history-objects">
-        <%= render :partial => 'history_object', :collection => @objects %>
+      <section class="history-objects clear">
+        <%= render :partial => 'history_object', 
+          :collection => @objects, 
+          :locals => {:history_object_count=>@objects.count-1} 
+        %>
       </section>
     </section>
   </div>

@@ -1,4 +1,4 @@
-ActiveAdmin.register CorporationHistoryEntry do
+ActiveAdmin.register CorporationHistoryEntry, :as => "History Entries" do
   menu :parent 	=> "Corporation"
   
   index do 

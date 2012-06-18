@@ -1,6 +1,6 @@
 class CorporationController < WebsiteController
   def index
-    @objects = CorporationHistoryEntry.all()
+    @objects = HistoryEntry.all()
   end
   
   def board_of_directors

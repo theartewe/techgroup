@@ -4,7 +4,9 @@ class CorporationHistoryEntry
   include Mongoid::Globalize
                        
   translates do
+    field :title
     field :year
-    field :description
+    field :text
+    fallbacks_for_empty_translations!
   end
 end

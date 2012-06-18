@@ -35,4 +35,9 @@ ActiveAdmin.register Company do
     end
     div resource.url
   end
+  
+  #why here? I don't have a better place yet
+  collection_action :change_locale, :method => :get do
+    
+  end
 end

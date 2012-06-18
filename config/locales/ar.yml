@@ -27,3 +27,47 @@ ar:
   your_email:       "بريدك الإلكتروني"
   your_name:        "إسمك"
   submit_form:      "استمارة"
+  
+  #active admin
+  active_admin:
+    dashboard: Dashboard ar
+    dashboard_welcome:
+      welcome: "Welcome to Active Admin. This is the default dashboard page."
+      call_to_action: "To add dashboard sections, checkout 'app/admin/dashboards.rb'"
+    view: "View ar"
+    edit: "Edit ar"
+    delete: "Delete ar"
+    delete_confirmation: "Are you sure you want to delete this? ar"
+    new_model: "New %{model} ar"
+    edit_model: "Edit %{model} ar"
+    delete_model: "Delete %{model} ar"
+    details: "%{model} Details ar"
+    cancel: "Cancel ar"
+    empty: "Empty ar"
+    previous: "Previous ar"
+    next: "Next ar"
+    download: "Download: ar"
+    has_many_new: "Add New %{model} ar"
+    has_many_delete: "Delete ar"
+    filter: "Filter ar"
+    clear_filters: "Clear Filters ar"
+    search_field: "Search %{field} ar"
+    equal_to: "Equal To ar"
+    greater_than: "Greater Than ar"
+    less_than: "Less Than ar"
+    main_content: "Please implement %{model}#main_content to display content. ar"
+    logout: "Logout ar"
+    sidebars:
+      filters: "Filters ar"
+    pagination:
+      empty: "No %{model} found ar"
+      one: "Displaying <b>1</b> %{model} ar"
+      one_page: "Displaying <b>all %{n}</b> %{model} ar"
+      multiple: "Displaying %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> of <b>%{total}</b> in total ar"
+      entry:
+        one: "entry ar"
+        other: "entries ar"
+    any: "Any ar"
+    blank_slate:
+      content: "There are no %{resource_name} yet. ar"
+      link: "Create one ar"

@@ -4,7 +4,9 @@ class Slide
   include Mongoid::Globalize
   
   translates do
-    field :text
+    field :title
   end
+  
+  mount_uploader  :image, SlideImageUploader
 
 end

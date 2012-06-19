@@ -13,6 +13,8 @@ class Company
   
   field :url
   
+  mount_uploader :logo, CompanyLogoUploader
+  
   slug :title
    
   validates_presence_of :title, :description, :logo

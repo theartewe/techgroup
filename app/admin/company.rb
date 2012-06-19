@@ -29,7 +29,6 @@ ActiveAdmin.register Company do
   show :title => :title do
     h1 resource.title
     div resource.description
-    div resource.description
     div do
       img :src=>resource.logo
     end

@@ -44,7 +44,7 @@ gem 'kaminari'
 
 group :development do
   gem 'foreman'
-  gem 'heroku-rails'
+  gem 'heroku-rails', :require => 'heroku'
   gem 'unicorn'
 end
 

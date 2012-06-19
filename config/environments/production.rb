@@ -54,7 +54,11 @@ Techgroup::Application.configure do
                               'respond.min.js',
                               'style.css', 
                               'right-style.css',
-                              'compass.css'
+                              'compass.css',
+                              'portfolio.css',
+                              'companies.css',
+                              'media.css',
+                              'corporation.css'
                             ]
 
   # Disable delivery errors, bad email addresses will be ignored

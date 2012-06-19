@@ -47,12 +47,15 @@ Techgroup::Application.configure do
   config.action_controller.asset_host = "http://techgroup-static.s3.amazonaws.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += ['active_admin.js',
-                               'active_admin.css',
-                               'modernizr.min.js',
-                               'respond.min.js',
-                               'style.css',
-                               'right-style.css']
+  config.assets.precompile += [
+                              'active_admin.js',
+                              'active_admin.css',
+                              'modernizr.min.js',
+                              'respond.min.js',
+                              'style.css', 
+                              'right-style.css',
+                              'compass.css'
+                            ]
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

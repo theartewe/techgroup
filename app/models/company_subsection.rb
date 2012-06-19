@@ -8,7 +8,7 @@ class CompanySubsection
 
   translates do
     field :title
-    field :text
+    field :description
   end
 
   slug :title
@@ -16,6 +16,6 @@ class CompanySubsection
   mount_uploader  :image,
                   CompanySubsectionImageUploader
 
-  validates_presence_of :title, :text
+  validates_presence_of :title, :description
   
 end

@@ -1,4 +1,4 @@
-<a href="<%= url_for company_path(object) %>" class="clear">
+<a href="<%= url_for company_path(object,:locale=>I18n.locale) %>" class="clear">
   <div class="logo">
     <%= image_tag(object.logo) %>
   </div>

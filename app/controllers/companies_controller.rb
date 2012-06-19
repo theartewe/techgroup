@@ -1,5 +1,10 @@
 class CompaniesController < WebsiteController
   def index
-    @objects  = Company.all
+    @objects = Company.all
+  end
+  
+  def show
+    @object = Company.find_by_slug!(params[:id])
+    @sections = @object.company_sections
   end
 end

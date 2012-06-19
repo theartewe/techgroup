@@ -10,11 +10,11 @@ class CompanySection
 
   translates do
     field :title
-    field :text
+    field :description
   end
 
   slug :title
 
-  validates_presence_of :title, :text
+  validates_presence_of :title, :description
 
 end

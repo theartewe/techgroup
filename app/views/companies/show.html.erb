@@ -1,7 +1,18 @@
-<section class="company">
-  <%= render :partial => "_object_header" %>
-  
-  <div class="content">
-    
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'companies', :media => 'screen' %>
+<% end %>
+
+
+<section class="main company">
+  <%= render :partial => "show_header" %>
+  <div class="content clear"> 
+    <%= render "sidebar", :sections => @sections %>
+    <section class="overview">
+      <h2><%= t(:overview) %></h2>
+      <h3><%= @object.description %></h3>
+      <section class="company-section-wrapper">
+        <%= render :partial => "section",:collection => @sections %>
+      </section>
+    </section>
   </div>
 </section>

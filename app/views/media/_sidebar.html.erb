@@ -4,7 +4,7 @@
       <li class="active"><a href="<%= media_path %>" alt="View More Posts"><%= t(:all) %></a></li>
       <% @media_categories.each do |cat| %>
         <li>
-          <a href="<%= category_media_path(cat) %>" alt="<%= t(:view_more_posts) %>">
+          <a href="<%= category_media_path(cat, :locale=>I18n.locale) %>" alt="<%= t(:view_more_posts) %>">
             <%= cat.title %>
           </a>
         </li>

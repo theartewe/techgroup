@@ -11,6 +11,8 @@ class Company
     field :description
   end
   
+  field :url
+  
   slug :title
    
   validates_presence_of :title, :description, :logo

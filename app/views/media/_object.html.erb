@@ -19,7 +19,7 @@
       <span><%= t(:posted_under) %>:</span>
       <ul>
         <li>
-          <a href="<%= category_media_path(object.media_category) %>" alt="<%= t(:view_more_posts) %>">
+          <a href="<%= category_media_path(object.media_category, :locale=>I18n.locale) %>" alt="<%= t(:view_more_posts) %>">
             <%= object.media_category.title %>
           </a>
         </li>

@@ -1,7 +1,9 @@
 <nav class="subnav">
   <ul class="breadcrumb">
     <li><a href="<%= root_path %>" title="<%= t(:home) %>"><%= t(:home) %></a></li>
-    <li><%= t(:company) %></li>
+	<li><a href="<%= companies_path %>" title="<%= t(:our_companies) %>"><%= t(:our_companies) %></a></li>
+	<li><a href="<%= company_path(object.company) %>" title="<%= object.company %>"><%= object.company.title %></a></li>
+    <li><%= object.title %></li>
   </ul>
 </nav>
 

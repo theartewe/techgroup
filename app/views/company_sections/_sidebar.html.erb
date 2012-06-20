@@ -1,10 +1,34 @@
-<nav class="subnav">
-  <ul class="breadcrumb">
-    <li><a href="<%= root_path %>" title="<%= t(:home) %>"><%= t(:home) %></a></li>
-    <li><%= t(:company) %></li>
-  </ul>
-</nav>
-
-<div class="banner">
-  <%= image_tag("company/banner_image.jpg", :alt=> t(:corporation_banner)) %>
-</div>
+<aside class="sidebar">
+  <div class="sections">
+    <ul>
+      <li class=""> 
+        <a href="<%= company_path(:locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
+          <%= t(:overview) %>
+        </a>
+      </li>
+      <%- subsections.each do |subsection| %>
+        <li class=""> 
+          <a href="<%= company_subsection_path(subsection, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
+            <%= subsection.title %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="contact-info">
+    <ul>
+      <li>
+        <span>telephone</span>
+		    <span>+971 6 7483 989</span>
+      </li>
+      <li>
+        <span>fax</span>
+		    <span>+971 6 7483 898</span>
+      </li>
+      <li>
+        <span>email</span>
+		    <span><a href="mailto:info@blocktech.ae">info@blocktech.ae</a></span>
+      </li>
+    </ul>
+  </div>
+</aside>

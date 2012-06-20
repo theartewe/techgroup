@@ -90,6 +90,44 @@
       }
     }
   }
+}
 
+.company.company-section{
+  .logo{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  h2{
+    margin-bottom:40px;
+  }
+  
+  a{
+    .image{
+      float:left;
+      width:33%;
+    }
+    .text{
+      margin-left:2%;
+      width:65%;
+      float:left;
+    }
+    
+    h5{
+      font-size:1.3em;
+      margin-top:5px;
+      margin-bottom:4px;
+    }
+    
+    p{
+      margin-bottom:4px;
+      line-height:95%;
+    }
+    
+    span{
+      color:$orange;
+      text-transform:uppercase;
+    }
+  }
 }
 

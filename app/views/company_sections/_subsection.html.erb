@@ -1,0 +1,10 @@
+<a href="<%= url_for company_subsection_path(subsection,:locale=>I18n.locale) %>" class="clear">
+  <div class="image">
+    <%= image_tag(subsection.image.thumbnail) %>
+  </div>
+  <div class="text">
+    <h5><%= subsection.title %></h5>
+    <p><%= subsection.description %> </p>
+    <span class="orange">view product list</span>
+  </div>
+</a>

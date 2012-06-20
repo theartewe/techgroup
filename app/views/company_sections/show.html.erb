@@ -2,15 +2,15 @@
   <%= stylesheet_link_tag 'companies', :media => 'screen' %>
 <% end %>
 
-<section class="main company">
-  <%= render :partial => "header" %>
+<section class="main company company-section">
+  <%= render :partial => "header", :locals => {:object => @object} %>
   <div class="content clear"> 
-    <%= render "sidebar", :sections => @sections %>
+    <%= render "sidebar", :subsections => @subsections, :locals => {:object => @object} %>
     <section class="overview">
-      <h2><%= t(:overview) %></h2>
-      <h3><%= @object.description %></h3>
+		<div class="logo"><%= image_tag(@object.company.logo) %></div>
+      <h2><%= @object.title %></h2>
       <section class="company-section-wrapper">
-        <%= render :partial => "section",:collection => @sections %>
+        <%= render :partial => "subsection", :collection => @subsections %>
       </section>
     </section>
   </div>

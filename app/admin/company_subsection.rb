@@ -26,7 +26,10 @@ ActiveAdmin.register CompanySubsection do
   show :title => :title do
     h1 resource.title
     div resource.description
-    div resource.image
+    div do
+      img :src=>resource.image.thumbnail
+    end
+    
   end
 
 

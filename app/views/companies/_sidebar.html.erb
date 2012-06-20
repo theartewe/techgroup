@@ -1,9 +1,9 @@
 <aside class="sidebar">
   <div class="sections">
     <ul>
-      <%= sections.each do |section| %>
+      <%- sections.each do |section| %>
         <li class=""> 
-          <a href="<%= company_section_path(section,:locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
+          <a href="<%= company_section_path(section, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
             <%= section.title %>
           </a>
         </li>
@@ -14,21 +14,15 @@
     <ul>
       <li>
         <span>telephone</span>
-      </li>
-      <li>
-        <span>telephone</span>
+		<span>+971 6 7483 989</span>
       </li>
       <li>
         <span>fax</span>
-      </li>
-      <li>
-        <span>telephone</span>
+		<span>+971 6 7483 898</span>
       </li>
       <li>
         <span>email</span>
-      </li>
-      <li>
-        <span>telephone</span>
+		<span><a href="mailto:info@blocktech.ae">info@blocktech.ae</a></span>
       </li>
     </ul>
   </div>

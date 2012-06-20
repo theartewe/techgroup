@@ -1,7 +1,7 @@
 <a href="<%= url_for company_section_path(section,:locale=>I18n.locale) %>" class="clear">
   <h3><%= section.title %></h3>
   <div class="text">
-    <p><%= object.description %> <span class="orange"></span></p>
-    <a href="<%= company_section_path(section, :locale=I18n.locale) %>">more</a>
+    <p><%= section.description %> <span class="orange"></span></p>
+    <a href="<%= company_section_path(section, :locale=>I18n.locale) %>">more</a>
   </div>
 </a>

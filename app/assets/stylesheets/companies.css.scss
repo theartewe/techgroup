@@ -3,13 +3,13 @@
 
 .company{
   .overview {
-    width:74.747475%; // 740/990
+    width:74.747475%;
     
     article {
       margin-bottom:50px;
     }
     h4 {
-      font-size:1.692307em; // 22/13
+      font-size:1.692307em;
       color:$orange;
       margin:0;
       padding-bottom:0;
@@ -23,9 +23,36 @@
   }
 
   .sidebar {
-    width:23.434343%; // 232/990
+    width:23.434343%;
     float:right;
     margin-bottom:50px;
+	
+  	.contact-info{
+      background-color: #FAFAFA;
+      padding:15px;
+      font-size:.95em;
+  		ul{
+		    li{
+          border-bottom:none;
+          margin-bottom:12px;
+          span{
+            display:block;
+            margin-bottom:5px;
+            
+            a{
+              text-transform:lowercase;
+              color:$orange;
+              padding:0px;
+            }
+          }
+          
+          &:last-child{
+            margin-bottom:0px;
+          }
+        }
+  		}
+  	}
+	
     
     ul {
       list-style:none;

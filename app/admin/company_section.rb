@@ -24,7 +24,7 @@ ActiveAdmin.register CompanySection do
 
   show :title => :title do
     h1 resource.title
-    div resource.text
+    div resource.description
     div resource.company
   end
 

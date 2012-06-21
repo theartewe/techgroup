@@ -14,6 +14,7 @@ class Company
   field :url
   
   mount_uploader :logo, CompanyLogoUploader
+  mount_uploader :banner, CompanyBannerUploader
   
   slug :title
    

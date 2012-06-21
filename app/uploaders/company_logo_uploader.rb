@@ -4,5 +4,6 @@ class CompanyLogoUploader < CarrierWave::Uploader::Base
   def store_dir
     "company_logos/#{model.id}"
   end
+  
 
 end

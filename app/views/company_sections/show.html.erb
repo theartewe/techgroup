@@ -7,9 +7,9 @@
   <div class="content clear"> 
     <%= render "sidebar", :subsections => @subsections, :locals => {:object => @object} %>
     <section class="overview">
-		<div class="logo"><%= image_tag(@object.company.logo) %></div>
+      <div class="logo"><%= image_tag(@object.company.logo, :height=>38) %></div>
       <h2><%= @object.title %></h2>
-      <section class="company-section-wrapper">
+      <section class="company-section-detail-wrapper">
         <%= render :partial => "subsection", :collection => @subsections %>
       </section>
     </section>

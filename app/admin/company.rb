@@ -21,6 +21,7 @@ ActiveAdmin.register Company do
       f.input :title, :required => true
       f.input :description, :as => :text, :required => true
       f.input :logo, :as => :file, :required => true
+      f.input :banner, :as => :file, :required => true
       f.input :url, :required => true
     end
     f.buttons
@@ -31,6 +32,9 @@ ActiveAdmin.register Company do
     div resource.description
     div do
       img :src=>resource.logo
+    end
+    div do
+      img :src=>resource.banner.banner
     end
     div resource.url
   end

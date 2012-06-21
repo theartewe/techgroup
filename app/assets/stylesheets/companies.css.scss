@@ -47,6 +47,7 @@
       float:left;
     }
   }
+  
 
   .sidebar {
     width:23.434343%;
@@ -160,5 +161,30 @@
       text-transform:uppercase;
     }
   }
+  
+  .company-section-detail-wrapper{
+    a{
+      h3{
+        border-bottom:none;
+        padding-bottom:5px;
+        font-size:1.30em;
+      }
+      
+      .text{
+        color:$orange;
+        p{
+          margin-bottom:5px;
+        }
+        span{
+          text-transform:uppercase;
+          font-size:.85em;
+        }
+      }
+      
+      display:block;
+    }
+  }
+  
+  
 }
 

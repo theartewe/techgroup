@@ -1,6 +1,11 @@
 <aside class="sidebar">
   <div class="sections">
     <ul>
+      <li class="active"> 
+        <a href="<%= company_path %>" alt="<%= t(:overview) %>">
+          <%= t(:overview) %>
+        </a>
+      </li>
       <%- sections.each do |section| %>
         <li class=""> 
           <a href="<%= company_section_path(section, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">

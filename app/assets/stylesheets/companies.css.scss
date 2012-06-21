@@ -2,24 +2,50 @@
 @import "shared_vars";
 
 .company{
+  
+  .logo{
+    border-bottom:1px solid #e5e5e5;
+    padding-bottom:20px;
+    margin-bottom:20px;
+  }
+  
   .overview {
     width:74.747475%;
-    
-    article {
-      margin-bottom:50px;
-    }
-    h4 {
-      font-size:1.692307em;
-      color:$orange;
-      margin:0;
-      padding-bottom:0;
-      border-bottom:0;
-    }
 
     p {
       margin-bottom:20px;
       line-height:150%;
+      
+      &.description{
+        border-bottom:1px solid #e5e5e5;
+        padding-bottom:20px;
+      }
     }  
+  }
+    
+  .company-section-wrapper{
+    a{
+      h3{
+        border-bottom:none;
+        padding-bottom:5px;
+        font-size:1.30em;
+      }
+      
+      .text{
+        color:$orange;
+        p{
+          margin-bottom:5px;
+        }
+        span{
+          text-transform:uppercase;
+          font-size:.85em;
+        }
+      }
+      
+      display:block;
+      width:200px;
+      float:left;
+    }
   }
 
   .sidebar {
@@ -52,7 +78,6 @@
         }
   		}
   	}
-	
     
     ul {
       list-style:none;

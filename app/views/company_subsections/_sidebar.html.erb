@@ -8,15 +8,15 @@
     <ul>
       <li>
         <span>telephone</span>
-		    <span>+971 6 7483 989</span>
+		    <span><%= @object.company_section.company.phone %></span>
       </li>
       <li>
         <span>fax</span>
-		    <span>+971 6 7483 898</span>
+		    <span><%= @object.company_section.company.fax %></span>
       </li>
       <li>
         <span>email</span>
-		    <span><a href="mailto:info@blocktech.ae">info@blocktech.ae</a></span>
+		    <span><a href="<%= @object.company_section.company.email %>"><%= @object.company_section.company.email %></a></span>
       </li>
     </ul>
   </div>

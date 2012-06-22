@@ -1,4 +1,4 @@
-ActiveAdmin.register CompanySubsection do
+ActiveAdmin.register CompanySubsectionItem do
   menu :parent 	=> "Company"
 
    controller do
@@ -7,7 +7,7 @@ ActiveAdmin.register CompanySubsection do
   
   index do 
     column :title do |obj|
-      link_to obj.title, edit_admin_company_section_path(obj)
+      link_to obj.title, edit_admin_company_subsection_item_path(obj)
     end
     column :description
     column :image do |obj|

@@ -1,12 +1,10 @@
-class CompanySubsection
+class CompanySubsectionItem
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Globalize
   include Mongoid::Slug
 
-  belongs_to :company_section
-  
-  has_many :company_subsection_items
+  belongs_to :company_subsection
 
   translates do
     field :title
@@ -16,7 +14,7 @@ class CompanySubsection
   slug :title
 
   mount_uploader  :image,
-                  CompanySubsectionImageUploader
+                  CompanySubsectionItemImageUploader
 
   validates_presence_of :title, :description
   

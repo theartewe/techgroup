@@ -17,6 +17,7 @@
       line-height:150%;
       
       &.description{
+        font-size:1.25em;
         border-bottom:1px solid #e5e5e5;
         padding-bottom:20px;
       }
@@ -24,6 +25,7 @@
   }
     
   .company-section-wrapper{
+    margin-bottom:20px;
     a{
       h3{
         border-bottom:none;
@@ -46,6 +48,7 @@
       width:200px;
       float:left;
     }
+    
   }
   
 
@@ -184,7 +187,58 @@
       display:block;
     }
   }
-  
-  
 }
 
+
+.company.company-subsection{
+  .logo{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  h2{
+    margin-bottom:40px;
+  }
+  
+  .company-subsection-item-wrapper{   
+    list-style:none;
+    margin:0;
+    padding:0;
+    
+    li{
+      
+      border-bottom:1px solid #e5e5e5;
+      font-family:$proximanova;
+      font-size:1em;
+      line-height:1em;
+      padding-bottom:20px;
+      margin-bottom:20px;
+      
+      &:last-child{
+        border-bottom:none;
+      }
+      
+      h5{
+        border-bottom:none;
+        padding-top:15px;
+        padding-bottom:10px;
+        font-size:1.30em;
+      }
+      
+      .image{
+        float:left;
+        width:33%;
+      
+        img{
+          border:1px solid #e5e5e5;
+        }
+      }
+      .text{
+        margin-left:2%;
+        width:65%;
+        float:left;
+      }
+    } 
+  } 
+  
+}

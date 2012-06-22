@@ -1,18 +1,7 @@
 <aside class="sidebar">
   <div class="sections">
     <ul>
-      <li class="active"> 
-        <a href="<%= company_path(:locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
-          <%= t(:overview) %>
-        </a>
-      </li>
-      <%- subsections.each do |subsection| %>
-        <li class=""> 
-          <a href="<%= company_subsection_path(subsection, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
-            <%= subsection.title %>
-          </a>
-        </li>
-      <% end %>
+  
     </ul>
   </div>
   <div class="contact-info">

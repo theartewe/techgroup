@@ -8,11 +8,11 @@ class PortfolioController < WebsiteController
   end
   
   def projects
-    @objects = Project.all()
+    @objects = PortfolioProject.all()
   end
   
   def operations
-    @objects = Project.all()
+    @objects = PortfolioOperation.all()
   end
   
 end

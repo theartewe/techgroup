@@ -9,11 +9,11 @@ class MediaObject
   scope :is_published, where(:published => true)
   
   field :published,     :type       => Boolean,
-                        :default    => false
-                        
+                        :default    => false            
   translates do
     field :title
     field :description
+    fallbacks_for_empty_translations!
   end
   
   slug :title

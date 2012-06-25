@@ -12,7 +12,7 @@ class CorporationController < WebsiteController
   end
   
   def clients
-     
+    @objects = Client.all
   end
   
   def corporate_partners

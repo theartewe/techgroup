@@ -20,7 +20,7 @@ ActiveAdmin.register CompanySubsection do
       f.input :title, :required => true
       f.input :description, :as => :text, :required => true
       f.input :image, :as => :file, :required => true
-      f.input :company_subsection, :required => true, :as => :select, :collection => CompanySubsection.order_by("title ASC").all
+      f.input :company_section, :required => true, :as => :select, :collection => CompanySection.order_by("title ASC").all
     end
     f.buttons
   end

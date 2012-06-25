@@ -1,0 +1,11 @@
+<%- content_for :page_stylesheet do %>
+<%= stylesheet_link_tag 'flatpages', :media => 'screen' %>
+<% end %>
+
+<section class="main flatpage">
+  <%= render :partial => "header", :locals=>{:current_page=>"Privacy Policy"} %>
+  <div class="content clear">
+    <h2><%= t(:privacy_policy) %></h2>
+    <p><%= t(:privacy_policy_text) %></p>
+  </div>
+</section>

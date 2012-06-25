@@ -1,0 +1,11 @@
+<%- content_for :page_stylesheet do %>
+<%= stylesheet_link_tag 'flatpages', :media => 'screen' %>
+<% end %>
+
+<section class="main flatpage">
+  <%= render :partial => "header", :locals=>{:current_page=>"Terms and Conditions"} %>
+  <div class="content clear">
+    <h2><%= t(:terms_and_conditions) %></h2>
+    <p><%= t(:terms_and_conditions_text) %></p>
+  </div>
+</section>

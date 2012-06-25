@@ -3,10 +3,10 @@ ActiveAdmin.register PortfolioProject, :as=> "Project" do
 
   index do
     column :id do |obj|
-      link_to obj.id, edit_admin_portfolio_project_path(obj)
+      link_to obj.id, edit_admin_project_path(obj)
     end
     column :title do |obj|
-      link_to obj.title, edit_admin_portfolio_project_path(obj)
+      link_to obj.title, edit_admin_project_path(obj)
     end
     column :client
     column :image do |obj|

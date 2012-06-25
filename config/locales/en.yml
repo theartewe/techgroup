@@ -27,9 +27,20 @@ en:
   board_of_directors: "Board of Directors"
   board_of_directors_text: "Board of Directors Text"
   ceo_message: "CEO Message"
-  ceo_message_text: "ceo message text"
+  ceo_name: "Ali Ghaleb Jaber"
+  ceo_title: "Chief Executive Officer"
+  ceo_message_p1: "Creative entrepreneurship meets visionary commitment in Ali Ghaleb Jaber, the chief executive officer at Tech Group. With international experience in project management and business development, he has been instrumental in steering Tech Group as diversified conglomerate with varied interests in real estate, construction, automotive repair, ceramic tiles and wood-joinery."
+  ceo_message_p2: "Assuming charge as CEO of the company in 2005, he swiftly laid out a defined direction of growth and structured operational strategy that enables the Group to overcome market challenges and consistently add value even in the phase of tough market situation."
+  ceo_message_p3: "Brought up in Canada, Ali Ghaleb brings Tech Group global experience that complements his cultural and social roots in the UAE, thus giving the company a focused vision of growth based on the development aspirations of the nation."
+  ceo_message_p4: "Young and energetic, Ali Ghaleb is a natural-born leader, who through his infectious enthusiasm encourages his team members to proactively contribute to work, thus bettering themselves consistently."
+  ceo_message_p5: "An alumnus of the university of Ottawa and graduate of Ajman University of Science and Technology with a bachelor’s degree in Business Administration and Marketing, Ali Ghaleb integrates his academic knowledge with practical application."
+  ceo_message_p6: "Ali Ghaleb has strong growth plans for Tech Group and is today one of the tough-leader in the UAE entrepreneurial world known for his business acumen, resourcefulness and foresight."
+  
+  
+  
   clients: "Clients"
   clients_text: "Clients Text"
+  
   corporate_partners: "Corporate Partners"
   corporate_partners_text: "Corporate Partners Text"
   corporate_partners_h3: "R Holding"

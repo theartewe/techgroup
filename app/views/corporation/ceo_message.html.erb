@@ -1,0 +1,14 @@
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'corporation', :media => 'screen' %>
+<% end %>
+
+<section class="main corporation ceo-message">
+  <%= render :partial => "header" %>
+  <div class="content clear"> 
+    <%= render "sidebar" %>
+    <section class="overview">
+      <h2><%= t(:ceo_message) %></h2>
+      <p><%= t(:ceo_message_text) %></p>
+    </section>
+  </div>
+</section>

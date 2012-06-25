@@ -10,10 +10,7 @@ class MediaController < WebsiteController
     end
 
     def show
-      @object   = MediaObject.first(conditions: { slug:params[:slug]})
-
-      raise ActionController::RoutingError.new('Not Found') unless @post
-
+      @object   = MediaObject.find_by_slug!(params[:slug])
       @title  = "#{@post.title} - Tech Group"
     end
 
@@ -27,10 +24,8 @@ class MediaController < WebsiteController
     def search
       q       = params[:q]
       @search = q
-
       @query  = MediaObject.is_published()
         
-
       #
       # NOTE: According to this:
       #       http://www.mongodb.org/display/DOCS/Full+Text+Search+in+Mongo
@@ -45,9 +40,8 @@ class MediaController < WebsiteController
           #
           # This regex is looking for a given substring, not a single word.
           #
-          query = @query.any_of({ title:      Regexp.new(key, true) },
-                                { excerpt:    Regexp.new(key, true) },
-                                { body:       Regexp.new(key, true) }).only(:id)
+          query = @query.any_of({ title:        Regexp.new(key, true) },
+                                { description:  Regexp.new(key, true) }).only(:id)
           new_ids = query.collect{ |p| p.id.to_s }
           ids += new_ids
       end

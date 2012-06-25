@@ -1,11 +1,14 @@
 <section class="media main">
   <%= render :partial => "header" %>
   <div class="content clear">
-    
-    <%= render "sidebar" %>
+    <%= render "sidebar", :active_page=> @category.nil? ? "overview" : @category.title %>
     <section class="posts-wrapper">
       <h2>Media<%= " - #{@category.title}" if @category %></h2>
-      <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
+      <%- if @objects.empty? %>
+        <h3>Sorry, no results for that category or search</h3>
+      <% else %>
+        <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
+      <% end %>
     </section>
     <% if not @search %>
       <%= paginate @objects %>

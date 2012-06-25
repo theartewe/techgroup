@@ -16,6 +16,9 @@ class MediaObject
     fallbacks_for_empty_translations!
   end
   
+  mount_uploader  :image, MediaObjectImageUploader               
+  mount_uploader  :pdf, MediaObjectPdfUploader
+  
   slug :title
   
 end

@@ -1,10 +1,6 @@
 class PortfolioController < WebsiteController
   def index
-    
-  end
-  
-  def show
-    
+    @active_page = "overview"
   end
   
   def projects

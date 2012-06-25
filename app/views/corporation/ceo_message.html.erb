@@ -3,9 +3,9 @@
 <% end %>
 
 <section class="main corporation ceo-message">
-  <%= render :partial => "header" %>
+  <%= render :partial => "header"  %>
   <div class="content clear"> 
-    <%= render "sidebar" %>
+    <%= render "sidebar", :active_page=>"ceo_message" %>
     <section class="overview">
       <h2><%= t(:ceo_message) %></h2>
       <p><%= t(:ceo_message_text) %></p>

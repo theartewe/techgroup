@@ -5,12 +5,7 @@ class PortfolioOperation
   
   translates do
     field :title
-    field :client
-    field :consultant
-    field :main_contractor
-    field :sub_contractors
-    field :project_worth
-    field :location
+    field :description
     fallbacks_for_empty_translations!
   end
   mount_uploader  :image, PortfolioOperationImageUploader

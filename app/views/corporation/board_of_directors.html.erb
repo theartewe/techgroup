@@ -3,9 +3,9 @@
 <% end %>
 
 <section class="main corporation board-of-directors">
-  <%= render :partial => "header" %>
+  <%= render :partial => "header"  %>
   <div class="content clear"> 
-    <%= render "sidebar" %>
+    <%= render "sidebar", :active_page=>"board_of_directors" %>
     <section class="overview">
       <h2><%= t(:board_of_directors) %></h2>
       <h3><%= t(:board_of_directors_text) %></h3>

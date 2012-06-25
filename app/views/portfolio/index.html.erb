@@ -5,7 +5,7 @@
 <section class="portfolio main">
   <%= render :partial => "header" %>
   <div class="content clear">
-    <%= render "sidebar" %>
+    <%= render "sidebar", :active_page=>"overview" %>
     <section class="overview">
       <h2><%= t(:overview) %></h2>
       <h3><%= t(:portfolio_overview_text) %></h3>

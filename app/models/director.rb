@@ -15,5 +15,4 @@ class Director
                   DirectorImageUploader
 
   validates_presence_of :title, :description
-  
 end

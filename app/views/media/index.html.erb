@@ -1,9 +1,10 @@
 <section class="media main">
   <%= render :partial => "header" %>
   <div class="content clear">
-    <h2>Media</h2>
+    
     <%= render "sidebar" %>
     <section class="posts-wrapper">
+      <h2>Media</h2>
       <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
     </section>
     <% if not @search %>

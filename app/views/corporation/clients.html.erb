@@ -1,0 +1,17 @@
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'corporation', :media => 'screen' %>
+<% end %>
+
+<section class="main corporation clients">
+  <%= render :partial => "header" %>
+  <div class="content clear"> 
+    <%= render "sidebar" %>
+    <section class="overview">
+      <h2><%= t(:clients) %></h2>
+      <h3><%= t(:clients_text) %></h3>
+      <ul id="client-wrapper">
+        <%= render :partial => "client", :collection => @objects %>
+      </ul>
+    </section>
+  </div>
+</section>

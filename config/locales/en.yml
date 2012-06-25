@@ -24,10 +24,17 @@ en:
   overview: "Overview"
   corporation_banner: "Corporation Banner"
   tall_oaks: "Tall oaks grow from little acorns. . ."
-  board_of_directors: "board of directors"
-  ceo_message: "ceo message"
-  clients: "clients"
-  corporate_partners: "corporate partners"
+  board_of_directors: "Board of Directors"
+  board_of_directors_text: "Board of Directors Text"
+  ceo_message: "CEO Message"
+  ceo_message_text: "ceo message text"
+  clients: "Clients"
+  clients_text: "Clients Text"
+  corporate_partners: "Corporate Partners"
+  corporate_partners_text: "Corporate Partners Text"
+  
+  #clients
+
   
   #our companies
   our_companies: "Our Companies"
@@ -53,8 +60,12 @@ en:
   #careers
   
   #terms and conditions
+  terms_and_conditions: "Terms and Conditions"
+  terms_and_conditions_text: "Terms and Conditions Text"
   
   #privacy policy
+  privacy_policy: "Privacy Policy"
+  privacy_policy_text: "Privacy Policy Text"
   
   #feedback
 

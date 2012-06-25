@@ -1,0 +1,17 @@
+<%- content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'corporation', :media => 'screen' %>
+<% end %>
+
+<section class="main corporation corporate-partners">
+  <%= render :partial => "header" %>
+  <div class="content clear"> 
+    <%= render "sidebar" %>
+    <section class="overview">
+      <h2><%= t(:corporate_partners) %></h2>
+      <h3><%= t(:corporate_partners_text) %></h3>
+      <ul id="partners-wrapper">
+        <%= render :partial => "partner", :collection => @objects %>
+      </ul>
+    </section>
+  </div>
+</section>

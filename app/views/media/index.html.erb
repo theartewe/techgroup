@@ -4,7 +4,7 @@
     
     <%= render "sidebar" %>
     <section class="posts-wrapper">
-      <h2>Media</h2>
+      <h2>Media<%= " - #{@category.title}" if @category %></h2>
       <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
     </section>
     <% if not @search %>

@@ -43,7 +43,7 @@ Techgroup::Application.routes.draw do
     resources :media, :except => [:new,:edit,:delete] do
       collection do
         get 'search'
-        match ':category'   => 'media#category', :as => :category
+        match 'category/:category'   => 'media#category', :as => :category
       end
     end
    

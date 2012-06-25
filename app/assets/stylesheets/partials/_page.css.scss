@@ -34,6 +34,10 @@ a {
   color:$darkgray;
   text-decoration:none;
   
+  &:visited {
+    color:$darkgray;
+  }
+  
   &:hover {
     color:$orange;
   }

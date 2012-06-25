@@ -1,0 +1,19 @@
+@import "compass/css3";
+@import "shared_vars";
+
+.flatpage{
+  .overview {
+    width:74.747475%;
+
+    p {
+      margin-bottom:20px;
+      line-height:150%;
+      
+      &.description{
+        font-size:1.25em;
+        border-bottom:1px solid #e5e5e5;
+        padding-bottom:20px;
+      }
+    }  
+  }
+}

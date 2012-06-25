@@ -16,7 +16,7 @@ class CorporationController < WebsiteController
   end
   
   def corporate_partners
-     
+      
   end
   
 end

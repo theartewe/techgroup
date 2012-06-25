@@ -1,10 +1,6 @@
 ActiveAdmin.register PortfolioProject, :as=> "Project" do
   menu :parent 	=> "Portfolio"
 
-   controller do
-    defaults :finder => :find_by_slug
-  end
-  
   index do
     column :id do |obj|
       link_to obj.id, edit_admin_portfolio_project_path(obj)

@@ -13,5 +13,6 @@ class PortfolioProject
     field :location
     fallbacks_for_empty_translations!
   end
+  
   mount_uploader  :image, PortfolioProjectImageUploader
 end

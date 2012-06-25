@@ -5,6 +5,7 @@ class Director
   include Mongoid::Slug
 
   translates do
+    field :name
     field :title
     field :description
   end
@@ -14,5 +15,5 @@ class Director
   mount_uploader  :image,
                   DirectorImageUploader
 
-  validates_presence_of :title, :description
+  validates_presence_of :title, :name
 end

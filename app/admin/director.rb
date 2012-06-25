@@ -1,14 +1,15 @@
 ActiveAdmin.register Director, :as=>"Directors" do
   menu :parent 	=> "Corporation"
 
-   controller do
+  controller do
     defaults :finder => :find_by_slug
   end
   
   index do 
-    column :title do |obj|
-      link_to obj.title, edit_admin_company_subsection_item_path(obj)
+    column :name do |obj|
+      link_to obj.name, edit_admin_director_path(obj)
     end
+    column :title
     column :description
     column :image do |obj|
       img :src=>obj.image.thumbnail
@@ -17,22 +18,20 @@ ActiveAdmin.register Director, :as=>"Directors" do
 
   form do |f|
     f.inputs do
+      f.input :name, :required => true
       f.input :title, :required => true
-      f.input :description, :as => :text, :required => true
+      f.input :description, :as => :text
       f.input :image, :as => :file, :required => true
-      f.input :company_subsection, :required => true, :as => :select, :collection => CompanySubsection.order_by("title ASC").all
     end
     f.buttons
   end
 
   show :title => :title do
-    h1 resource.title
+    h1 resource.name
+    div resource.title
     div resource.description
     div do
       img :src=>resource.image.thumbnail
     end
-    
   end
-
-
 end

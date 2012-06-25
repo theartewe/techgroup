@@ -13,12 +13,12 @@
         <section class="project">
           <h3><%= t(:tech_group_projects_header) %></h3>
           <p><%= t(:tech_group_projects_text) %></p>
-          <a href=""><%= t(:more) %></a>
+          <a href="<%= projects_portfolio_index_path(:locale=>I18n.locale) %>"><%= t(:more) %></a>
         </section>
         <section class="project">
           <h3><%= t(:tech_group_operations_header) %></h3>
           <p><%= t(:tech_group_operations_text) %></p>
-          <a href=""><%= t(:more) %></a>
+          <a href="<%= operations_portfolio_index_path(:locale=>I18n.locale) %>"><%= t(:more) %></a>
         </section>
       </section>
     </section>

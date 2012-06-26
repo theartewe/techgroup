@@ -1,20 +1,23 @@
+<%- content_for :page_javascript do %>
+  <%= stylesheet_link_tag 'contact', :media => 'screen' %>
+<% end %>
+
 <section class="main contact">
   <%= render :partial => "header" %>
   <div class="content clear">
     <h2><%= t(:our_offices) %></h2>
-    <h3><%= t(:our_offices_text) %></h3>
       <section class="contact-wrapper">
        <div class="form">
-        <h4 role="title">Contact Us</h4>
-        <form method="post" action="/submit" id="contact_form">
+        <h4 role="title"><%= t(:contact_us).titlecase %></h4>
+        <form method="post" action="<%= submit_path %>" id="contact_form">
           <fieldset>
-              <input type="text" required name="name" placeholder="Name" />
-              <input type="tel" required name="telephone" placeholder="Telephone" />
-              <input type="email" required name="email" placeholder="Email Address" />
+              <input type="text" class="required" required name="name" placeholder="<%= t(:name).titlecase %>" />
+              <input type="tel" class="required" required name="telephone" placeholder="<%= t(:telephone).titlecase %>" />
+              <input type="email" class="email required" required name="email" placeholder="<%= t(:email).titlecase %>" />
             <select required name="subject">
-              <option disabled="disabled">Choose Subject</option>
+              <option disabled="disabled"><%= t(:choose_subject).titlecase %> </option>
             </select>
-            <textarea name="message" required placeholder="Message"></textarea>
+            <textarea name="message" class="required" required placeholder="<%= t(:message).titlecase %>"></textarea>
             <input type="submit" value="Submit Form" class="button" />
           </fieldset>
         </form>
@@ -23,35 +26,35 @@
         <div>
           <h5><small>Tech Group PJSC</small> Ajman - UAE</h5>
           <ul>
-            <li><b>Address</b> Al Rumaila, Corniche Road, Ajman, UAE</li>
-            <li><b>Telephone</b> +9716 747 5552</li>
-            <li><b>Fax</b> +9716 747 5553</li>
-            <li><b>Email</b> <a href="" title="Email Us">info@techgroup.ae</a></li>
+            <li><b><%= t(:address).titlecase %></b> Al Rumaila, Corniche Road, Ajman, UAE</li>
+            <li><b><%= t(:telephone).titlecase %></b> +9716 747 5552</li>
+            <li><b><%= t(:fax).titlecase %></b> +9716 747 5553</li>
+            <li><b><%= t(:email).titlecase %></b> <a href="" title="Email Us">info@techgroup.ae</a></li>
           </ul>
         </div>
         <div>
           <h5><small>Tech Group</small> Khartoum - Sudan</h5>
           <ul>
-            <li><b>Address</b> Al Ryad, Makkah Hospital Street</li>
-            <li><b>Fax</b> +244 991 232 7909</li>
-            <li><b>Email</b> <a href="" title="Email Us">e.siraj@pilingtech.ae</a></li>
+            <li><b><%= t(:address).titlecase %></b> Al Ryad, Makkah Hospital Street</li>
+            <li><b><%= t(:fax).titlecase %></b> +244 991 232 7909</li>
+            <li><b><%= t(:email).titlecase %></b> <a href="" title="Email Us">e.siraj@pilingtech.ae</a></li>
           </ul>
         </div>
         <div>
           <h5><small>Tech Group</small> Baghdad - Iraq</h5>
           <ul>
-            <li><b>Address</b> Al Jadria, Bagdad</li>
-            <li><b>Telephone</b> +964 7700014444</li>
-            <li><b>Fax</b> +964 7800014444 </li>
-            <li><b>Email</b> <a href="" title="Email Us">a.khalik@techgroup.ae</a></li>
+            <li><b><%= t(:address).titlecase %></b> Al Jadria, Bagdad</li>
+            <li><b><%= t(:telephone).titlecase %></b> +964 7700014444</li>
+            <li><b><%= t(:fax).titlecase %></b> +964 7800014444 </li>
+            <li><b><%= t(:email).titlecase %></b> <a href="" title="Email Us">a.khalik@techgroup.ae</a></li>
           </ul>
         </div>
         <div>
           <h5><small>Tech Group</small> Abha - KSA</h5>
           <ul>
-            <li><b>Address</b> Abha, Khamis Mushayt</li>
-            <li><b>Telephone</b> +966554492477</li>
-            <li><b>Email</b> <a href="" title="Email Us">k.mohamed@remixtech.ae</a></li>
+            <li><b><%= t(:address).titlecase %></b> Abha, Khamis Mushayt</li>
+            <li><b><%= t(:telephone).titlecase %></b> +966554492477</li>
+            <li><b><%= t(:email).titlecase %></b> <a href="" title="Email Us">k.mohamed@remixtech.ae</a></li>
           </ul>
         </div>
       </div>

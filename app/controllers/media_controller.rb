@@ -2,7 +2,7 @@ class MediaController < WebsiteController
     before_filter :set_categories
 
     def set_categories
-      @media_categories = MediaCategory.all()
+      @media_categories = MediaCategory.excludes(:title=>"Careers")
     end
 
     def index
@@ -18,6 +18,11 @@ class MediaController < WebsiteController
       @category   = MediaCategory.find_by_slug!(params[:category])
       @objects    = MediaObject.is_published().where(:media_category_id=>@category._id).page(params[:page])
       @title      = "#{@category.title} - Tech Group"
+      
+      if @category.title == "Careers"
+        @career_mode = true
+      end
+      
       render 'index'
     end
 

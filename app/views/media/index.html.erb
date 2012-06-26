@@ -1,11 +1,22 @@
 <section class="media main">
   <%= render :partial => "header" %>
   <div class="content clear">
-    <%= render "sidebar", :active_page=> @category.nil? ? "overview" : @category.title %>
-    <section class="posts-wrapper">
-      <h2>Media<%= " - #{@category.title}" if @category %></h2>
+    <%- if !@career_mode %>
+      <%= render "sidebar", :active_page=> @category.nil? ? "overview" : @category.title %>
+    <% end %>
+    <section class="posts-wrapper ">
+      <%- if !@career_mode %>
+        <h2><%= t(:media) %><%= " - #{@category.title}" if @category %></h2>
+      <% else %>
+        <h2><%= t(:careers) %></h2>
+      <% end %>
+      
       <%- if @objects.empty? %>
-        <h3>Sorry, no results for that category or search</h3>
+        <%- if !@career_mode %>
+          <h3>Sorry, no results for that category or search</h3>
+        <% else %>
+          <h3>Sorry, no career results at this time</h3>
+        <% end %>
       <% else %>
         <%= render :partial => 'object', :collection => @objects, :locals => { :categories => @categories } %>
       <% end %>

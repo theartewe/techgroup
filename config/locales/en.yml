@@ -37,59 +37,70 @@ en:
   ceo_message_p6: "Ali Ghaleb has strong growth plans for Tech Group and is today one of the tough-leader in the UAE entrepreneurial world known for his business acumen, resourcefulness and foresight."
   
   
+  clients:        "Clients"
+  clients_text:   "Clients Text"
   
-  clients: "Clients"
-  clients_text: "Clients Text"
-  
-  corporate_partners: "Corporate Partners"
-  corporate_partners_text: "Corporate Partners Text"
-  corporate_partners_h3: "R Holding"
-  corporate_partners_p1: "R Holding is the master developer of the AED 15 billion Emirates city located adjacent to the Emirates road in Ajman, which is arguably the single largest single phased development in the world, consisting of 92 towers, hotels and shopping malls, along with medical educational and entertainment facilities."
-  corporate_partners_p2: "R Holding is presently and actively involved in other industries such as Real Estate development, Hotel and Hotel management, Hospitality, construction, Retail property development, aviation, marine yacht manufacturing and the capital market. The companies that head each of these verticals are qualified, very competitive and posses well experienced management professionals."
-  corporate_partners_h4: "Tactical Partnership that fuel growth"
-  corporate_partners_p3: "Allied with strategic partnership. the R Holding group of companies is positioned to be at the right place at the right time, with the right people, indeed , the group’s vast depth resources and expertise give it the ability to meet the ever-changing needs of the market. "
-  corporate_partners_p4: "R Holding is committed to being the forefront of this exciting growth and expansion, deploying its investors’ capital intelligently to allow it to generate exceptional returns by providing first-class products ad services for clients. And although each of the group’s companies have separate and independent management structures, they all complement each other and work together in order to develop tactical partnership that increase Return-On-Investment and successfully complete projects on time and within budget."
+  corporate_partners:       "Corporate Partners"
+  corporate_partners_text:  "Corporate Partners Text"
+  corporate_partners_h3:    "R Holding"
+  corporate_partners_p1:    "R Holding is the master developer of the AED 15 billion Emirates city located adjacent to the Emirates road in Ajman, which is arguably the single largest single phased development in the world, consisting of 92 towers, hotels and shopping malls, along with medical educational and entertainment facilities."
+  corporate_partners_p2:    "R Holding is presently and actively involved in other industries such as Real Estate development, Hotel and Hotel management, Hospitality, construction, Retail property development, aviation, marine yacht manufacturing and the capital market. The companies that head each of these verticals are qualified, very competitive and posses well experienced management professionals."
+  corporate_partners_h4:    "Tactical Partnership that fuel growth"
+  corporate_partners_p3:    "Allied with strategic partnership. the R Holding group of companies is positioned to be at the right place at the right time, with the right people, indeed , the group’s vast depth resources and expertise give it the ability to meet the ever-changing needs of the market. "
+  corporate_partners_p4:    "R Holding is committed to being the forefront of this exciting growth and expansion, deploying its investors’ capital intelligently to allow it to generate exceptional returns by providing first-class products ad services for clients. And although each of the group’s companies have separate and independent management structures, they all complement each other and work together in order to develop tactical partnership that increase Return-On-Investment and successfully complete projects on time and within budget."
   
   #clients
 
   
   #our companies
-  our_companies: "Our Companies"
+  our_companies:      "Our Companies"
   our_companies_text: ""
   
   #portfolio
-  overview: "Overview"
-  portfolio_overview_text: "Tech Group’s corporate success is borne by each company’s unrivaled hard work and sheer dedication reflected from its portfolio."
-  portfolio_banner: "Portfolio Banner"
-  tech_group_projects_header: "Tech Group Projects"
-  tech_group_operations_header: "Tech Group Operations"
-  tech_group_projects_text: "With the prestigious projects in the UAE and the GCC that are credited to Tech Group, the organization has earned the distinction as one of the pillars of development in the country."
-  tech_group_operations_text: "Within its sphere of operations, Tech Group is represented by its member companies which are known for their patent expertise in quality procedures, processes and machinery operations"
-  tech_group_projects_full_text: "With the prestigious projects in the UAE and the GCC that are credited to Tech Group, the organization has earned the distinction as one of the pillars of development in the country."
-  tech_group_operations_full_text: "Within its sphere of operations, Tech Group is represented by its member companies which are known for their patent expertise in quality procedures, processes and machinery operations"
+  overview:                 "Overview"
+  portfolio_overview_text:  "Tech Group’s corporate success is borne by each company’s unrivaled hard work and sheer dedication reflected from its portfolio."
+  portfolio_banner:         "Portfolio Banner"
+  tech_group_projects_header:       "Tech Group Projects"
+  tech_group_operations_header:     "Tech Group Operations"
+  tech_group_projects_text:         "With the prestigious projects in the UAE and the GCC that are credited to Tech Group, the organization has earned the distinction as one of the pillars of development in the country."
+  tech_group_operations_text:       "Within its sphere of operations, Tech Group is represented by its member companies which are known for their patent expertise in quality procedures, processes and machinery operations"
+  tech_group_projects_full_text:    "With the prestigious projects in the UAE and the GCC that are credited to Tech Group, the organization has earned the distinction as one of the pillars of development in the country."
+  tech_group_operations_full_text:  "Within its sphere of operations, Tech Group is represented by its member companies which are known for their patent expertise in quality procedures, processes and machinery operations"
   
   #media
-  all: "all"
-  search_media: "Search Media"
-  view_more_posts: "view more posts"
-  posted_under: "posted under"
+  media:            "Media"
+  all:              "all"
+  search_media:     "Search Media"
+  view_more_posts:  "view more posts"
+  posted_under:     "posted under"
   
   #careers
+  careers: "Careers"
   
   #terms and conditions
   terms_and_conditions: "Terms and Conditions"
   terms_and_conditions_text: "Terms and Conditions Text"
   
   #privacy policy
-  privacy_policy: "Privacy Policy"
+  privacy_policy:      "Privacy Policy"
   privacy_policy_text: "Privacy Policy Text"
   
   #feedback
 
   subscribe:    "Subscribe"
   return_home:  "Return Home"
-
-  contact_us:       "Contact Us"
+  
+  #contact
+  contact_us:     "Contact Us"
+  address:        "Address"
+  telephone:      "Telephone"
+  fax:            "Fax"
+  email:          "Email"
+  choose_subject: "Choose Subject"
+  message:        "Message"
+  name:           "Name"
+  
+  
   thank_you:        "Thank you!"
   your_message:     "Your Message"
   choose_country:   "Choose Country"

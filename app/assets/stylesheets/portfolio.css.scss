@@ -72,6 +72,15 @@
   }
 }
 
+
+.portfolio-operations{
+  h2{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #e5e5e5; 
+  }
+}
+
 .portfolio-projects, .portfolio-operations{
   //portfolio/projects
   .projects-wrapper {
@@ -89,6 +98,9 @@
         
         .image{
           margin-bottom:8px;
+          img{
+            border:1px solid #e5e5e5;
+          }
         }
         
         h3{
@@ -111,6 +123,31 @@
               color: #555;
             }
           }
+        }
+      }
+    }
+    
+    #operations{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .operation{
+        .image{
+          margin-bottom:8px;
+          float:left;
+          img{
+            border:1px solid #e5e5e5;
+          }
+        }
+    
+        .text{
+          float:left;
+          margin-left:5%;
+          h3{
+            color: #555;
+            font-size:1.4em;
+            padding-bottom:0px;
+            border:none;
+          } 
         }
       }
     }

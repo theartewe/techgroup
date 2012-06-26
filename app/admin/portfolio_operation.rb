@@ -3,10 +3,10 @@ ActiveAdmin.register PortfolioOperation, :as=> "Operation" do
 
   index do
     column :id do |obj|
-      link_to obj.id, edit_admin_portfolio_operation_path(obj)
+      link_to obj.id, edit_admin_operation_path(obj)
     end
     column :title do |obj|
-      link_to obj.title, edit_admin_portfolio_operation_path(obj)
+      link_to obj.title, edit_admin_operation_path(obj)
     end
   end
 

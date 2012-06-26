@@ -82,24 +82,23 @@
     #projects{
       margin-top:30px;
       .project{
-        width:47%;
         float:left;
+        width:170px;
+        
         h3{
-          font-size:1.2em;
-          padding-bottom:5px;
+          font-size:1.6em;
+          padding-bottom:2px;
           border:none;
         }
-        &:first-child{
-          margin-right:6%;
-        }
-        p{
-          margin-bottom:2px;
-          line-height:100%;
-        }
-        a{
-          font-size:.85em;
-          color:$orange;
-          text-transform:uppercase;
+        
+        ul{
+          padding:0;
+          list-style:none;
+          li{
+            margin-bottom:5px;
+            line-height:100%;
+            font-size:.9em;
+          }
         }
       }
     }

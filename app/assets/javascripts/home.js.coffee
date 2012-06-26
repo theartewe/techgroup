@@ -19,8 +19,6 @@ $ ->
   $(window).bind "load resize", ->
     #$(".equal").removeAttr("style")
     #$(".equal, .slides > li, .flex-direction-nav, .banner").equalHeight()
-    #$("nav.services ul li a").removeAttr("style")
-    #$("nav.services ul li a").equalHeight()
 
   $('img.retina').retina()
   

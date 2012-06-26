@@ -1,4 +1,7 @@
 <%- content_for :page_javascript do %>
+  <%= javascript_include_tag 'contact' %>
+<% end %>
+<%- content_for :page_stylesheet do %>
   <%= stylesheet_link_tag 'contact', :media => 'screen' %>
 <% end %>
 
@@ -11,9 +14,9 @@
         <h4 role="title"><%= t(:contact_us).titlecase %></h4>
         <form method="post" action="<%= submit_path %>" id="contact_form">
           <fieldset>
-              <input type="text" class="required" required name="name" placeholder="<%= t(:name).titlecase %>" />
-              <input type="tel" class="required" required name="telephone" placeholder="<%= t(:telephone).titlecase %>" />
-              <input type="email" class="email required" required name="email" placeholder="<%= t(:email).titlecase %>" />
+              <input type="text" required name="name" placeholder="<%= t(:name).titlecase %>" />
+              <input type="tel" required name="telephone" placeholder="<%= t(:telephone).titlecase %>" />
+              <input type="email" required name="email" placeholder="<%= t(:email).titlecase %>" />
             <select required name="subject">
               <option disabled="disabled"><%= t(:choose_subject).titlecase %> </option>
             </select>
@@ -21,6 +24,10 @@
             <input type="submit" value="Submit Form" class="button" />
           </fieldset>
         </form>
+        <div class="thank-you">
+          <h3><%= t(:contact_thank_you_header)%></h3>
+          <p><%= t(:contact_thank_you_text)%></p>
+        </div>
       </div>
       <div class="addresses">
         <div>

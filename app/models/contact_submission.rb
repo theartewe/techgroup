@@ -4,10 +4,10 @@ class ContactSubmission
 
   field :name
   field :email
-  field :country
   field :message
+  field :telephone
 
-  validates_presence_of :name, :email, :country, :message
+  validates_presence_of :name, :email, :message
   default_scope order_by(:created_at => :desc)
 
   def self.unread

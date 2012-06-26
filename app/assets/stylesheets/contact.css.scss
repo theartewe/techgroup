@@ -1,0 +1,17 @@
+@import "compass/css3";
+@import "shared_vars";
+
+.contact {
+  .contact-wrapper{
+    .thank-you{
+      display:none;
+      h3{
+        font-size:1.5em;
+        margin-bottom:20px;
+      }
+      p{
+        font-size:1.2em;
+      }
+    }
+  }
+}

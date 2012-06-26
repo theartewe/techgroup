@@ -101,6 +101,8 @@ en:
   choose_subject: "Choose Subject"
   message:        "Message"
   name:           "Name"
+  contact_thank_you_header: "Thank You!"
+  contact_thank_you_text: "Your info has been received and we will get back to you as soon as possible"
   
   
   thank_you:        "Thank you!"

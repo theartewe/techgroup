@@ -43,14 +43,3 @@ $ ->
       $("nav.services ul li a").equalHeight()
 
     $('img.retina').retina()
-
-  $('#contact_form').submit ->
-    event.stopPropagation()
-    event.preventDefault()
-
-    url     = $(this).attr('action')
-    params  = $(this).serializeArray()
-
-    $.post url, params, (data) ->
-      if data == "okay"
-        $('.thank-you').show()

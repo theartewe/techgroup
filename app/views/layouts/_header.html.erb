@@ -31,7 +31,8 @@
           </a>
         </li>
         <li class="switcher">
-          <a href="<%= change_locale_path %>" title="<%= t(:switch_language) %>" class="right">
+          <%- new_locale = (I18n.locale.to_s.downcase == "en" ? "ar" : "en") %>
+          <a href="<%= root_path(:locale=>new_locale)  %>" title="<%= t(:switch_language) %>" class="right">
             <%= t(:switch_language) %>
           </a>
         </li>

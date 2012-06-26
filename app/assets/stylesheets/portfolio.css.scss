@@ -40,6 +40,7 @@
       }
     }
     
+    //portfolio/index
     .projects{
       margin-top:30px;
       margin-bottom:40px;
@@ -48,6 +49,7 @@
         margin-top:30px;
         width:47%;
         float:left;
+        
         h3{
           font-size:1.2em;
           padding-bottom:5px;
@@ -71,33 +73,43 @@
 }
 
 .portfolio-projects, .portfolio-operations{
+  //portfolio/projects
   .projects-wrapper {
     width:74.747475%;
     
     h3{
-      padding-bottom: 0px;
-      border-bottom: none;
+      padding-bottom: 20px;
     }
     
     #projects{
-      margin-top:30px;
+      margin-top:20px;
       .project{
         float:left;
-        width:170px;
+        width:300px;
+        
+        .image{
+          margin-bottom:8px;
+        }
         
         h3{
-          font-size:1.6em;
-          padding-bottom:2px;
+          color: #555;
+          font-size:1.4em;
+          padding-bottom:0px;
           border:none;
         }
         
         ul{
           padding:0;
+          margin-top:6px;
           list-style:none;
           li{
-            margin-bottom:5px;
+            margin-bottom:6px;
             line-height:100%;
             font-size:.9em;
+            
+            b{
+              color: #555;
+            }
           }
         }
       }

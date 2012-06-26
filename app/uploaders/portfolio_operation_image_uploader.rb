@@ -5,7 +5,7 @@ class PortfolioOperationImageUploader < CarrierWave::Uploader::Base
   end
   
   version :thumbnail do
-    process :resize_to_fill => [232, 189]
+    process :resize_to_fill => [300, 246]
     process :quality => 80
   end
 end

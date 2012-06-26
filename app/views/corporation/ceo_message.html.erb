@@ -7,15 +7,22 @@
   <div class="content clear"> 
     <%= render "sidebar", :active_page=>"ceo_message" %>
     <section class="overview">
-      <h2><%= t(:ceo_message) %></h2>
-      <h3><%= t(:ceo_name) %></h3>
-      <h3><%= t(:ceo_title) %></h3>
-      <p><%= t(:ceo_message_p1) %></p>
-      <p><%= t(:ceo_message_p2) %></p>
-      <p><%= t(:ceo_message_p3) %></p>
-      <p><%= t(:ceo_message_p4) %></p>
-      <p><%= t(:ceo_message_p5) %></p>
-      <p><%= t(:ceo_message_p6) %></p>
+      <div id="ceo-message">
+        <h2><%= t(:ceo_message) %></h2>
+        <div class="image">
+          <%= image_tag("corporation/ceo_image.jpg", :alt=> t(:ceo_image)) %>
+        </div>
+        <div class="text">
+          <h3><%= t(:ceo_name) %></h3>
+          <h4><%= t(:ceo_title) %></h4>
+          <p><%= t(:ceo_message_p1) %></p>
+          <p><%= t(:ceo_message_p2) %></p>
+        </div>
+        <p><%= t(:ceo_message_p3) %></p>
+        <p><%= t(:ceo_message_p4) %></p>
+        <p><%= t(:ceo_message_p5) %></p>
+        <p><%= t(:ceo_message_p6) %></p>
+      </div>
     </section>
   </div>
 </section>

@@ -58,7 +58,8 @@ Techgroup::Application.configure do
                               'portfolio.css',
                               'companies.css',
                               'media.css',
-                              'corporation.css'
+                              'corporation.css',
+                              'flatpages.css'
                             ]
 
   # Disable delivery errors, bad email addresses will be ignored

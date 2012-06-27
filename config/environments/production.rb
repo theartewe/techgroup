@@ -52,6 +52,7 @@ Techgroup::Application.configure do
                               'active_admin.css',
                               'modernizr.min.js',
                               'respond.min.js',
+                              'home.js',
                               'style.css', 
                               'right-style.css',
                               'compass.css',

@@ -48,21 +48,21 @@ Techgroup::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   config.assets.precompile += [
-                              'active_admin.js',
-                              'active_admin.css',
-                              'modernizr.min.js',
-                              'respond.min.js',
-                              'home.js',
-                              'style.css', 
-                              'right-style.css',
-                              'compass.css',
-                              'portfolio.css',
-                              'companies.css',
-                              'media.css',
-                              'corporation.css',
-                              'flatpages.css',
-                              'fancybox.css'
-                            ]
+    'active_admin.js',
+    'active_admin.css',
+    'modernizr.min.js',
+    'respond.min.js',
+    'home.js',
+    'style.css', 
+    'right-style.css',
+    'compass.css',
+    'portfolio.css',
+    'companies.css',
+    'media.css',
+    'corporation.css',
+    'flatpages.css',
+    'fancybox.css'
+  ]
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

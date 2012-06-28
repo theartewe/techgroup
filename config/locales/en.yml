@@ -19,44 +19,9 @@ en:
   #breadcrumb
   home: "home"
   
-  
-  #corporation
-  overview: "Overview"
-  corporation_banner: "Corporation Banner"
-  tall_oaks: "Tall oaks grow from little acorns. . ."
-  board_of_directors: "Board of Directors"
-  board_of_directors_text: "Board of Directors Text"
-  ceo_message: "CEO Message"
-  ceo_name: "Ali Ghaleb Jaber"
-  ceo_title: "Chief Executive Officer"
-  ceo_image: "CEO Image"
-  ceo_message_p1: "Creative entrepreneurship meets visionary commitment in Ali Ghaleb Jaber, the chief executive officer at Tech Group. With international experience in project management and business development, he has been instrumental in steering Tech Group as diversified conglomerate with varied interests in real estate, construction, automotive repair, ceramic tiles and wood-joinery."
-  ceo_message_p2: "Assuming charge as CEO of the company in 2005, he swiftly laid out a defined direction of growth and structured operational strategy that enables the Group to overcome market challenges and consistently add value even in the phase of tough market situation."
-  ceo_message_p3: "Brought up in Canada, Ali Ghaleb brings Tech Group global experience that complements his cultural and social roots in the UAE, thus giving the company a focused vision of growth based on the development aspirations of the nation."
-  ceo_message_p4: "Young and energetic, Ali Ghaleb is a natural-born leader, who through his infectious enthusiasm encourages his team members to proactively contribute to work, thus bettering themselves consistently."
-  ceo_message_p5: "An alumnus of the university of Ottawa and graduate of Ajman University of Science and Technology with a bachelor’s degree in Business Administration and Marketing, Ali Ghaleb integrates his academic knowledge with practical application."
-  ceo_message_p6: "Ali Ghaleb has strong growth plans for Tech Group and is today one of the tough-leader in the UAE entrepreneurial world known for his business acumen, resourcefulness and foresight."
-  
-  
-  clients:        "Clients"
-  clients_text:   "Clients Text"
-  
-  corporate_partners:       "Corporate Partners"
-  corporate_partners_text:  "Corporate Partners Text"
-  corporate_partners_h3:    "R Holding"
-  corporate_partners_p1:    "R Holding is the master developer of the AED 15 billion Emirates city located adjacent to the Emirates road in Ajman, which is arguably the single largest single phased development in the world, consisting of 92 towers, hotels and shopping malls, along with medical educational and entertainment facilities."
-  corporate_partners_p2:    "R Holding is presently and actively involved in other industries such as Real Estate development, Hotel and Hotel management, Hospitality, construction, Retail property development, aviation, marine yacht manufacturing and the capital market. The companies that head each of these verticals are qualified, very competitive and posses well experienced management professionals."
-  corporate_partners_h4:    "Tactical Partnership that fuel growth"
-  corporate_partners_p3:    "Allied with strategic partnership. the R Holding group of companies is positioned to be at the right place at the right time, with the right people, indeed , the group’s vast depth resources and expertise give it the ability to meet the ever-changing needs of the market. "
-  corporate_partners_p4:    "R Holding is committed to being the forefront of this exciting growth and expansion, deploying its investors’ capital intelligently to allow it to generate exceptional returns by providing first-class products ad services for clients. And although each of the group’s companies have separate and independent management structures, they all complement each other and work together in order to develop tactical partnership that increase Return-On-Investment and successfully complete projects on time and within budget."
-  
-  
-  #clients
-
-  
   #our companies
   our_companies:      "Our Companies"
-  our_companies_text: ""
+  our_companies_text: "Tech Group monitors and consolidates the performance variables of all the operating companies under its aegis. Every company’s name is tagged with “Tech”, a spin-off of Technology which synergizes each specialization or area of operations."
   
   #portfolio
   overview:                 "Overview"

@@ -1,3 +1,200 @@
-// Place all the styles related to the media controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass/css3";
+@import "shared_vars";
+
+.media {
+  .banner {
+    @include single-box-shadow(rgba(0, 0, 0, 0.15), 0, 0, 0, 1px, inset);
+  }
+  .posts-wrapper {
+    width:74.747475%;
+    
+    article {
+      margin-bottom:50px;
+    }
+    h4 {
+      font-size:1.692307em;
+      color:$orange;
+      margin:0;
+      padding-bottom:0;
+      border-bottom:0;
+    }
+    .date {
+      font-size:0.923076em;
+      font-style:italic;
+      color:#999;
+      margin-bottom:20px;
+    }
+    .body {
+      .image {
+        float:left;
+        margin:0 30px 10px 0;
+        text-align:center;
+        
+        img {
+          max-width:100%;
+        }
+        
+        p {
+          display:block;
+          padding:10px 5px;
+          font-size:0.923076em;
+          line-height:100%;
+          margin-bottom:0;
+        }
+      }
+      p {
+        margin-bottom:20px;
+        line-height:150%;
+      }
+    }
+    .meta {
+      background:#f7f7f7;
+      padding:10px 15px;
+      line-height:21px;
+      font-size:0.923076em;
+      
+      .tags {
+        float:left;
+        
+        span {
+          text-transform:uppercase;
+        }
+        ul {
+          list-style:none;
+          margin:0;
+          padding:0;
+          display:inline;
+          
+          li {
+            display:inline;
+            
+            &:after {
+              content:',';
+            }
+            
+            &:last-child {
+              &:after {
+                content:'';
+              }
+            }
+            
+          }
+        }
+      }
+      .other-media {
+        float:right;
+        
+        ul {
+          list-style:none;
+          margin:0;
+          padding:0;
+          
+          li {
+            float:left;
+            color:#888;
+            text-transform:uppercase;
+
+            &:after {
+              content:"";
+              width:24px;
+              height:21px;
+              background:image-url('breadcrumb-divider.png') no-repeat center center;
+              display:block;
+              float:right;
+            }
+            
+            &:last-child {
+              &:after {
+                content:'';
+                width:0;
+                height:0;
+                padding:0;
+              }
+            }
+            
+          }
+        }
+      }
+      
+      a {
+        color:$orange;
+        
+        &:hover {
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+  .sidebar {
+    width:23.434343%;
+    float:right;
+    margin-bottom:50px;
+    
+    ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      
+      li {
+        border-bottom:1px solid #e5e5e5;
+        font-family:$proximanova;
+        font-size:1em;
+        line-height:1em;
+        text-transform:uppercase;
+        
+        a {
+          padding:15px;
+          color:#666;
+          display:block;
+          
+          &:hover {
+            color:$orange;
+          }
+        }
+        &.active {
+          background:$orange;
+          
+          a {
+            color:#fff;
+            cursor:default;
+          }
+        }
+        &:last-child {
+          border-bottom:0;
+          margin-bottom:25px;
+        }
+      }
+    }
+    .search-wrapper {
+      position:relative;
+      
+      input[type="image"] {
+        width:17px;
+        height:17px;
+        float:right;
+        position:absolute;
+        right:1px;
+        top:1px;
+        padding:9px 8px 8px;
+        @include single-transition(all, 0.2s, ease-in-out, 0);
+        
+        &:hover {
+          background-color:#fff;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width:759px) {
+  .media {
+    .posts-wrapper {
+      width:auto;
+      
+      .body .image {
+        width:100%;
+      }
+    }
+  }
+}

@@ -14,4 +14,159 @@
       }
     }
   }
+  
+  .content {
+    padding-bottom:30px;
+  }
+  .contact-wrapper {
+    margin-top:20px;
+  }
+  .form {
+    width:48.888889%;
+    float:right;
+    
+    input[type="text"], input[type="email"], input[type="tel"], select {
+      width:61.983471%;
+      margin-bottom:10px;
+    }
+    textarea {
+      height:120px;
+      padding:5px 10px;
+      margin-bottom:10px;
+    }
+    input[type="submit"] {
+      background:$orange;
+      padding:10px;
+      font-family:$proximanova;
+      font-size:1.076923em;
+      font-weight:300;
+      text-transform:uppercase;
+      color:#fff;
+      @include single-transition(all, 0.2s, ease-in-out, 0);
+      
+      &:hover {
+        background:#ad3918;
+      }
+    }
+  }
+  .addresses {
+    width:48.888889%;
+    float:left;
+    
+    > div {
+      padding-bottom:20px;
+      
+      &:after {
+        content:".";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+      }
+    }
+    
+    h5 {
+      width:30.371901%;
+      float:left;
+    }
+    
+    ul {
+      width:69.628099%;
+      margin:0;
+      padding:0;
+      float:right;
+      list-style:none;
+      display:block;
+      
+      li {
+        line-height:1.538461em;
+        
+        b {
+          width:22.255193%;
+          color:#555;
+          font-weight:300;
+          display:block;
+          float:left;
+        }
+        
+        a {
+          color:$orange;
+          
+          &:hover {
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width:759px) {
+  .contact {
+    .form {
+      width:100%;
+      float:none;
+      margin-bottom:30px;
+      
+      input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+        width:100%;
+      }
+    }
+    .addresses {
+      width:100%;
+      float:none;
+      
+      h5 {
+        width:100%;
+        float:none;
+        
+        small {
+          font-size:1em;
+          display:inline;
+        }
+      }
+      ul {
+        width:100%;
+        float:none; 
+        margin-top:5px;
+        
+        li {
+          margin-bottom:5px;
+          b {
+            width:100%;
+            display:block;
+            float:none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width:760px) and (max-width:1029px) {
+  .contact {
+    .addresses {
+      h5 {
+        width:100%;
+        float:none;
+        
+        small {
+          font-size:1em;
+          display:inline;
+        }
+      }
+      ul {
+        width:100%;
+        float:none;
+        margin-top:5px;
+      }
+    }
+  }
+}
+
+// Netbook
+@media screen and (min-width:1030px) and (max-width:1279px) {
+
 }

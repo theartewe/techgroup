@@ -1,56 +1,32 @@
-<%- content_for :page_javascript do %>
+<% content_for :page_javascript do %>
   <%= javascript_include_tag 'home' %>
 <% end %>
+<% content_for :page_stylesheet do %>
+  <%= stylesheet_link_tag 'home', :media => 'screen' %>
+<% end %>
+
 
 <section class="main home">
   <div id="hero" class="flexslider">
     <h1>Building the Future</h1>
     <ul class="slides">
-      <li>
-        <%= image_tag("sample-hero_image.jpg", :alt=>"image01") %>
-      </li>
-      <li>
-        <%= image_tag("sample-hero_image2.jpg", :alt=>"image01") %>
-      </li>
-      <li>
-        <%= image_tag("sample-hero_image3.jpg", :alt=>"image01") %>
-      </li>
-      <li>
-        <%= image_tag("sample-hero_image4.jpg", :alt=>"image01") %>
-      </li>
-      <li>
-        <%= image_tag("sample-hero_image5.jpg", :alt=>"image01") %>
-      </li>
+      <% @slides.each do |slide| %>
+        <li>
+          <%= image_tag(slide.image.full, :alt=>slide.title) %>
+        </li>
+      <% end %>
     </ul>
   </div>
   <div class="content">
     <section id="companies" class="flexslider">
       <ul class="slides">
-        <li>
-          <a href="#" target="_blank">
-            <%= image_tag("tech-construction.svg", :alt=>"Construction Tech") %>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <%= image_tag("tech-construction.svg", :alt=>"Construction Tech") %>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <%= image_tag("tech-construction.svg", :alt=>"Construction Tech") %>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <%= image_tag("tech-construction.svg", :alt=>"Construction Tech") %>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <%= image_tag("tech-construction.svg", :alt=>"Construction Tech") %>
-          </a>
-        </li>
+        <% @companies.each do |company| %>
+          <li>
+            <a href="<%= company_path(company, :locale=>I18n.locale) %>" target="_blank">
+              <%= image_tag(company.logo, :alt=>company.title) %>
+            </a>
+          </li>
+        <% end %>
       </ul>
       <ul class="flex-direction-nav">
         <li class="flex-prev">

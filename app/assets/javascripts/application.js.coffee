@@ -1,11 +1,12 @@
 #= require jquery
 #= require jquery_ujs
 #= require libs/jquery.retina
-#= require libs/jquery.flexslider-min
 #= require libs/jquery.fancybox
 #= require libs/jquery.fancybox-media
 #= require libs/equalize
 #= require libs/selectivizr-min
+#= require modernizr.min
+#= require respond.min
 #= require_self
 
 if navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)
@@ -21,3 +22,4 @@ $ ->
   	helpers : {
   		media : {}
   	}
+  $('img.retina').retina()

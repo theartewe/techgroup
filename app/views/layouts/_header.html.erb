@@ -1,8 +1,11 @@
 <header role="header">
   <div class="container">
-    <nav role="navigation">
+    <nav role="navigation" class="clear">
       <a href="<%= root_path %>" title="<%= t(:return_home) %>" class="logo">
         <%= image_tag("techgroup-logo.svg", :alt=>"Tech Group") %>
+      </a>
+      <a href="" title="View Menu" class="nav-button" id="mobile-nav-button">
+        <%= image_tag("mobile_nav-button.svg", :alt=>"View Menu") %>
       </a>
       <ul>
         <li class="corporation">

@@ -1,3 +1,6 @@
+#= require libs/jquery.flexslider-min
+#= require libs/jquery.easing
+
 $ ->
   $('#hero').flexslider
     animation: "slide"
@@ -15,10 +18,4 @@ $ ->
     controlNav: true
     controlsContainer: ".flex-direction-nav"
     manualControls: ".flex-direction-nav li"
-    
-  $(window).bind "load resize", ->
-    #$(".equal").removeAttr("style")
-    #$(".equal, .slides > li, .flex-direction-nav, .banner").equalHeight()
-
-  $('img.retina').retina()
   

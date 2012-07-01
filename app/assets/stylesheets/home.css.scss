@@ -87,9 +87,13 @@
       li {
         float:left;
         width:auto !important;
-
-        img {
-          display:block;
+        
+        a{
+          float:left;
+          img {
+            display:block;
+          }
+          
         }
       }
     }

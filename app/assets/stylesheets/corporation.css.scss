@@ -208,9 +208,8 @@
     
     .image{
       float:left;
-      width:30%;
-      padding-right:1%;
-      padding-bottom:2%;
+      padding-right:2%;
+      padding-bottom:3%;
     }
   }
   
@@ -315,3 +314,117 @@
     }
   }
 }
+
+@media screen and (max-width:759px) {
+  .corporation{
+    
+    .content{
+      .overview{
+        width:100%;
+      }
+      .missions{
+        .mission {
+          float: none;
+          width:100%;
+          margin-top:10px;
+        }
+      }
+      #history-wrapper{
+        margin-top:10px;
+      }
+    } 
+    
+    #ceo-message{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      } 
+    }
+    
+    &.clients{
+      #client-wrapper{
+        li{
+          .image{
+            width:auto;
+          }
+          .text{
+            width:100%;
+          }
+        }
+      }
+    }
+    
+    &.corporate-partners{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      }
+    }
+    
+    #directors-wrapper{
+      li{
+        .image{
+          width:auto;
+        }
+        .text{
+          width:100%;
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (min-width:760px) and (max-width:1029px) {
+  .corporation{
+    #ceo-message{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      } 
+    }
+    &.clients{
+      #client-wrapper{
+        li{
+          .text{
+            width:60%;
+            margin-left:5%;
+          }
+        }
+      }
+    }
+    &.corporate-partners{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      }
+    } 
+  }
+}
+
+@media screen and (min-width:1030px) and (max-width:1279px) {
+  .corporation{
+    #ceo-message{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      } 
+    }
+    &.clients{
+      #client-wrapper{
+        li{
+          .text{
+            width:60%;
+            margin-left:5%;
+          }
+        }
+      }
+    }
+    &.corporate-partners{
+      .image {
+        padding-right: 4%;
+        padding-bottom: 3%;
+      }
+    } 
+  } 
+}
+

@@ -333,6 +333,9 @@ footer[role="footer"] {
       float:none;
       margin-bottom:30px;
     }
+    h2 {
+      font-size:1.9em; // 30/13
+    }
   }
   footer[role="footer"] {
     .footer-cta {
@@ -405,6 +408,9 @@ footer[role="footer"] {
     }
   }
   .main {
+    h2 {
+      font-size:1.9em; // 30/13
+    }
     .content {
       padding:0 20px;
     }
@@ -466,6 +472,11 @@ footer[role="footer"] {
       li {
         margin-right:5.384615%; // 35/650
       }
+    }
+  }
+  .main{
+    h2 {
+      font-size:1.9em; // 30/13
     }
   }
   .content, nav.subnav, .banner {

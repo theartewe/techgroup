@@ -20,7 +20,6 @@
   <div class="content">
     <section id="companies" class="flexslider">
       <ul class="slides">
-        <%= 5.times do %>
         <% @companies.each_slice(5) do |slice| %>
           <li>
             <% slice.each do |company| %>
@@ -29,7 +28,14 @@
               </a>
             <% end %>
           </li>
-        <% end %>
+          <li>
+            <% slice.each do |company| %>
+              <a href="<%= company_path(company, :locale=>I18n.locale) %>" target="_blank">
+                <%= image_tag(company.logo, :alt=>company.title) %>
+              </a>
+            <% end %>
+          </li>
+          
         <% end %>
       </ul>
       <ul class="flex-direction-nav">

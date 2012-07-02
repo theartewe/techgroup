@@ -129,6 +129,12 @@ header[role="header"] {
   }
   
 }
+
+#mobile-nav{
+  display:none;
+}
+
+
 a.switcher {
   background:rgba(0, 0, 0, 0.3);
   padding:5px 10px;
@@ -145,15 +151,15 @@ a.switcher {
   h2 {
     font-family:$proximanova;
     font-weight:100;
-    font-size:2.307692em; // 30/13
+    font-size:2.307692em;
     color:$darkgray;
     margin:0 0 15px 0;
     line-height:100%;
   }
   h3 {
     font-family:$proximanova;
-    font-size:1.153846em; // 15/13
-    line-height:1.384615em; // 18/13
+    font-size:1.153846em;
+    line-height:1.384615em; 
     font-weight:500;
     color:#666;
     padding-bottom:20px;
@@ -162,7 +168,7 @@ a.switcher {
   h4 {
     font-family:$proximanova;
     font-weight:100;
-    font-size:1.384615em; // 18/13
+    font-size:1.384615em;
     color:$darkgray;
     margin:0 0 10px 0;
     line-height:100%;
@@ -271,7 +277,7 @@ footer[role="footer"] {
   }
   p.copyright {
     color:#fff;
-    font-size:0.846154em; // 11/13
+    font-size:0.846154em;
     float:left;
     line-height:26px;
   }
@@ -294,13 +300,13 @@ footer[role="footer"] {
       }
     }
     .logo {
-      width:23.232323%; // 230/990
+      width:23.232323%; 
       padding-left:15px;
       @include box-sizing(border-box);
       float:left;
     }
     .description {
-      width:76.767677%; // 760/990
+      width:76.767677%; 
       padding:0 15px 0 20px;
       @include box-sizing(border-box);
       float:right;
@@ -320,10 +326,45 @@ footer[role="footer"] {
   header[role="header"] {
     line-height:30px;
     
-    nav[role="navigation"] a.switcher, nav[role="navigation"] ul {
-      display:none;
+    nav[role="navigation"] a.switcher, nav[role="navigation"]{
+      ul{
+        display:none;
+      }
     }
   }
+  
+  #mobile-nav{
+
+    display:block;
+    position:absolute;
+    background:$orange;
+    width:300px;
+    height:1000px;
+    top:0px;
+    right:0px;
+    .nav-button{
+      position:absolute;
+      left:-40px;
+      top: 8px;
+      background:$orange;
+      padding:5px;
+    }
+    ul{
+      list-style:none;
+      padding-left:20px;
+      li{
+        padding:10px;
+        padding-left:0px;
+        border-bottom:1px solid #d3431e;
+        a{
+          font-size: 1.15em;
+          text-transform:uppercase;
+          color:#FFF;
+        }
+      }
+    }
+  }
+  
   .main .content {
     padding:0 10px;
   }

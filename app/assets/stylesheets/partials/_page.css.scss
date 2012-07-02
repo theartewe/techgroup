@@ -126,6 +126,10 @@ header[role="header"] {
     li {
       display:inline-block;
       zoom:1; *display:inline;
+      
+      a.current{
+        color:$orange;
+      }
     }
   }
   

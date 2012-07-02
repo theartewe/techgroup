@@ -19,4 +19,8 @@ class CorporationController < WebsiteController
     
   end
   
+  def inject_current_page
+    @location = "corporation"
+  end
+  
 end

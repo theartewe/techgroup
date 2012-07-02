@@ -12,4 +12,7 @@ class FlatpagesController < WebsiteController
     
   end
   
+  def inject_current_page
+  end
+
 end

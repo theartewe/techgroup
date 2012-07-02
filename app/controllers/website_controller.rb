@@ -1,5 +1,6 @@
 class WebsiteController < ApplicationController
   
+  before_filter :inject_current_page
 
   private
 

@@ -1,4 +1,5 @@
 class ContactController < WebsiteController
+  
   def submit
       contact = ContactSubmission.new
       contact.name      = params[:name]
@@ -9,4 +10,9 @@ class ContactController < WebsiteController
 
       render :text => "okay"
   end
+  
+  def inject_current_page
+    @location = "contact"
+  end
+
 end

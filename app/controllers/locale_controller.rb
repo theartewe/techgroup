@@ -21,4 +21,7 @@ class LocaleController < WebsiteController
     return redirect_to(return_path, :locale=>params[:locale])
   end
   
+  def inject_current_page
+  end
+  
 end

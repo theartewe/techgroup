@@ -11,4 +11,8 @@ class PortfolioController < WebsiteController
     @objects = PortfolioOperation.all()
   end
   
+  def inject_current_page
+    @location = "portfolio"
+  end
+  
 end

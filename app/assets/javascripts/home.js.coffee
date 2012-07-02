@@ -1,5 +1,4 @@
 #= require libs/jquery.flexslider-min
-#= require libs/jquery.easing
 
 $ ->
   $('#hero').flexslider

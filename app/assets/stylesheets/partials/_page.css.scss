@@ -1,4 +1,5 @@
 @import "compass/css3";
+@import "shared_vars";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
@@ -334,18 +335,18 @@ footer[role="footer"] {
   }
   
   #mobile-nav{
-
+    z-index:50;
     display:block;
     position:absolute;
     background:$orange;
     width:300px;
     height:1000px;
     top:0px;
-    right:0px;
+    right:-300px;
     .nav-button{
       position:absolute;
       left:-40px;
-      top: 8px;
+      top: 10px;
       background:$orange;
       padding:5px;
     }
@@ -355,12 +356,24 @@ footer[role="footer"] {
       li{
         padding:10px;
         padding-left:0px;
+        margin-right:10px;
         border-bottom:1px solid #d3431e;
+        background:image-url('companies-arrow_right.svg') no-repeat center right;
         a{
           font-size: 1.15em;
           text-transform:uppercase;
           color:#FFF;
+          display:block;
         }
+        
+        &.contact{
+          border-bottom:none;
+        }
+      }
+      .switcher{
+        float:left;
+        padding:5px 10px;
+        background:$dark_orange;
       }
     }
   }

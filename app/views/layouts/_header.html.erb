@@ -4,9 +4,6 @@
       <a href="<%= root_path %>" title="<%= t(:return_home) %>" class="logo">
         <%= image_tag("techgroup-logo.svg", :alt=>"Tech Group") %>
       </a>
-      <a href="" title="View Menu" class="nav-button" id="mobile-nav-button">
-        <%= image_tag("mobile_nav-button.svg", :alt=>"View Menu") %>
-      </a>
       <ul>
         <li class="corporation">
         <a href="<%= corporation_index_path(:locale=>I18n.locale) %>" title="<%= t(:corporation) %>" class="<% @location == "corporation" ? "current" : ""%>">
@@ -48,6 +45,11 @@
     <%= image_tag("mobile_nav-button.svg", :alt=>"View Menu") %>
   </a>
   <ul>
+    <li class="home">
+      <a href="<%= root_path(:locale=>I18n.locale) %>" title="<%= t(:home) %>" class="<% @location == "home" ? "current" : ""%>">
+         <%= t(:home) %>
+      </a>
+    </li>
     <li class="corporation">
     <a href="<%= corporation_index_path(:locale=>I18n.locale) %>" title="<%= t(:corporation) %>" class="<% @location == "corporation" ? "current" : ""%>">
          <%= t(:corporation) %>
@@ -73,11 +75,9 @@
         <%= t(:contact) %>
       </a>
     </li>
-    <li class="switcher">
-      <%- new_locale = (I18n.locale.to_s.downcase == "en" ? "ar" : "en") %>
-      <a href="<%= root_path(:locale=>new_locale)  %>" title="<%= t(:switch_language) %>" class="right">
-        <%= t(:switch_language) %>
-      </a>
-    </li>
+    <%- new_locale = (I18n.locale.to_s.downcase == "en" ? "ar" : "en") %>
+    <a class="switcher" href="<%= root_path(:locale=>new_locale)  %>" title="<%= t(:switch_language) %>" >
+      <%= t(:switch_language) %>
+    </a>
   </ul>
 </section>

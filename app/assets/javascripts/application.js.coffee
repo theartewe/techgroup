@@ -2,6 +2,7 @@
 #= require jquery_ujs
 #= require libs/jquery.retina
 #= require libs/jquery.fancybox
+#= require libs/jquery.easing
 #= require libs/jquery.fancybox-media
 #= require libs/equalize
 #= require libs/selectivizr-min
@@ -23,3 +24,19 @@ $ ->
   		media : {}
   	}
   $('img.retina').retina()
+  
+  $('#mobile-nav > .nav-button').click (event) =>
+    event.stopPropagation()
+    event.preventDefault()
+    if $('#mobile-nav').hasClass('open')
+      #close
+      $('#mobile-nav').animate  
+        'right': -300
+        'easing': 'easeOutBack'
+      $('#mobile-nav').removeClass('open')
+    else
+      #open up
+      $('#mobile-nav').animate  
+        'right': 0
+        'easing': 'easeInBack'
+      $('#mobile-nav').addClass('open')

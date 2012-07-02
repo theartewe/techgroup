@@ -54,6 +54,7 @@ Techgroup::Application.configure do
     'respond.min.js',
     'home.js',
     'style.css', 
+    'home.css',
     'right-style.css',
     'compass.css',
     'portfolio.css',

@@ -53,6 +53,7 @@ Techgroup::Application.configure do
     'modernizr.min.js',
     'respond.min.js',
     'home.js',
+    'contact.js',
     'style.css', 
     'home.css',
     'right-style.css',
@@ -62,6 +63,7 @@ Techgroup::Application.configure do
     'media.css',
     'corporation.css',
     'flatpages.css',
+    'contact.css',
     'jquery.fancybox.css'
   ]
 

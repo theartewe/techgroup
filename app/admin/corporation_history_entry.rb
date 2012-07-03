@@ -3,7 +3,7 @@ ActiveAdmin.register CorporationHistoryEntry, :as => "History Entries" do
   
   index do 
     column :title do |obj|
-      link_to obj.title, edit_admin_media_object_path(obj)
+      link_to obj.title, edit_admin_history_entry_path(obj)
     end
     column :year
     column :text

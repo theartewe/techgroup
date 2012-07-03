@@ -23,6 +23,12 @@ ActiveAdmin.register MediaObject do
       f.input :media_category, :required => true, :as => :select, :collection => MediaCategory.order_by("title ASC").all
       f.input :pdf, :as => :file, :required => true
       f.input :image, :as => :file, :required => true
+      f.input :read_more_title1
+      f.input :read_more_link1
+      f.input :read_more_title2
+      f.input :read_more_link2
+      f.input :read_more_title3
+      f.input :read_more_link3
       f.input :published, :as => :boolean
     end
     f.buttons
@@ -32,6 +38,18 @@ ActiveAdmin.register MediaObject do
     h1 resource.title
     div resource.description
     div resource.media_category.title
+    div do
+      resource.read_more_title1
+      resource.read_more_link1
+    end
+    div do
+      resource.read_more_title2
+      resource.read_more_link2
+    end
+    div do
+      resource.read_more_title3
+      resource.read_more_link3
+    end
     div do
       resource.pdf
     end

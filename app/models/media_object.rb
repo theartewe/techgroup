@@ -13,8 +13,16 @@ class MediaObject
   translates do
     field :title
     field :description
+    field :image_caption
+    field :read_more_title1
+    field :read_more_title2
+    field :read_more_title3
     fallbacks_for_empty_translations!
   end
+  
+  field :read_more_link1
+  field :read_more_link2
+  field :read_more_link3
   
   mount_uploader  :image, MediaObjectImageUploader               
   mount_uploader  :pdf, MediaObjectPdfUploader

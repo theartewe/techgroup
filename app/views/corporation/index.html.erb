@@ -3,7 +3,7 @@
 <% end %>
 
 <section class="corporation main">
-  <%= render :partial => "header" %>
+  <%= render :partial => "header", :locals=>{:header_image=>"corporation-overview.jpg"} %>
   <div class="content clear">
     <%= render "sidebar", :active_page=>"overview"  %>
     <section class="overview">

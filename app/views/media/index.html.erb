@@ -5,18 +5,22 @@
 <section class="media main">
   <%= render :partial => "header" %>
   <div class="content clear">
-    <%- if !@career_mode %>
+    <% if !@career_mode %>
       <%= render "sidebar", :active_page=> @category.nil? ? "overview" : @category.title %>
     <% end %>
     <section class="posts-wrapper ">
-      <%- if !@career_mode %>
-        <h2><%= t(:media) %><%= " - #{@category.title}" if @category %></h2>
+      <% if !@career_mode %>
+        <% if @search %>
+        <h2><%= t(:searched_for) %><%= " :  \"#{@search}\"" %></h2>
+        <% else %>
+          <h2><%= t(:media) %><%= " - #{@category.title}" if @category %></h2>
+        <% end %>
       <% else %>
         <h2><%= t(:careers) %></h2>
       <% end %>
       
-      <%- if @objects.empty? %>
-        <%- if !@career_mode %>
+      <% if @objects.empty? %>
+        <% if !@career_mode %>
           <h3>Sorry, no results for that category or search</h3>
         <% else %>
           <h3>Sorry, no career results at this time</h3>

@@ -2,27 +2,27 @@
   <div class="categories">
     <ul>
       <li class="<%= "active" if active_page =="overview" %>"> 
-        <a href="<%= corporation_index_path %>" alt="<%= t(:overview) %>">
+        <a href="<%= corporation_index_path(:locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
           <%= t(:overview) %>
         </a>
       </li>
       <li class="<%= "active" if active_page =="board_of_directors" %>">
-        <a href="<%= board_of_directors_corporation_index_path %>" alt="<%= t(:board_of_directors) %>">
+        <a href="<%= board_of_directors_corporation_index_path(:locale=>I18n.locale) %>" alt="<%= t(:board_of_directors) %>">
           <%= t(:board_of_directors) %>
         </a>
       </li>
       <li class="<%= "active" if active_page =="ceo_message" %>">
-        <a href="<%= ceo_message_corporation_index_path %>" alt="<%= t(:ceo_message) %>">
+        <a href="<%= ceo_message_corporation_index_path(:locale=>I18n.locale) %>" alt="<%= t(:ceo_message) %>">
           <%= t(:ceo_message) %>
         </a>
       </li>
       <li class="<%= "active" if active_page =="clients" %>">
-        <a href="<%= clients_corporation_index_path %>" alt="<%= t(:clients) %>">
+        <a href="<%= clients_corporation_index_path(:locale=>I18n.locale) %>" alt="<%= t(:clients) %>">
           <%= t(:clients) %>
         </a>
       </li>
       <li class="<%= "active" if active_page =="corporate_partners" %>">
-        <a href="<%= corporate_partners_corporation_index_path %>" alt="<%= t(:corporate_partners) %>">
+        <a href="<%= corporate_partners_corporation_index_path(:locale=>I18n.locale) %>" alt="<%= t(:corporate_partners) %>">
           <%= t(:corporate_partners) %>
         </a>
       </li>

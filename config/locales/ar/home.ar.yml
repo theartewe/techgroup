@@ -1,0 +1,9 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+ar:
+  #home
+  mission_and_vision_cta: Tech Group is committed to became the UAE’s leading partner in infrastructure development and contributed to the economy through focused diversification.
+  our_companies_cta: Tech Group is comprised of various operating companies that are well-known and highly respected in the field of construction, real estate, vehicle repair, ceramic tiles and wood-joinery.
+  partners_cta: Behind the AED 15 billion Emirates City, is its master developer R Holding. It is actively engaged in real estate & development, hotel & hotel management, construction, and more.
+  offices_cta: Tech Group’s expansion is inevitable because of its commitment to serve in the GCC. Its current offices are centrally located to close deals with the clients efficiently.
+

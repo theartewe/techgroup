@@ -1,0 +1,33 @@
+en:
+  #shared
+  
+  #header
+  corporation: "corporation"
+  our_companies: "our companies"
+  portfolio: "portfolio"
+  media: "media"
+  contact:  "contact"
+  switch_language: العربية
+  
+  overview: "Overview"
+
+  #footer
+  careers: "careers"
+  terms_and_conditions: "terms and conditions"
+  privacy_policy: "privacy policy"
+  feedback: "feedback"
+  
+  #breadcrumb
+  home: "home"
+  
+  #terms and conditions
+  terms_and_conditions: "Terms and Conditions"
+  terms_and_conditions_text: "Terms and Conditions Text"
+  
+  thank_you:        "Thank you!"
+  your_message:     "Your Message"
+  choose_country:   "Choose Country"
+  country:          "Country"
+  your_email:       "Your Email"
+  your_name:        "Your Name"
+  submit_form:      "Submit Form"

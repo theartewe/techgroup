@@ -1,0 +1,87 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+
+  #terms and conditions
+
+  terms_and_conditions: "Terms and Conditions"
+  terms_and_conditions_h3_1: 1. Collection of your Personal Information
+  terms_and_conditions_p1: A. This website www.techgroup.ae, is the official website of TECH GROUP whose registered office is at P.O. Box 6800, Ajman, United Arab Emirates ("Sharjah Theaters Group" or "We" or "us" or "our" hereinafter), provides the information contained on this website or any of the pages comprising the website to visitors ("visitors") (cumulatively referred to as "you" or "your" hereinafter) subject to the terms and conditions set out in the website terms and conditions.
+  terms_and_conditions_p2: B. These terms & conditions ("Terms & Conditions") apply to the entire contents of the Website. Please read these terms carefully before using the Website. By accessing the website or any part of it, you shall be deemed to have accepted the terms & conditions in full. If you do not accept the terms & conditions in full, you must leave the Website immediately.
+
+  terms_and_conditions_h3_2:  "2. Information on the Website"
+  terms_and_conditions_p3:    A. This Website contains text, data, graphics, photographs, illustrations, opinions, research, artwork, names, logos, trade marks, service marks and information connected with TECH GROUP(including but not limited to any information which may be provided by any third party or data or content providers) ("Information").
+  terms_and_conditions_p4:    B. TECH GROUP attempts to ensure Information is accurate, however Information is provided "AS IS" and on an "AS AVAILABLE" basis and may not be accurate or up to date. Information on this Website may or may not have been prepared by TECH GROUP but is made available without responsibility on the part of Sharjah Theaters Group.
+  terms_and_conditions_p5:    "C. TECH GROUP does not guarantee the accuracy, timeliness, completeness, performance or fitness for a particular purpose of the Website or any of the Information."
+  terms_and_conditions_p6:    "D. Whilst every effort is made to update the information contained on this website, neither TECH GROUP nor any third party or data or content provider make any representations or warranties, whether express, or implied in law or residual, as to the sequence, accuracy, completeness or reliability of information and shall not be bound in any manner by any information contained on the website."
+  terms_and_conditions_p7:    "E. No information shall be construed as advice and information is offered for information purposes only and is not intended for trading purposes. In particular Information on the Website does not constitute professional, financial or investment advice and must not be used as a basis for making investment decisions and is in no way intended, directly or indirectly, as an attempt to market or sell any type of financial instrument."
+  terms_and_conditions_p8:     "F. Advice from a suitably qualified professional should always be sought in relation to any particular matter or circumstances. You and your company rely on the information contained on this website at your own risk."
+  terms_and_conditions_p9:     "G. No action should be taken or omitted to be taken in reliance upon Information on this Website. We accept no liability for the results of any action taken on the basis of the Information."
+  terms_and_conditions_p10:    "H. Certain files of Information are available for download from the Website. These files of Information are subject to these terms."
+  terms_and_conditions_p11:    "I. No responsibility is accepted by or on behalf of TECH GROUP for any errors, omissions, negligent or inaccurate Information on the Website."
+  terms_and_conditions_p12:    "J. Any unauthorized use of any Materials contained on this Website may violate copyright laws, trademark laws, the laws of privacy and publicity, and statutes."
+
+  terms_and_conditions_h3_3:    3. License
+  terms_and_conditions_p13:     "A. You are permitted to print and download extracts from the Website for your own use on the following basis: "
+  terms_and_conditions_p13_a:   No documents or related graphics and/or Sonics on the Website are modified in any way.
+  terms_and_conditions_p13_b:   "No graphics on the Website are used separately from the corresponding text and;"
+  terms_and_conditions_p13_c:   "TECH GROUP's copyright and trade mark notices and this permission notice appear in all copies."
+  terms_and_conditions_p14:     "B. This permission to recopy does not extend to incorporation of the material or any part of it in any work or publication, whether in hard copy or electronic or any other form. In particular (but without limitation) no part of the Website may be distributed or copied for any commercial purpose. No part of the Website may be reproduced on or transmitted to or stored in any other Website or other form of electronic retrieval system."
+  terms_and_conditions_p15:     "C. Except where otherwise expressly noted or as noted below, the copyright and other intellectual property rights in all material on the Website (including without limitation graphics, icons photographs, Sonics, graphical images and overall appearance of the Website ) are owned by TECH GROUP or its licensors. "
+  terms_and_conditions_p16:     "D. The posting of the Contents of this Website neither constitutes a waiver of any of TECH GROUP proprietary rights or any other party's proprietary rights, including but not limited to, copyrights, trademarks, service marks, patents, and other intellectual property, nor a transfer of any such rights or of any license to the Website user or to any third party."
+  terms_and_conditions_p17:     "E. For the purposes of these Terms and conditions, any use of extracts from the Website other than in accordance with Article 3.1 for any purpose is prohibited. If you breach any of the terms in this Terms and conditions, your permission to use the Website automatically terminates and you must immediately destroy any downloaded or printed extracts from the website.
+  Subject to Article 3.1, no part of the Website may be reproduced or stored in any other website or included in any public or private electronic retrieval system or service without TECH GROUP’s prior written permission."
+  terms_and_conditions_p18:     "F. Any rights not expressly granted in these terms are reserved."
+
+  terms_and_conditions_h3_4:    "4. Service Access"
+  terms_and_conditions_p19:     "A. While TECH GROUP endeavors to ensure that the Website is normally available 24 hours a day, TECH GROUP shall not be liable if for any reason the Website is unavailable at any time or for any period."
+  terms_and_conditions_p20:     "B. Access to the Website may be suspended temporarily or permanently and without notice in the case of system failure, maintenance or repair or for any other reasons whether beyond TECH GROUP’s control or as TECH GROUP’s sees fit at their own discretion."
+ 
+  terms_and_conditions_h3_5:    "5. Privacy"
+  terms_and_conditions_p21:     "A. Any information provided by you to TECH GROUP via this Website may be kept and used by TECH GROUP and disclosed to third parties for the purposes of internal and independent research and for reporting and statistical purposes and may be used for recruitment purposes or communicating with you."
+ 
+  terms_and_conditions_h3_6:    "6. Third Party Contents & Links to and from other Websites"
+  terms_and_conditions_p22:     "A. TECH GROUP might includes links to other websites for information purposes only and makes no representation whatsoever about any such link, website or content."
+  terms_and_conditions_p23:     "B. TECH GROUP has not reviewed all of these third party websites and does not control and is not responsible for these websites or their content or availability."
+  terms_and_conditions_p24:     "C. TECH GROUP therefore does not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them."
+  terms_and_conditions_p25:     "D. If you decide to access any of the third party websites linked to the Website, you do so entirely at your own risk."
+  terms_and_conditions_p26:     "E. You may not frame, link or deep-link this Website to any other website without our prior written consent. Should you wish to frame or to set up a link / deep-link to our Website please contact."
+  terms_and_conditions_p27: "F. TECH GROUP expressly reserves the right to revoke the right granted in Article 6 for breach of these terms and to take any action it deems appropriate. You shall fully indemnify the Gym for any loss or damage suffered by TECH GROUP or any of its affiliates."
+ 
+  terms_and_conditions_h3_7:    "7. Disclaimer"
+  terms_and_conditions_p28:     "A. While TECH GROUP endeavors to ensure that the information on the Website is correct, however TECH GROUP does not warrant the accuracy and completeness of the material on the Website. TECH GROUP may make changes to the material on the Website, at any time without notice. The material on the Website may be out of date and TECH GROUP makes no commitment to update such material whatsoever."
+  terms_and_conditions_p29:     B. The material on the Website is provided "as is", without any conditions, warranties or other terms of any kind. Accordingly, to the maximum extent permitted by law, TECH GROUP provides you with the Website on the basis that TECH GROUP excludes all representations, warranties, conditions and other terms (including, without limitation, the conditions implied by law of satisfactory quality, fitness for purpose and the use of reasonable care and skill which, but for this Disclaimer, might have effect in relation to the Website.
+  terms_and_conditions_p30:     "C. TECH GROUP shall not be responsible for and disclaims all liability for any loss, liability, damage (whether direct, indirect or consequential), personal injury or expense of any nature whatsoever which may be suffered by you or any third party, as a result of or which may be attributable, directly or indirectly, to your access and use of the website, and/or any information contained on the website."
+  terms_and_conditions_p31:     "D. In particular, neither TECH GROUP nor any third party or data or content provider shall be liable in any way to you or to any other person, firm or corporation whatsoever for any loss, liability, damage (whether direct or consequential), personal injury or expense of any nature whatsoever arising from any delays, inaccuracies, errors in, or omission of any share price information or the transmission thereof, or for any actions taken in reliance thereon or occasioned thereby or by reason of non-performance or interruption, or termination thereof."
+  terms_and_conditions_h3_8:    "8. Warranties"
+  terms_and_conditions_p32:     "A. All implied warranties, including but not limited to the implied warranties of satisfactory quality, fitness for a particular purpose, non-infringement, compatibility, security and accuracy are excluded from these Terms & Conditions to the extent that they may be excluded as a matter of law."
+  terms_and_conditions_p33:     "B. Further, TECH GROUP does not warrant that the Website will be uninterrupted or error free or that any defects will be corrected at any given time."
+  terms_and_conditions_p34:     "C. TECH GROUP makes no warranties, representations, statements or guarantees (whether express, implied in law or residual) regarding the website, the information contained on the website, your or your company's personal information or material and information transmitted over our website."
+  terms_and_conditions_p35:     D. Whilst TECH GROUP uses reasonable endeavors to protect this Website from computer viruses, worms, and Trojan Horses (the "Viruses"), we do not warrant that the Website is free from such Viruses and accept no liability for any damage that may result from the transmission of any Viruses via this Website or via any files which are available for you to download from the Website.
+  terms_and_conditions_h3_9:    "9. Liability"
+  terms_and_conditions_p36:     "A. To the extent permitted by applicable law, TECH GROUP expressly disclaims all liability howsoever arising whether in contract, or otherwise (including, but not limited to, liability for any negligent act or omissions) to any person in respect of any claims or losses of any nature, arising directly or indirectly from:"
+  terms_and_conditions_p36_a:   "Anything done or the consequences of anything done or omitted to be done wholly or partly in reliance upon the whole or any part of the contents of this Website."
+  terms_and_conditions_p36_b:   "The use of any data or materials on this Website or unauthorized access to this Website or otherwise."
+  terms_and_conditions_p37:     "B. TECH GROUP will not be responsible for any breach of these Terms & Conditions caused by any circumstances."
+  terms_and_conditions_h3_10:   "10. Alteration"
+  terms_and_conditions_p38:     "A. TECH GROUP reserves the right at any time to change or discontinue without notice, any aspect or feature of this website."
+  terms_and_conditions_p39:     "B. Furthermore TECH GROUP may revise and amend these Terms & Conditions at any time by updating this posting."
+  terms_and_conditions_p40:     C. You acknowledge that by visiting the Website from time to time, you shall become bound to the current version of the relevant Terms and Conditions (the "Current Version") and, unless stated in the Current Version, all previous versions shall be superseded by the Current Version.
+  terms_and_conditions_p41:     "D. You shall be responsible for reviewing the Current Version of the Terms & Conditions each time you visit the Website because they are binding on you."
+
+  terms_and_conditions_h3_11:   "11. Conflict"
+  terms_and_conditions_p42:     "A. Where any conflict or contradiction appears between the Terms & Conditions of the Website any other relevant terms and conditions, policies or notices, the other relevant terms and conditions, policies or notices which relate specifically to a particular section or module of the Website shall prevail in respect of your use of the relevant section or module of the Website."
+
+  terms_and_conditions_h3_12:   "12. Waiver"
+  terms_and_conditions_p43:     "A. No indulgence or extension of time which either you or TECH GROUP may grant to the other will constitute a waiver of or, to limit any of the existing or future rights of the grantor in the Terms and Conditions hereof, save in the event or to the extent that the grantor has signed a written document expressly waiving or limiting such rights."
+
+  terms_and_conditions_h3_13:   "13. Cession"
+  terms_and_conditions_p44:     "A. TECH GROUP shall be entitled to cede, assign and delegate all or any of its rights and obligations in terms of any relevant Terms & Conditions, policies and notices to any third party."
+
+  terms_and_conditions_h3_14:   "14. Illegality and Sever-ability"
+  terms_and_conditions_p45:     A. If any provision of the Terms & Conditions (in whole or in part) is held invalid, illegal or unenforceable for any reason by any court of competent jurisdiction in Ajman "the Provision", such Provision shall be severed from the Terms & Conditions and the remaining Terms & Conditions shall continue in full force and effect as if the Term had been executed without the invalid, illegal, or unenforceable Provision.
+ 
+  terms_and_conditions_h3_15:   "15. Governing law"
+  terms_and_conditions_p46:     "A. These Terms & Conditions shall be governed by and construed in accordance with the law of the United Arab Emirates without giving effect to any principles of conflict of law. You hereby consent to the exclusive jurisdiction of the courts of the Emirate of Ajman in respect of any disputes arising in connection with the Website, or any relevant Terms & Conditions, policies and notices or any matter related to or in connection therewith."
+ 

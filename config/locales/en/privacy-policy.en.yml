@@ -1,0 +1,21 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  
+  #privacy policy
+  privacy_policy:       "Privacy Policy"
+  privacy_policy_p1:    "TECH – GROUP is committed to protecting the privacy of our users. We aim to provide a safe, secure user experience. We will use our best efforts to ensure that the information you submit to us remains private, and is used only for the purposes as set forth herein. The following reflects our commitment to you."
+  privacy_policy_h3_1:    "Collection of your Personal Information Information"
+  privacy_policy_h3_2:    "About All TECH-GROUP website Visitors:"
+  privacy_policy_p2:    "In general, information is gathered about all of our users collectively, such as what areas users visit most frequently and what services users access the most. This information is used to determine what is most beneficial for our users, and how we can continually create a better overall experience when visiting the site."
+  privacy_policy_h3_3:    "Information About Users Specifically:"
+  privacy_policy_p3:    "In some instances, users are asked to supply specific information such as name, address, e-mail address, telephone number, etc in the contact us section. This information may be used to make you aware of additional products and services which may be of interest to you, or to contact you."
+  privacy_policy_p4:    "TECH – GROUP might collect additional personal information, such as your CV and work experience and other such data associated with a resume for job applications to our companies in the careers section, please keep in mind that, when you apply to jobs in the Careers section, your resume data and any other information that you disclosed during your job application will be made available to all our associated companies."
+  privacy_policy_h3_4:    "Use of your Personal Information"
+  privacy_policy_p5:    "TECH-GROUP does not sell, rent or lease its user lists to third parties."
+  privacy_policy_p6:   "TECH-GROUP TECH-GROUP may access and/or disclose your personal information if required to do so by law or in the good faith belief that such action is necessary to: (a) conform to the edicts of the law or comply with legal process served on TECH-GROUP or the site; (b) protect and defend the rights or property of TECH-GROUP and its family of websites; or © act under exigent circumstances to protect the personal safety of users of TECH-GROUP, its websites, or the general public."
+  privacy_policy_h3_5:   "Security of your Personal Information"
+  privacy_policy_p7:   "TECH-GROUP is committed to protecting the security of your personal information. We use a variety of security technologies and procedures to help protect your personal information from unauthorized access, use, or disclosure."
+  privacy_policy_h3_6:   "Changes to These Terms"
+  privacy_policy_p8:   "TECH-GROUP will occasionally update these Terms to reflect company and user feedback. When TECH-GROUP posts changes to these Terms, you will see the word “updated” next to the Privacy Statement link on the front page of TECH-GROUP. If there are material changes to these Terms or in how TECH-GROUP will use your personal information, TECH-GROUP will prominently post such changes prior to implementing the change. TECH-GROUP encourages you to periodically review these Terms to be informed of how TECH-GROUP is protecting your information. If at any time you have questions or concerns about the TECH-GROUP privacy commitment, please email us at info@techgroup.ae"

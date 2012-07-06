@@ -1,33 +1,4 @@
-ar:
-  about:    "نحن من"
-  services: "خدمات"
-  news:     "أخبار"
-  contact:  "للإتصال"
-  social:   "إجتماعي"
-
-  jhg_clients:  "JHG زبائن"
-
-  connect:      "تواصل معنا"
-  categories:   "الفئات"
-  search_news:  "إبحث عن الأخبار"
-  posted_in:    "تمّ نشره في"
-  read_more:    "إقرأ المزيد"
-  searching_for:    "إبحت عن"
-  listed_in:        "٢٢.  مُدرجة في"
-  view_more_posts:  "٢٣. اعرض المزيد من المشاركات"
-
-  subscribe:    "٢٤. تسجّل"
-  return_home:  "٢٥. العودة الى الصفحة الرئيسية"
-
-  contact_us:       "إتصل بنا"
-  thank_you:        "شكراً"
-  your_message:     "رسالتك"
-  choose_country:   "إختر البلد"
-  country:          "البلد"
-  your_email:       "بريدك الإلكتروني"
-  your_name:        "إسمك"
-  submit_form:      "استمارة"
-  
+ar:  
   #active admin
   active_admin:
     dashboard: Dashboard ar

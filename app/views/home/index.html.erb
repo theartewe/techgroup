@@ -44,25 +44,25 @@
     <section class="home-cta-container clear">
       <a href="<%= corporation_index_path(:locale=>I18n.locale) %>">
         <%= image_tag("home/home-cta-1.jpg", :alt=>"Next") %>
-        <h3>Mission + Vision</h3>
+        <h3><%= t(:mission_and_vision_header) %></h3>
         <p><%= t(:mission_and_vision_cta) %></p>
         <span class="more">More</span>
       </a>
       <a href="<%= companies_path(:locale=>I18n.locale) %>">
         <%= image_tag("home/home-cta-2.jpg", :alt=>"Next") %>
-        <h3>Our Companies</h3>
+        <h3><%= t(:our_companies_header) %></h3>
         <p><%= t(:our_companies_cta) %></p>
         <span class="more">More</span>
       </a>
       <a href="<%= corporate_partners_corporation_index_path %>">
         <%= image_tag("home/home-cta-3.jpg", :alt=>"Next") %>
-        <h3>Partners</h3>
+        <h3><%= t(:partners_header) %></h3>
         <p><%= t(:partners_cta) %></p>
         <span class="more">More</span>
       </a>
       <a href="<%= contact_path(:locale=>I18n.locale) %>">
         <%= image_tag("home/home-cta-4.jpg", :alt=>"Next") %>
-        <h3>Offices</h3>
+        <h3><%= t(:offices_header) %></h3>
         <p><%= t(:offices_cta) %></p>
         <span class="more">More</span>
       </a>

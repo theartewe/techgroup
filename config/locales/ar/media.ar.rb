@@ -1,7 +1,6 @@
 {
   :ar =>
   {
-    :media            => "Media",
     :all              => "all",
     :search_media     => "Search Media",
     :view_more_posts  => "view more posts",

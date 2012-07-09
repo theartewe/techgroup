@@ -1,11 +1,11 @@
 {
   :ar => 
   {
-    :corporation      => "corporation",
-    :our_companies    => "our companies",
-    :portfolio        => "portfolio",
-    :media            => "media",
-    :contact          => "contact",
+    :corporation      => "المجموعة",
+    :our_companies    => "شركات المجموعة",
+    :portfolio        => "محفظة الاعمال",
+    :media            => "الزاوية الاعلامية",
+    :contact          => "اتصل بنا",
     :switch_language  => "English",
   
     :overview         => "نظرة عامة",

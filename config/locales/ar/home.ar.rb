@@ -1,12 +1,14 @@
 {
   :ar => 
   {
-    :mission_and_vision_header  => "Mission + Vision",
-    :mission_and_vision_cta     => "Tech Group is committed to became the UAE's leading partner in infrastructure development and contributed to the economy through focused diversification.",
-    :our_companies_header       => "Our Companies",  
-    :our_companies_cta          => "Tech Group is comprised of various operating companies that are well-known and highly respected in the field of construction, real estate, vehicle repair, ceramic tiles and wood-joinery.",
-    :partners_header            => "Our Partners",
-    :partners_cta               => "Behind the AED 15 billion Emirates City, is its master developer R Holding. It is actively engaged in real estate & development, hotel & hotel management, construction, and more.",
+    :mission_and_vision_header  => "رؤية + المهمة",
+    :mission_and_vision_cta     => 'يمكن إيعاز نجاح مجموعة "تك جروب" إلى جهد وإلتزام كل من شركاتها. فكل شركة مبنية على الثقة، والإلتزام بالتفوق، . وقد أعطت هذه المواصفات المجموعة المرونة والمهارة لأن تكون السباقة ضمن المنافسة المحلية.  
+',
+    :our_companies_header       => "شركات المجموعة",  
+    :our_companies_cta          => 'يمكن إيعاز نجاح مجموعة "تك جروب" إلى جهد وإلتزام كل من شركاتها. فكل شركة مبنية على الثقة، والإلتزام بالتفوق، والشغف بالإبتكار. وقد أعطت هذه المواصفات المجموعة المرونة والمهارة لأن تكون السباقة ضمن المنافسة المحلية. وتعتبر الإستثمارات المستمرة للمجموعة في التقنيات العالمية دليلاً على التزامها بالمحافظة على تقدمها على منافسيها.
+',
+    :partners_header            => "شركائنا",
+    :partners_cta               => 'تعد "آر القابضة" مجموعة شركات متكاملة عمودياً تعمل ضمن القطاعات العقارية، والصناعية والمالية',
     :offices_header             => "مكاتبنا",
     :offices_cta                => "وتوسع مجموعة تك هو امر لا مفر منه بسبب التزامها بالخدمة في مجلس التعاون الخليجي. ومكاتبها الحالية تقع في موقع محوري لابرام الصفقات مع العملاء بصورة فعالة.
 ",

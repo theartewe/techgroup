@@ -1,26 +1,27 @@
 {
   :ar => 
   {
+    :tech_group       => "تك جروب",
     :corporation      => "المجموعة",
     :our_companies    => "شركات المجموعة",
     :portfolio        => "محفظة الاعمال",
     :media            => "الزاوية الاعلامية",
     :contact          => "اتصل بنا",
     :switch_language  => "English",
-  
     :overview         => "نظرة عامة",
 
     #footer
-    :careers              => "careers",
-    :terms_and_conditions => "terms and conditions",
-    :privacy_policy       => "privacy policy",
-    :feedback             => "feedback",
+    
+    :tech_group_corporate_video   => "تك جروب الشركات فيديو",
+    :tech_group_business_brochure => "التكنولوجيا مجموعة الأعمال كتيب",
+    :contact_tech_group_today     => "اتصل التقنية المجموعة اليوم",
+    
+    :careers              => "وظائف",
+    :terms_and_conditions => "الشروط و الأحكام",
+    :privacy_policy       => "سياسة الخصوصية",
+    :feedback             => "الاستفسارات",
   
     #breadcrumb
-    :home                 => "home",
-  
-    #terms and conditions
-    :terms_and_conditions       => "Terms and Conditions",
-    :terms_and_conditions_text  => "Terms and Conditions Text"
+    :home                 => "الرئيسية"
   }
 }  

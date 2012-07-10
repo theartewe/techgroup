@@ -2,15 +2,15 @@
   <section class="footer-cta clear">
     <a href="https://vimeo.com/44833230" class="corporate-video-cta fancybox-media">
       <%= image_tag("footer_icon-corporate_video.svg", :alt=>"View") %>
-      Tech Group Corporate Video
+      <%= t(:tech_group_corporate_video) %>
     </a>
     <a href="http://techgroup-media.s3.amazonaws.com/main-company-pdf/techgroup.pdf" class="business-brochure-cta">
       <%= image_tag("footer_icon-business_brochure.svg", :alt=>"View") %>
-      Tech Group Business Brochure
+      <%= t(:tech_group_business_brochure) %>
     </a>
     <a href="<%= contact_path(:locale=>I18n.locale) %>" class="contact-cta">
       <%= image_tag("footer_icon-contact.svg", :alt=>"View") %>
-      Contact Tech Group Today
+      <%= t(:contact_tech_group_today) %>
     </a>
   </section>
   <div class="container clear">

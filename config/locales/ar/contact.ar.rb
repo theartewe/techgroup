@@ -17,8 +17,6 @@
     :choose_country =>   "Choose Country",
     :country =>          "Country",
     :submit_form =>      "Submit Form",
-    :tech_group  =>      "تك جروب",
-    :tech_group_pjsc =>  "Tech Group PJSC",
     :ajman_uae =>        "عجمان الامارات العربية المتحدة",
     :al_rumalia_corniche_road => "الرميلة شارع الكورنيش، عجمان، الامارات العربية المتحدة",
     :khartoum_sudan =>   "الخرطوم السودان",

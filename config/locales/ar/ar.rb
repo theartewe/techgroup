@@ -20,6 +20,7 @@
     :terms_and_conditions => "الشروط و الأحكام",
     :privacy_policy       => "سياسة الخصوصية",
     :feedback             => "الاستفسارات",
+    :tech_group_all_rights_reserved => "مجموعة تك جروب. جميع الحقوق محفوظة",
   
     #breadcrumb
     :home                 => "الرئيسية"

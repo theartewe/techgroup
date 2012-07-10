@@ -1,5 +1,9 @@
-<%- content_for :page_stylesheet do %>
+<% content_for :page_stylesheet do %>
   <%= stylesheet_link_tag 'corporation', :media => 'screen' %>
+<% end %>
+
+<% content_for :extra_title do %>
+  <%= t(:corporation) %> : 
 <% end %>
 
 <section class="corporation main">

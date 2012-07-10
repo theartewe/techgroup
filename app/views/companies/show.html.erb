@@ -2,6 +2,10 @@
   <%= stylesheet_link_tag 'companies', :media => 'screen' %>
 <% end %>
 
+<% content_for :extra_title do %>
+  <%= @object.title %> : 
+<% end %>
+
 <section class="main company">
   <%= render :partial => "show_header", :locals => {:object => @object} %>
   <div class="content clear">

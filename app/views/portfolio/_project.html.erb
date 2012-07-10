@@ -2,13 +2,13 @@
   <div class="image">
     <img src="<%= project.image.thumbnail %>" alt="<%= project.title %>">
   </div>
-  <h3><%= project.title.titlecase %></h3>
+  <h3><%= project.title.try(:titlecase) %></h3>
   <ul>
     <li>
-      <b>Client: </b><%= project.client.titlecase %>
+      <b>Client: </b><%= project.client.try(:titlecase) %>
     </li>
     <li>
-      <b>Consultant: </b><%= project.consultant.titlecase %>
+      <b>Consultant: </b><%= project.consultant.try(:titlecase) %>
     </li>
     <li>
       <b>Main Contractor: </b><%= project.main_contractor %>

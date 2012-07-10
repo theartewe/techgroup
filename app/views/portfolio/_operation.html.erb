@@ -3,7 +3,7 @@
     <img src="<%= operation.image.thumbnail %>" alt="<%= operation.title %>">
   </div>
   <div class="text">
-    <h3><%= operation.title.titlecase %></h3>
+    <h3><%= operation.title.try(:titlecase) %></h3>
     <p><%= operation.description %></p>
   </div>
 </section>

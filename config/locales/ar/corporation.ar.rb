@@ -23,8 +23,7 @@
     #board of directors
   
     :board_of_directors => "مجلس الادارة",
-    :board_of_directors_text => "Board of Directors Text",
-    :ceo_message => "CEO Message",
+    :ceo_message => "كلمة الرئيس التنفيذي",
     :ceo_name => "على غالب جابر",
     :ceo_title => "المدير التنفيذي",
     :ceo_image => "CEO Image",
@@ -36,11 +35,10 @@
     :ceo_message_p5 => 'ويتابع "رؤيتنا هو ان نصبح شركة بارزة ومتخصصة في تعزيز ودعم وتقوية الدور المتغلغل لقطاع الشركات الصغرى في الاقتصاد من خلال الاستثمار وجعلها قصة نجاح". ',
     :ceo_message_p6 => "ويواصل علي دمج خبرته الكبيرة في الاستثمارات والتصنيع بعلاقاته القوية في قادة الصناعة الاخرين في مجلس التعاون الخليجي. وباعتباره اقتصاديا ومستثمرا، يتطلع علي ايضا الى المشاركة في ثروة مجموعة تك جروب من الخبرة في كل انحاء المنطقة. وهي الان لديها مكتب في مسقط بعمان ومدينة الكويت بالكويت والخرطوم بالسودان وبغداد بالعراق. ولكن بالنسبة للجوانب الاخرى التي تبدو فيها الاسواق والفرص مشجعة، فانها مسألة وقت لبناء اسقف اخرى لمجموعة تك جروب.  ",
 
-    :clients => "Clients",
-    :clients_text => "Clients Text",
-    :corporate_partners => "Corporate Partners",
-    :corporate_partners_text => "Corporate Partners Text",
-    :corporate_partners_h3 => "R Holding",
+    :clients => "عملاء المجموعة",
+    
+    :corporate_partners => "شركاء المجموعة",
+    :corporate_partners_h3 => "آر القابضة",
     :corporate_partners_p1 => "Behind the AED 15 billion Emirates City, is its master developer R Holding. It is currently and actively engaged in real estate & development, real property development, hotel & hotel management, hospitality, construction, aviation, marine yacht, manufacturing and the capital market.",
     :corporate_partners_p2 => "Allied with strategic partnership, the R Holding Group of Companies has positioned at the right place in the right time with the right people. Its vast resources and expertise provide the ability to meet the ever changing needs of the market.",
     :corporate_partners_p3 => "R Holdings is committed at the forefront of this exciting growth and expansion, deploying its investors’ capital allows it to generate exceptional returns by providing first-class products and services for clients. Although every member-companies of Tech Group has separate and independent management structures, they all complement to each other and work together in order to develop strategic partnership that increases return-on-investment and success completely."

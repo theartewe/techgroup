@@ -1,6 +1,6 @@
 <nav class="subnav">
   <ul class="breadcrumb">
-    <li><a href="" title="Home">Home</a></li>
-    <li>Our Companies</li>
+    <li><a href="<%= root_path(:locale=>I18n.locale) %>" title="<%= t(:home) %>"><%= t(:home) %></a></li>
+    <li><%= t(:our_companies) %></li>
   </ul>
 </nav>

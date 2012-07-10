@@ -1,7 +1,7 @@
 {
   :ar =>
   {
-    :all              => "all",
+    :all              => "كافة",
     :search_media     => "Search Media",
     :view_more_posts  => "view more posts",
     :posted_under     => "posted under",

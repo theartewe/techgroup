@@ -18,15 +18,15 @@
   <div class="contact-info">
     <ul>
       <li>
-        <span>telephone</span>
+        <span><%= t(:telephone) %></span>
 		    <span><%= @object.phone %></span>
       </li>
       <li>
-        <span>fax</span>
+        <span><%= t(:fax) %></span>
 		    <span><%= @object.fax %></span>
       </li>
       <li>
-        <span>email</span>
+        <span><%= t(:email) %></span>
 		    <span><a href="<%= @object.email %>"><%= @object.email %></a></span>
       </li>
     </ul>

@@ -8,7 +8,9 @@
         <p class="caption"><%= object.image_caption %></p>
       </div>
       <p>
-        <%= object.description.gsub(/\n/, '<br/>').html_safe %>
+        <% if object.description %>
+          <%= object.description.gsub(/\n/, '<br/>').html_safe %>
+        <% end %>
       </p>
       <p>
         <% if object.read_more_title1 %>

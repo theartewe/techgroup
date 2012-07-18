@@ -14,6 +14,6 @@ CarrierWave.configure do |config|
     config.fog_host       = '//techgroup-media.s3.amazonaws.com'
   when :production
     config.fog_directory = 'techgroup-media'
-    config.fog_host       = '//techgroup-media.s3.amazonaws.com'
+    config.fog_host       = '//d2b6zofzbz0sn1.cloudfront.net'
   end
 end

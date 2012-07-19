@@ -12,15 +12,15 @@
     <title><%= yield :extra_title %> <%= t(:tech_group) %></title>
     <meta content='<%= @description %>' name='description' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-
-    <% if @arabic %>
-      <%= stylesheet_link_tag "right-style" %>
-    <% else %>
-      <%= stylesheet_link_tag "style" %>
-    <% end %>
+    
+    <%= stylesheet_link_tag "style" %>
     
     <%= yield :page_stylesheet %>
     <%= stylesheet_link_tag "jquery.fancybox" %>
+    
+    <% if (I18n.locale.to_s.downcase == "ar") %>
+      <%= stylesheet_link_tag "right-style-override" %>
+    <% end %>
 
     <%= javascript_include_tag "modernizr.min" %>
     <%= javascript_include_tag "respond.min" %>

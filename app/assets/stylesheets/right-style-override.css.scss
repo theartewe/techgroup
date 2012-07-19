@@ -1,0 +1,76 @@
+body{
+  text-align:right;
+}
+
+//nav
+header[role="header"]{
+  a.logo {
+    float: right;
+  }
+  
+  nav[role="navigation"] ul {
+    float: left;
+    text-align: left;
+    li{
+      float:right;
+      &.corporation{
+        margin-right:41%;
+      }
+    }
+  }
+}
+
+//subnav
+.main nav.subnav{
+  ul.breadcrumb {
+    margin-right: 10px;
+    li{
+      float:right;
+      a::after {
+        float: left;
+      }
+    }
+  }
+} 
+
+//footer
+footer[role="footer"]{
+  a.switcher{
+    float:left;
+  }
+  .footer-nav {
+    float: left;
+    margin-left:15px;
+    li{
+      float:right;
+    }
+  }
+  p.copyright {
+    float: right;
+  }
+}
+ 
+
+//shared
+.sidebar{
+  float: left;
+} 
+ 
+
+//home
+.home h1{
+  left:55%;
+}
+
+//coporation
+.corporation {
+  .overview {
+    float:right;
+  }
+  #history-wrapper{
+    
+  }
+}
+
+
+

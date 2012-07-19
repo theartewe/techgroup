@@ -36,6 +36,9 @@
         </section>
       </section>
     </section>
+    <% if (I18n.locale.to_s.downcase == "ar") %>
+      <section class="spacer clear"></section>
+    <% end %>
     <section id="history-wrapper">
       <h3><%= t(:our_history) %></h3>
       <section class="history-objects clear">

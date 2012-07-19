@@ -66,10 +66,20 @@ footer[role="footer"]{
   left:55%;
 }
 
-//coporation
+//corporation
 .corporation {
   #history-wrapper{
     
+  }
+  #directors-wrapper{
+    li{
+      .image{
+        float: right;
+      }
+      .text{
+        float: right;
+      }
+    }
   }
   &.clients{
     #client-wrapper{
@@ -90,6 +100,17 @@ footer[role="footer"]{
         padding-left: 2%;
         padding-right: 0;
         padding-bottom: 3%;
+      }
+    }
+  }
+}
+
+//companies
+.companies{
+  .companies-wrapper{
+    a{
+      .logo{
+        float:right;
       }
     }
   }

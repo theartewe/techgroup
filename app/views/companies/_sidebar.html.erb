@@ -27,8 +27,14 @@
       </li>
       <li>
         <span><%= t(:email) %></span>
-		    <span><a href="<%= @object.email %>"><%= @object.email %></a></span>
+		    <span><a href="mailto:<%= @object.email %>"><%= @object.email %></a></span>
       </li>
+      <% if !@object.brochure.path.nil? %>
+      <li>
+        <span><%= t(:brochure) %></span>
+		    <span><a href="<%= @object.brochure %>"><%= t(:download) %></a></span>
+      </li>
+      <% end %>
     </ul>
   </div>
 </aside>

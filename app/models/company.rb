@@ -18,6 +18,7 @@ class Company
   
   mount_uploader :logo, CompanyLogoUploader
   mount_uploader :banner, CompanyBannerUploader
+  mount_uploader :brochure, CompanyBrochureUploader
   
   slug :title
    

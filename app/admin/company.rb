@@ -25,6 +25,7 @@ ActiveAdmin.register Company do
       f.input :email, :required => true
       f.input :logo, :as => :file, :required => true
       f.input :banner, :as => :file, :required => true
+      f.input :brochure, :as => :file
       f.input :url, :required => true
     end
     f.buttons

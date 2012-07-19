@@ -5,22 +5,22 @@
   <h3><%= project.title.try(:titlecase) %></h3>
   <ul>
     <li>
-      <b>Client: </b><%= project.client.try(:titlecase) %>
+      <b><%= t(:client) %>: </b><%= project.client.try(:titlecase) %>
     </li>
     <li>
-      <b>Consultant: </b><%= project.consultant.try(:titlecase) %>
+      <b><%= t(:consultant) %>: </b><%= project.consultant.try(:titlecase) %>
     </li>
     <li>
-      <b>Main Contractor: </b><%= project.main_contractor %>
+      <b><%= t(:main_contractor) %>: </b><%= project.main_contractor %>
     </li>
     <li>
-      <b>Sub Contractors: </b><%= project.sub_contractors %>
+      <b><%= t(:sub_contractors) %>: </b><%= project.sub_contractors %>
     </li>
     <li>
-      <b>Project Worth: </b><%= project.project_worth %>
+      <b><%= t(:project_worth) %>: </b><%= project.project_worth %>
     </li>
     <li>
-      <b>Location: </b><%= project.location %>
+      <b><%= t(:location) %>: </b><%= project.location %>
     </li>
   </ul>
 </section>

@@ -1,5 +1,11 @@
 {
   :ar => {
+    :client                   =>  "Client",
+    :consultant               =>  "Consultant",
+    :main_contractor          =>  "Main Contractor",
+    :sub_contractors          =>  "Sub Contractors",
+    :project_worth            =>  "Project Worth",
+    :location                 =>  "Location",
     :tech_group_projects_header   =>  "عمليات مجموعة تك",
     :tech_group_operations_header =>  "عمليات تك جروب",
     :tech_group_operations_text   =>  "في نطاق عملياتها، تعد مجموعة تك ممثلة بشركاتها الم عروفة بخبرتها الواضحة في اجراءات الجودة، وعملياتها وتشغيل معداتها أي ",

@@ -1,0 +1,74 @@
+<h2><%= t(:our_offices) %></h2>
+  <section class="contact-wrapper">
+   <div class="form">
+    <h4 role="title"><%= t(:contact_us).titlecase %></h4>
+    <form method="post" action="<%= submit_path %>" id="contact_form">
+      <fieldset>
+          <input type="text" required name="name" placeholder="<%= t(:name).titlecase %>" />
+          <input type="tel" required name="telephone" placeholder="<%= t(:telephone).titlecase %>" />
+          <input type="email" required name="email" placeholder="<%= t(:email).titlecase %>" />
+        <select required name="subject">
+          <option disabled="disabled"><%= t(:choose_subject).titlecase %> </option>
+        </select>
+        <textarea name="message" class="required" required placeholder="<%= t(:message).titlecase %>"></textarea>
+        <input type="submit" value="<%= t(:submit_form).titlecase %>" class="button" />
+      </fieldset>
+    </form>
+    <div class="thank-you">
+      <h3><%= t(:contact_thank_you_header)%></h3>
+      <p><%= t(:contact_thank_you_text)%></p>
+    </div>
+  </div>
+  <div class="addresses">
+    <div>
+      <h5><small><%= t(:tech_group) %></small><%= t(:ajman_uae) %></h5>
+      <ul>
+        <li><b><%= t(:address).titlecase %></b><%= t(:al_rumalia_corniche_road) %></li>
+        <li><b><%= t(:telephone).titlecase %></b> +9716 747 5552</li>
+        <li><b><%= t(:fax).titlecase %></b> +9716 747 5553</li>
+        <li><b><%= t(:email).titlecase %></b> 
+          <a href="mailto:info@techgroup.ae" title="<%= t(:email) %>">
+            info@techgroup.ae
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5><small><%= t(:tech_group) %></small><%= t(:khartoum_sudan) %></h5>
+      <ul>
+        <li><b><%= t(:address).titlecase %></b><%= t(:al_ryad_makkah_hospital_street) %></li>
+        <li><b><%= t(:fax).titlecase %></b> +244 991 232 7909</li>
+        <li><b><%= t(:email).titlecase %></b> 
+          <a href="mailto:e.siraj@pilingtech.ae" title="<%= t(:email) %>">
+            e.siraj@pilingtech.ae
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5><small><%= t(:tech_group) %></small><%= t(:baghdad_iraq) %></h5>
+      <ul>
+        <li><b><%= t(:address).titlecase %></b><%= t(:al_jadria_baghdad) %></li>
+        <li><b><%= t(:telephone).titlecase %></b> +964 7700014444</li>
+        <li><b><%= t(:fax).titlecase %></b> +964 7800014444 </li>
+        <li><b><%= t(:email).titlecase %></b> 
+          <a href="mailto:a.khalik@techgroup.ae" title="<%= t(:email) %>">
+            a.khalik@techgroup.ae
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5><small><%= t(:tech_group) %></small><%= t(:saudi_abha) %><</h5>
+      <ul>
+        <li><b><%= t(:address).titlecase %></b><%= t(:abha_khamis_mushayt) %></li>
+        <li><b><%= t(:telephone).titlecase %></b> +966554492477</li>
+        <li><b><%= t(:email).titlecase %></b> 
+          <a href="mailto:k.mohamed@remixtech.ae" title="<%= t(:email) %>">
+            k.mohamed@remixtech.ae
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

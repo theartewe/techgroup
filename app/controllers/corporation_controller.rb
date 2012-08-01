@@ -8,7 +8,7 @@ class CorporationController < WebsiteController
   end
   
   def ceo_message
-     
+    @settings = Settings.first
   end
   
   def clients

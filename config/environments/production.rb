@@ -56,7 +56,7 @@ Techgroup::Application.configure do
     'contact.js',
     'style.css', 
     'home.css',
-    'right-style.css',
+    'right-style-override.css',
     'compass.css',
     'portfolio.css',
     'companies.css',

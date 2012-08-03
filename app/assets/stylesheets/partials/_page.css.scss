@@ -652,3 +652,27 @@ footer[role="footer"] {
     }
   }
 }
+
+.corporation .overview {
+  p.proverb {
+    display:block;
+    font-size:1.15em;
+    margin-bottom:10px;
+    color: #F85222;
+  }  
+}
+
+#ceo-message {
+  em {
+    color: #F85222;
+  }
+}
+
+.content .overview {
+  p img {
+    padding-right: 4%;
+    padding-bottom: 3%;
+    margin:0px;
+  }
+}
+

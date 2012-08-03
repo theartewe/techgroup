@@ -8,12 +8,7 @@
     <%= render "sidebar", :active_page=>"corporate_partners"  %>
     <section class="overview">
       <h2><%= t(:corporate_partners) %></h2>
-      <div class="image">
-        <%= image_tag("corporation/r-holding.jpg", :alt=> t(:corporate_partners)) %>
-      </div>
-
       <%= settings_value("Corporate Partners").html_safe %>
-
     </section>
   </div>
 </section>

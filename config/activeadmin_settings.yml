@@ -97,7 +97,7 @@ Home CTA4:
 # Pages
 Pages:
   CEO Message:
-    type:           text
+    type:           html
     description:    This text is used for the "CEO Message" page
     default_value:  >
                       Ali Ghaleb Jaber began to learn the nubs in manufacturing and technology.  He started up as a trainee devoting his time and enthusiasm to learn all the facets in various operations and investments of the company. One of his strengths is explaining technological innovations.
@@ -115,7 +115,7 @@ Pages:
                       Ali continues to combine his vast experience in investments and manufacturing with his strong relationships with other industry leaders in the GCC.  As an economist and investor, Ali also envisions the sharing of Tech Group’s wealth of experience throughout the Region.  It now holds an office in Muscat (Oman), Kuwait City (Kuwait), Khartoum (Sudan), Baghdad (Iraq), and KSA. But for some other areas where the markets and opportunities are encouraging, it will just be a matter of time to build other roofs for Tech Group.
 
   Corporation Overview:
-    type:           text
+    type:           html
     description:    This overview text is used for the "Corporation" page
     default_value:  >
                       <div id="proverb">Tall oaks grow from little acorns. . .</div>
@@ -130,7 +130,7 @@ Pages:
 
 
   Corporate Partners:
-    type:           text
+    type:           html
     description:    This text is used for the "Corporate Partners" page
     default_value:  >
                       <h3>R Holding</h3>

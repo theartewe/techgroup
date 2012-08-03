@@ -12,6 +12,8 @@ ActiveAdmin.setup do |config|
   #
   # config.site_title_link = "/"
 
+  config.site_title_image = "techgroup-logo.png"
+
   # == Default Namespace
   #
   # Set the default namespace each administration resource

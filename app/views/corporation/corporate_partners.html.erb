@@ -11,12 +11,9 @@
       <div class="image">
         <%= image_tag("corporation/r-holding.jpg", :alt=> t(:corporate_partners)) %>
       </div>
-      <div class="text">
-        <h3><%= t(:corporate_partners_h3) %></h3>
-        <p><%= t(:corporate_partners_p1) %></p>
-        <p><%= t(:corporate_partners_p2) %></p>
-      </div>
-      <p><%= t(:corporate_partners_p3) %></p>
+
+      <%= settings_value("Corporate Partners").html_safe %>
+
     </section>
   </div>
 </section>

@@ -10,8 +10,9 @@ CarrierWave.configure do |config|
 
   case Rails.env.to_sym
   when :development
-    config.fog_directory = 'techgroup-media'
-    config.fog_host       = '//techgroup-media.s3.amazonaws.com'
+    #config.fog_directory = 'techgroup-media'
+    #config.fog_host       = '//techgroup-media.s3.amazonaws.com'
+    config.storage = :file
   when :production
     config.fog_directory = 'techgroup-media'
     config.fog_host       = '//d2b6zofzbz0sn1.cloudfront.net'

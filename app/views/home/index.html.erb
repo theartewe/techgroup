@@ -42,28 +42,28 @@
       </ul>
     </section>
     <section class="home-cta-container clear">
-      <a href="<%= corporation_index_path(:locale=>I18n.locale) %>">
-        <%= image_tag("home/home-cta-1.jpg", :alt=>"Next") %>
-        <h3><%= t(:mission_and_vision_header) %></h3>
-        <p><%= t(:mission_and_vision_cta) %></p>
+      <a href="<%= settings_value("CTA1 URL") %>">
+        <%= image_tag(settings_value("CTA1 Image"), :alt=>"Next") %>
+        <h3><%= settings_value("CTA1 Title") %></h3>
+        <p><%= settings_value("CTA1 Description") %></p>
         <span class="more"><%= t(:more) %></span>
       </a>
-      <a href="<%= companies_path(:locale=>I18n.locale) %>">
-        <%= image_tag("home/home-cta-2.jpg", :alt=>"Next") %>
-        <h3><%= t(:our_companies_header) %></h3>
-        <p><%= t(:our_companies_cta) %></p>
+      <a href="<%= settings_value("CTA2 URL") %>">
+        <%= image_tag(settings_value("CTA2 Image"), :alt=>"Next") %>
+        <h3><%= settings_value("CTA2 Title") %></h3>
+        <p><%= settings_value("CTA2 Description") %></p>
         <span class="more"><%= t(:more) %></span>
       </a>
-      <a href="<%= corporate_partners_corporation_index_path %>">
-        <%= image_tag("home/home-cta-3.jpg", :alt=>"Next") %>
-        <h3><%= t(:partners_header) %></h3>
-        <p><%= t(:partners_cta) %></p>
+      <a href="<%= settings_value("CTA3 URL") %>">
+        <%= image_tag(settings_value("CTA3 Image"), :alt=>"Next") %>
+        <h3><%= settings_value("CTA3 Title") %></h3>
+        <p><%= settings_value("CTA3 Description") %></p>
         <span class="more"><%= t(:more) %></span>
       </a>
-      <a href="<%= contact_path(:locale=>I18n.locale) %>">
-        <%= image_tag("home/home-cta-4.jpg", :alt=>"Next") %>
-        <h3><%= t(:offices_header) %></h3>
-        <p><%= t(:offices_cta) %></p>
+      <a href="<%= settings_value("CTA4 URL") %>">
+        <%= image_tag(settings_value("CTA4 Image"), :alt=>"Next") %>
+        <h3><%= settings_value("CTA4 Title") %></h3>
+        <p><%= settings_value("CTA4 Description") %></p>
         <span class="more"><%= t(:more) %></span>
       </a>
     </section>

@@ -1,3 +1,8 @@
+PATH
+  remote: ../_lib/activeadmin-settings
+  specs:
+    activeadmin-settings (0.2.6)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -237,6 +242,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin-mongoid
+  activeadmin-settings!
   asset_sync
   aws-s3
   bson_ext

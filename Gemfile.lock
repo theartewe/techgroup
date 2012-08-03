@@ -1,5 +1,6 @@
-PATH
-  remote: ../_lib/activeadmin-settings
+GIT
+  remote: git@github.com:alexkravets/activeadmin-settings.git
+  revision: 47d8f2ce554fc9e46ff00f4eeadb66d34dd9e400
   specs:
     activeadmin-settings (0.2.6)
 

@@ -38,7 +38,7 @@ gem "formtastic", "~> 2.1.1"
 # Active Admin 
 gem 'activeadmin-mongoid'
 #gem 'activeadmin-settings', :path => "../_lib/activeadmin-settings"
-gem 'activeadmin-settings', :git => "git@github.com:alexkravets/activeadmin-settings.git"
+gem 'activeadmin-settings'
 
 # Pagination
 gem 'kaminari'

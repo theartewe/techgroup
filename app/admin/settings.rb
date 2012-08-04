@@ -1,7 +1,7 @@
 ActiveAdmin.register Settings do
   index do
-    column :id do |obj|
-      link_to obj.id, edit_admin_setting_path(obj)
+    column :settings do |obj|
+      link_to "Settings", edit_admin_setting_path(obj)
     end
     default_actions
   end

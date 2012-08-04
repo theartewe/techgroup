@@ -1,5 +1,7 @@
 Techgroup::Application.routes.draw do
 
+  mount ActiveadminSettings::Engine => '/admin'
+
   ActiveAdmin.routes(self)
   
   match "change-locale" => 'locale#change_locale', :as => :change_locale

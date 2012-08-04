@@ -37,6 +37,8 @@ gem "formtastic", "~> 2.1.1"
 
 # Active Admin 
 gem 'activeadmin-mongoid'
+gem "activeadmin-settings"
+gem "activeadmin-mongoid-reorder"
 
 # Pagination
 gem 'kaminari'

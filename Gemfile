@@ -37,8 +37,11 @@ gem "formtastic", "~> 2.1.1"
 
 # Active Admin 
 gem 'activeadmin-mongoid'
-gem "activeadmin-settings"
-gem "activeadmin-mongoid-reorder"
+# Active Admin Settings
+gem "carrierwave-mongoid", :require => "carrierwave/mongoid"
+gem "mini_magick"
+#gem 'activeadmin-settings', :path => "../_lib/activeadmin-settings"
+gem 'activeadmin-settings'
 
 # Pagination
 gem 'kaminari'

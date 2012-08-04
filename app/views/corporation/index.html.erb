@@ -12,19 +12,8 @@
     <%= render "sidebar", :active_page=>"overview"  %>
     <section class="overview">
       <h2><%= t(:overview) %></h2>
-      <div id="proverb"><%= t(:tall_oaks) %></div>
-      <p class="opening-text">
-        <%= t(:overview_text_p1) %> 
-      </p>
-      <p class="opening-text">
-        <%= t(:overview_text_p2) %> 
-      </p>
-      <p>
-        <%= t(:overview_text_p3) %> 
-      </p>
-      <p>
-        <%= t(:overview_text_p4) %> 
-      </p>
+      <%= settings_value("Corporation Overview").html_safe %>
+
       <section class="missions clear">
         <section class="mission">
           <h3><%= t(:our_vision_header) %> </h3>

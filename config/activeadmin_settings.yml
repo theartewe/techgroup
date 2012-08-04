@@ -17,3 +17,120 @@
 #   Link setting value expected to be in a format of: (link title) http://link.url
 #
 # ================================================================================
+
+# CTA1
+Home CTA1:
+  CTA1 Title:
+    default_value:  Mission And Vision Header
+
+  CTA1 Image:
+    type:           file
+    description:    Please make sure image size is 287x140 pixels
+    default_value:  home/home-cta-1.jpg
+
+  CTA1 Description:
+    type:           text
+    description:    A paragraph of text which goes right after the CTAs title
+    default_value:  Tech Group is committed to became the UAE’s leading partner in infrastructure development and contributed to the economy through focused diversification.
+
+  CTA1 URL:
+    description:    You can put relative or absolute URL here
+    default_value:  /en/corporation
+
+# CTA2
+Home CTA2:
+  CTA2 Title:
+    default_value:  Our Company
+
+  CTA2 Image:
+    type:           file
+    description:    Please make sure image size is 287x140 pixels
+    default_value:  home/home-cta-2.jpg
+
+  CTA2 Description:
+    type:           text
+    description:    A paragraph of text which goes right after the CTAs title
+    default_value:  Tech Group is comprised of various operating companies that are well-known and highly respected in the field of construction, real estate, vehicle repair, ceramic tiles and wood-joinery.
+
+  CTA2 URL:
+    description:    You can put relative or absolute URL here
+    default_value:  /en/companies
+
+# CTA3
+Home CTA3:
+  CTA3 Title:
+    default_value:  Partners
+
+  CTA3 Image:
+    type:           file
+    description:    Please make sure image size is 287x140 pixels
+    default_value:  home/home-cta-3.jpg
+
+  CTA3 Description:
+    type:           text
+    description:    A paragraph of text which goes right after the CTAs title
+    default_value:  Behind the AED 15 billion Emirates City, is its master developer R Holding. It is actively engaged in real estate & development, hotel & hotel management, construction, and more.
+
+  CTA3 URL:
+    description:    You can put relative or absolute URL here
+    default_value:  /corporation/corporate-partners
+
+# CTA4
+Home CTA4:
+  CTA4 Title:
+    default_value:  Offices
+
+  CTA4 Image:
+    type:           file
+    description:    Please make sure image size is 287x140 pixels
+    default_value:  home/home-cta-4.jpg
+
+  CTA4 Description:
+    type:           text
+    description:    A paragraph of text which goes right after the CTAs title
+    default_value:  Tech Group’s expansion is inevitable because of its commitment to serve in the GCC. Its current offices are centrally located to close deals with the clients efficiently.
+
+  CTA4 URL:
+    description:    You can put relative or absolute URL here
+    default_value:  /en/contact
+
+# Pages
+Pages:
+  CEO Message:
+    type:           html
+    description:    This text is used for the "CEO Message" page
+    default_value:  >
+                      <p>Ali Ghaleb Jaber began to learn the nubs in manufacturing and technology.  He started up as a trainee devoting his time and enthusiasm to learn all the facets in various operations and investments of the company. One of his strengths is explaining technological innovations.</p>
+                      <p>Finally, he took the helm of Tech Group as Chief Executive Officer. With his self-styled initiatives and exemplary leadership, the companies diversified into major manufacturing operations, and later claim the recognition as one of the most successful conglomerates in the UAE and GCC. Tech Group’s presence in the market has turned up a healthy competition in the manufacturing sector.</p>
+                      <p>In August 2008, he was appointed Board Member and a major shareholder of the Kuwait-based Shiraa for Project Management.  SPM is a closed shareholding Islamic company aimed to foster small businesses into specialized ventures in various business fields.</p>
+                      <p>SPMC plays an evident role in encouraging small businesses by specializing in ventures with owners of technologically-advanced micro businesses. Currently, Shiraa has successfully fostered several initiatives in different business fields in the GCC.</p>
+                      <p><em>We will continue to  cultivate a compelling economic model in the arena of small businesses, develop  and support them by investing in these opportunities, facilitating any hurdles,  and encouraging their growth in Kuwait and the GCC areas</em> Ali stresses.</p>
+                      <p><em>Our vision is to become a leading and a specializing company in fostering, supporting and substantiating the pervasive role of the small businesses sector in the economy through investing and making it a success story.</em></p>
+                      <p>Ali continues to combine his vast experience in investments and manufacturing with his strong relationships with other industry leaders in the GCC.  As an economist and investor, Ali also envisions the sharing of Tech Group’s wealth of experience throughout the Region.  It now holds an office in Muscat (Oman), Kuwait City (Kuwait), Khartoum (Sudan), Baghdad (Iraq), and KSA. But for some other areas where the markets and opportunities are encouraging, it will just be a matter of time to build other roofs for Tech Group.</p>
+
+  Corporation Overview:
+    type:           html
+    description:    This overview text is used for the "Corporation" page
+    default_value:  >
+                      <p class="proverb">Tall oaks grow from little acorns. . .</p>
+                      <p class="opening-text">First, there was a seed, homegrown by the skillful hand. It was then nurtured by the humble mind which let it grow into a promising tree of inspiration, opportunity and success. Knowledge, skills, and sincere efforts subsequently developed the tree into a conglomerate in less than a decade – the Tech Group.</p>
+                      <p class="opening-text">A famous Arabic proverb goes "tall oaks grow from little acorns," or great things may come from small beginnings. The small enterprise that was founded nine years ago is now an aggregate of industries, mostly downstream and empowered by sheer dedication of its founder, managers, and human resources. It is an epic symbol, and a glowing torch of independent-thinking companies, competitive and respected in the indispensable fields in the industry – construction, real estate & development, vehicle maintenance, block manufacturing, ceramic tiles, woodworks, elevator systems, MEP, aluminum & glass, piling, steel, metal fabrications and transport.</p>
+                      <p>With the time-tested skills & proven track record of its staff and employees, plus the dedicated leadership and ebullient supervision by the management and other corporate officers, the Group is a pillar of the rapid growth and development in the Gulf Region and the United Arab Emirates. It is now a UAE’s economic powerhouse built in Ajman.</p>
+                      <p>The Group’s continued investment in machinery, technology, and respect to environment and ecology is an evidence of its life-long commitment in service to the nation. It’s strong adherence to world-class systems, and international norms in quality processes and procedures is reflected in its manufactured products, completed projects, and service provided.</p>
+
+  Corporate Partners:
+    type:           html
+    description:    This text is used for the "Corporate Partners" page
+    default_value:  >
+                      <h3>R Holding</h3>
+                      <p>Behind the AED 15 billion Emirates City, is its master developer R Holding. It is currently and actively engaged in real estate &amp; development, real property development, hotel &amp; hotel management, hospitality, construction, aviation, marine yacht, manufacturing and the capital market.</p>
+                      <p>Allied with strategic partnership, the R Holding Group of Companies has positioned at the right place in the right time with the right people. Its vast resources and expertise provide the ability to meet the ever changing needs of the market.</p>
+                      <p>R Holdings is committed at the forefront of this exciting growth and expansion, deploying its investors’ capital allows it to generate exceptional returns by providing first-class products and services for clients. Although every member-companies of Tech Group has separate and independent management structures, they all complement to each other and work together in order to develop strategic partnership that increases return-on-investment and success completely.</p>
+
+
+
+
+
+
+
+

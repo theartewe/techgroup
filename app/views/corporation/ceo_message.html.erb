@@ -15,7 +15,7 @@
           </div>
           <h3><%= t(:ceo_name) %></h3>
           <h4><%= t(:ceo_title) %></h4>
-          <p><%= @settings.ceo_message.gsub(/\n/, '<br/>').html_safe %></p>
+          <%= settings_value("CEO Message").html_safe %>
         </div>
       </div>
     </section>

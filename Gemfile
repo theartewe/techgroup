@@ -41,6 +41,7 @@ gem 'activeadmin-mongoid'
 gem "carrierwave-mongoid", :require => "carrierwave/mongoid"
 gem "mini_magick"
 #gem 'activeadmin-settings', :path => "../_lib/activeadmin-settings"
+#gem 'activeadmin-mongoid-reorder'
 gem 'activeadmin-settings'
 
 # Pagination

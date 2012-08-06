@@ -19,6 +19,7 @@ gem 'bson_ext'
 gem 'mongoid'
 gem 'mongoid_slug', :require => 'mongoid/slug'
 gem 'mongoid_globalize'
+gem 'activeadmin-mongoid-reorder'
 
 # Media storage
 gem 'aws-s3'

@@ -23,3 +23,6 @@ log/development.log
 /working
 
 /public/company_logos/
+=======
+# Vim temp files
+*.swp

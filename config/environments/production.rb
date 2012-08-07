@@ -65,7 +65,7 @@ Techgroup::Application.configure do
     'flatpages.css',
     'contact.css',
     'jquery.fancybox.css',
-    'redactor/css/style'
+    'redactor/css/style.css'
   ]
 
   # Disable delivery errors, bad email addresses will be ignored

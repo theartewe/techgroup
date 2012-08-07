@@ -223,20 +223,32 @@
       list-style:none;
       margin-top:30px;
       padding:0;
-      padding-top:30px;
+      //padding-top:30px;
       border-top: 1px solid #F2F2F2;
+      margin-bottom:0px;
     
       h4{
         font-size:1.2em; 
         padding-bottom:5px;
         border:none;
       }
+
+      .client {
+        display:inline-table;
+        padding-bottom:30px;
+      }
     
       li{
+        padding-top:30px;
+        //padding-bottom:45px;
         border-bottom:1px solid #e5e5e5;
         font-family:$proximanova;
         font-size:1em;
         line-height:1em;
+
+        //&:first-child{
+        //  padding-bottom:0px;
+        //}
       
         &:last-child{
           border-bottom:none;
@@ -316,6 +328,11 @@
 }
 
 @media screen and (max-width:759px) {
+
+  .corporation.clients #client-wrapper li.client {
+    padding-bottom:0px;
+  }
+
   .corporation{
     
     .content{
@@ -428,3 +445,10 @@
   } 
 }
 
+.content .overview {
+  p img, h3 img {
+    padding-right: 4%;
+    padding-bottom: 3%;
+    margin:0px;
+  }
+}

@@ -1,6 +1,6 @@
-<li class="clear">
+<li class="client">
   <div class="image">
-    <%= image_tag(client.image.thumbnail) %>
+    <%= image_tag(client.image.thumbnail, :alt => client.title, :size => "292x158") %>
   </div>
   <div class="text">
     <h5><%= client.title %></h5>

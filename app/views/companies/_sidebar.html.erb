@@ -18,6 +18,11 @@
   <div class="contact-info">
     <ul>
       <li>
+        <% if @object.contact_title %>
+		      <span class="contact-title"><%= @object.contact_title %></span>
+        <% endif %>
+      </li>
+      <li>
         <span><%= t(:telephone) %></span>
 		    <span><%= @object.phone %></span>
       </li>
@@ -37,4 +42,46 @@
       <% end %>
     </ul>
   </div>
+  <% if @object.contact_title2 %>
+    <div class="contact-info">
+      <ul>
+        <li>
+  		    <span class="contact-title"><%= @object.contact_title2 %></span>
+        </li>
+        <li>
+          <span><%= t(:telephone) %></span>
+  		    <span><%= @object.phone2 %></span>
+        </li>
+        <li>
+          <span><%= t(:fax) %></span>
+  		    <span><%= @object.fax2 %></span>
+        </li>
+        <li>
+          <span><%= t(:email) %></span>
+  		    <span><a href="mailto:<%= @object.email2 %>"><%= @object.email2 %></a></span>
+        </li>
+      </ul>
+    </div>
+  <% end %>
+  <% if @object.contact_title3 %>
+    <div class="contact-info">
+      <ul>
+        <li>
+  		    <span class="contact-title"><%= @object.contact_title3 %></span>
+        </li>
+        <li>
+          <span><%= t(:telephone) %></span>
+  		    <span><%= @object.phone3 %></span>
+        </li>
+        <li>
+          <span><%= t(:fax) %></span>
+  		    <span><%= @object.fax3 %></span>
+        </li>
+        <li>
+          <span><%= t(:email) %></span>
+  		    <span><a href="mailto:<%= @object.email3 %>"><%= @object.email3 %></a></span>
+        </li>
+      </ul>
+    </div>
+  <% end %>
 </aside>

@@ -23,7 +23,7 @@
       <li>
         <% if @object.contact_title %>
 		      <span class="contact-title"><%= @object.contact_title %></span>
-        <% endif %>
+        <% end %>
       </li>
       <li>
         <span><%= t(:telephone) %></span>
@@ -37,6 +37,7 @@
         <span><%= t(:email) %></span>
 		    <span><a href="mailto:<%= @object.email %>"><%= @object.email %></a></span>
       </li>
+
       <% if !@object.brochure.path.nil? %>
       <li>
         <span><%= t(:brochure) %></span>

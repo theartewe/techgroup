@@ -1,5 +1,5 @@
 ActiveAdmin.register Client do
-  menu :parent 	=> "Corporation"
+  menu :parent 	=> "Corporation", :label => "Clients' Portfolio"
   
   index do 
     column :title do |obj|

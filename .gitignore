@@ -21,3 +21,6 @@ log/development.log
 
 .env
 /working
+
+# Vim temp files
+*.swp

@@ -179,9 +179,15 @@
   margin-bottom:50px;
 	
 	.contact-info{
+    margin-bottom: 20px;
     background-color: #FAFAFA;
     padding:15px;
     font-size:.95em;
+    
+    .contact-title{
+      font-weight:bold;
+    }
+    
 		ul{
 	    li{
         border-bottom:none;

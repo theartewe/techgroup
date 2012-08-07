@@ -19,7 +19,6 @@ gem 'bson_ext'
 gem 'mongoid'
 gem 'mongoid_slug', :require => 'mongoid/slug'
 gem 'mongoid_globalize'
-gem 'activeadmin-mongoid-reorder'
 
 # Media storage
 gem 'aws-s3'
@@ -41,9 +40,8 @@ gem 'activeadmin-mongoid'
 # Active Admin Settings
 gem "carrierwave-mongoid", :require => "carrierwave/mongoid"
 gem "mini_magick"
-#gem 'activeadmin-settings', :path => "../_lib/activeadmin-settings"
-#gem 'activeadmin-mongoid-reorder'
 gem 'activeadmin-settings'
+gem 'activeadmin-mongoid-reorder'
 
 # Pagination
 gem 'kaminari'

@@ -20,9 +20,21 @@ ActiveAdmin.register Company do
     f.inputs do
       f.input :title, :required => true
       f.input :description, :as => :text, :required => true
+      f.input :contact_title
       f.input :phone, :required => true
       f.input :fax
       f.input :email, :required => true
+      
+      f.input :contact_title2
+      f.input :phone2
+      f.input :fax2
+      f.input :email2
+
+      f.input :contact_title3
+      f.input :phone3
+      f.input :fax3
+      f.input :email3
+      
       f.input :logo, :as => :file, :required => true
       f.input :banner, :as => :file, :required => true
       f.input :brochure, :as => :file

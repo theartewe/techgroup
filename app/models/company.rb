@@ -12,9 +12,21 @@ class Company
   end
   
   field :url
+  
+  field :contact_title
   field :phone
   field :fax
   field :email
+  
+  field :contact_title2
+  field :phone2
+  field :fax2
+  field :email2
+  
+  field :contact_title3
+  field :phone3
+  field :fax3
+  field :email3
   
   mount_uploader :logo, CompanyLogoUploader
   mount_uploader :banner, CompanyBannerUploader

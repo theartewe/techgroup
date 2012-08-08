@@ -1,5 +1,5 @@
 ActiveAdmin.register CompanySubsection do
-  menu :parent 	=> "Company"
+  menu :parent 	=> "Company", :priority => 3
 
    controller do
     defaults :finder => :find_by_slug
@@ -7,7 +7,7 @@ ActiveAdmin.register CompanySubsection do
   
   index do 
     column :title do |obj|
-      link_to obj.title, edit_admin_company_section_path(obj)
+      link_to obj.title, edit_admin_company_subsection_path(obj)
     end
     column :description
     column :image do |obj|
@@ -31,8 +31,6 @@ ActiveAdmin.register CompanySubsection do
     div do
       img :src=>resource.image.thumbnail
     end
-    
   end
-
 
 end

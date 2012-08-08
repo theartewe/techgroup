@@ -1,5 +1,5 @@
 ActiveAdmin.register CompanySection do
-  menu :parent 	=> "Company"
+  menu :parent 	=> "Company", :priority => 2
 
    controller do
     defaults :finder => :find_by_slug

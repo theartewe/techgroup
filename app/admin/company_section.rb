@@ -65,7 +65,7 @@ ActiveAdmin.register CompanySection do
   end
 
   action_item :only => :show do
-    link_to('New Company Section Item', new_admin_company_section_item_path + "?section=#{resource.id}")
+    link_to('New Company Section Item', new_admin_company_section_item_path + "?company_section_id=#{resource.id}")
   end
 
   collection_action :reorder, :method => :put do

@@ -4,6 +4,7 @@
 #= require redactor_settings
 #= require activeadmin_settings
 #= require activeadmin_reorder_table
+#= require libs/URI
 
 # Attaching tinymce
 script      = document.createElement("script")
@@ -65,3 +66,13 @@ $ ->
     $('#header #companies').addClass("current")
 
 
+autofill_values = ->
+  # Auto-fill client field if provided via get request parameter
+  params = URI.parseQuery(new URI(window.location.href).query())
+  if params.company_id
+    $("#company_section_company_id").val(params.company_id)
+  if params.company_section_id
+    $("#company_section_item_company_section_id").val(params.company_section_id)
+
+$ ->
+  autofill_values()

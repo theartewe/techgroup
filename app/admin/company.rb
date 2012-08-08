@@ -93,7 +93,7 @@ ActiveAdmin.register Company do
   end
 
   action_item :only => :show do
-    link_to('New Company Section', new_admin_company_section_path + "?company=#{resource.slug}")
+    link_to('New Company Section', new_admin_company_section_path + "?company_id=#{resource.id}")
   end
 
   #why here? I don't have a better place yet

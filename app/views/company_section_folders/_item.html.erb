@@ -4,6 +4,6 @@
   </div>
   <div class="text">
     <h5><%= item.title %></h5>
-    <p><%= item.description %> </p>
+    <%= item.description.html_safe %>
   </div>
 </li>

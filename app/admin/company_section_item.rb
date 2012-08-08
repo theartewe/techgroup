@@ -26,7 +26,7 @@ ActiveAdmin.register CompanySectionItem do
   form do |f|
     f.inputs "Details" do
       f.input :title, :required => true
-      f.input :description, :as => :text, :required => true
+      f.input :description, :as => :text, :required => true, :input_html => {:class => "redactor"}
       f.input :image, :as => :file, :required => true
       f.input :company_section_folder, :required => true, :as => :select, :collection => CompanySectionFolder.order_by("title ASC").all
     end

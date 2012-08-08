@@ -3,7 +3,7 @@ class CompanySectionsController < WebsiteController
   def show
     @object           = CompanySection.find_by_slug!(params[:id])
     @sections         = @object.company.company_sections
-    @items            = @object.company_section_items
+    @folders          = @object.company_section_folders
     @company          = @object.company
     @current_section  = @object.slug
   end

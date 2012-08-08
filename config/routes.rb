@@ -22,13 +22,10 @@ Techgroup::Application.routes.draw do
       end
     end
 
-    resources :companies, :except => [:new,:edit,:delete] do
-     
-    end
-    
-    resources :company_sections, :except => [:new,:edit,:delete] do
-        
-    end
+    resources :companies,               :only => [:index, :show]
+    resources :company_sections,        :only => [:show]
+    resources :company_section_folders, :only => [:show]
+
 
     resources :portfolio, :except => [:new,:edit,:delete] do
       collection do

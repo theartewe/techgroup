@@ -1,0 +1,10 @@
+<a href="<%= url_for company_section_folder_path(folder,:locale=>I18n.locale) %>" class="item">
+  <div class="image">
+    <%= image_tag(folder.image.thumbnail) %>
+  </div>
+  <div class="text">
+    <h5><%= folder.title %></h5>
+    <p><%= folder.description %> </p>
+    <span class="orange">view product list</span>
+  </div>
+</a>

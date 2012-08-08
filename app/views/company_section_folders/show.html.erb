@@ -7,17 +7,17 @@
 <% end %>
 
 <section class="main company company-section">
-  <%= render :partial => "header", :locals => {:object => @object} %>
+  <%= render :partial => "header", :locals => {:object => @object, :company => @company} %>
 
   <div class="content clear"> 
     <%= render :partial => "shared/company_sidebar", :locals => { :company => @company, :sections => @sections } %>
 
     <section class="overview">
-      <div class="logo"><%= image_tag(@object.company.logo, :height=>38) %></div>
+      <div class="logo"><%= image_tag(@company.logo, :height=>38) %></div>
       <h2><%= @object.title %></h2>
 
       <section class="company-section-detail-wrapper">
-        <%= render :partial => "folder", :collection => @folders %>
+        <%= render :partial => "item", :collection => @items %>
       </section>
     </section>
 

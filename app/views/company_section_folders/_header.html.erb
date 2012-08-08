@@ -1,0 +1,12 @@
+<nav class="subnav">
+  <ul class="breadcrumb">
+    <li><a href="<%= root_path(:locale=>I18n.locale) %>" title="<%= t(:home) %>"><%= t(:home) %></a></li>
+    <li><a href="<%= companies_path(:locale=>I18n.locale) %>" title="<%= t(:our_companies) %>"><%= t(:our_companies) %></a></li>
+    <li><a href="<%= company_path(company, :locale=>I18n.locale) %>" title="<%= company.title %>"><%= company.title %></a></li>
+    <li>
+      <a href="<%= company_section_path(object.company_section, :locale=>I18n.locale) %>" 
+        title="<%= object.company_section.title %>"><%= object.company_section.title %></a>
+    </li>
+    <li><%= object.title %></li>
+  </ul>
+</nav>

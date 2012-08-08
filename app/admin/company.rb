@@ -6,8 +6,10 @@ ActiveAdmin.register Company do
   end
   
   index :as => :reorder_table do
-    column :company do |obj|
-      image_tag obj.logo
+    column :company do |o|
+      link_to admin_company_path(o) do
+        image_tag o.logo
+      end
     end
     column :description do |o|
       html = ""
@@ -17,7 +19,6 @@ ActiveAdmin.register Company do
       html.html_safe
     end
     column "" do |o|
-      link_to("Sections", admin_company_path(o), :class => "member_link") +
       link_to("Edit",     edit_admin_company_path(o), :class => "member_link") +
       link_to("Delete",   admin_company_path(o), :method => :delete, :confirm => "Are you sure?", :class => "member_link")
     end
@@ -69,20 +70,20 @@ ActiveAdmin.register Company do
   show :title => :title do
     ul :id => "company_section_page", :class => "show-page index_as_reorder_table" do
       li :class => "links" do
-        ( "Back to <strong>" +
-          link_to("All Companies", admin_companies_path)+
-          "</strong>" ).html_safe
+        ( link_to("All Companies", admin_companies_path) +
+          " / #{company.title}" ).html_safe
       end
       li do
         if company.company_sections.size > 0
           table_for(company.company_sections, {:id => "company_sections", :class => "index_table company_sections reorder"}) do |t|
-            t.column :title
+            t.column :title do |o|
+              link_to o.title,  admin_company_section_path(o)
+            end
             t.column :description
 
             t.column "" do |p|
-              link_to("Items",  admin_company_section_path(p), :class => "member_link") +
-              link_to("Edit",   edit_admin_company_section_path(p), :class => "member_link") +
-              link_to("Delete", admin_company_section_path(p),      :class => "member_link", :method => :delete, :confirm => "Are you sure?")
+              link_to("Edit",     edit_admin_company_section_path(p), :class => "member_link") +
+              link_to("Delete",   admin_company_section_path(p),      :class => "member_link", :method => :delete, :confirm => "Are you sure?")
             end
           end
         else

@@ -86,3 +86,23 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
     margin-bottom:10px;
   }
 }
+
+.breadcrumb {
+  display:none;
+}
+
+#companies {
+  tr td:first-child {
+    img:hover {
+      opacity:0.7;
+    }
+  }
+}
+
+#company_sections {
+  tr th:first-child {
+    width:20%;
+  }
+}
+
+

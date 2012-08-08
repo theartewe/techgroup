@@ -1,13 +1,12 @@
-class CompanySection
+class CompanySectionFolder
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Globalize
   include Mongoid::Slug
   include Mongoid::Reorder
-  
-  belongs_to :company
 
-  has_many :company_section_folders
+  belongs_to  :company_section
+  has_many    :company_section_items
 
   translates do
     field :title
@@ -16,6 +15,8 @@ class CompanySection
 
   slug :title
 
-  validates_presence_of :title, :description
+  mount_uploader  :image,
+                  CompanySectionItemImageUploader
 
+  validates_presence_of :title, :description
 end

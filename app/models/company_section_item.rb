@@ -5,7 +5,7 @@ class CompanySectionItem
   include Mongoid::Slug
   include Mongoid::Reorder
 
-  belongs_to :company_section
+  belongs_to :company_section_folder
 
   translates do
     field :title

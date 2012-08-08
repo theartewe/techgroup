@@ -72,7 +72,10 @@ autofill_values = ->
   if params.company_id
     $("#company_section_company_id").val(params.company_id)
   if params.company_section_id
-    $("#company_section_item_company_section_id").val(params.company_section_id)
+    $("#company_section_folder_company_section_id").val(params.company_section_id)
+  if params.company_section_folder_id
+    $("#company_section_item_company_section_folder_id").val(params.company_section_folder_id)
+
 
 $ ->
   autofill_values()

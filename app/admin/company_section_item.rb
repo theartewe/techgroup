@@ -4,19 +4,19 @@ ActiveAdmin.register CompanySectionItem do
    controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_company_section_path(resource.company_section) }
+        format.html { redirect_to admin_company_section_folder_path(resource.company_section_folder) }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_company_section_path(resource.company_section) }
+        format.html { redirect_to admin_company_section_folder_path(resource.company_section_folder) }
       end
     end
 
     def destroy
       destroy! do |format|
-        format.html { redirect_to admin_company_section_path(resource.company_section) }
+        format.html { redirect_to admin_company_section_folder_path(resource.company_section_folder) }
       end
     end
 
@@ -28,7 +28,7 @@ ActiveAdmin.register CompanySectionItem do
       f.input :title, :required => true
       f.input :description, :as => :text, :required => true
       f.input :image, :as => :file, :required => true
-      f.input :company_section, :required => true, :as => :select, :collection => CompanySection.order_by("title ASC").all
+      f.input :company_section_folder, :required => true, :as => :select, :collection => CompanySectionFolder.order_by("title ASC").all
     end
     f.buttons do
       f.commit_button

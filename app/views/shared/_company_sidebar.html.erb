@@ -29,9 +29,11 @@
         <span><%= t(:address) %></span>
 		    <span><%= company.address %></span>
       </li>
-      <li>
-        <span><a href="<%= company.map_address %>" class="fancybox-map fancybox.iframe"><%= t(:map) %></a></span>
-      </li>
+      <% if !company.map_address.nil? %>
+        <li>
+          <span><a href="<%= company.map_address %>" class="fancybox-map fancybox.iframe"><%= t(:map) %></a></span>
+        </li>
+      <% end %>
       <li>
         <span><%= t(:telephone) %></span>
 		    <span><%= company.phone %></span>
@@ -56,7 +58,7 @@
 
 
 
-  <% if company.contact_title2 %>
+  <% if !company.contact_title2.nil? %>
     <div class="contact-info">
       <ul>
         <li>
@@ -84,7 +86,7 @@
 
 
 
-  <% if company.contact_title3 %>
+  <% if !company.contact_title3.nil? %>
     <div class="contact-info">
       <ul>
         <li>

@@ -32,7 +32,7 @@ ActiveAdmin.register Company do
 
     f.inputs "Address 1" do
       f.input :contact_title
-      f.input :address
+      f.input :address, :required => true
       f.input :phone, :required => true
       f.input :fax
       f.input :email, :required => true

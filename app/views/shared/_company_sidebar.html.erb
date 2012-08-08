@@ -31,7 +31,11 @@
       </li>
       <% if !company.map_address.nil? %>
         <li>
-          <span><a href="<%= company.map_address %>" class="fancybox-map fancybox.iframe"><%= t(:map) %></a></span>
+          <span>
+            <a href="<%= company.map_address %>"
+              class="fancybox-map fancybox.iframe"
+              style="text-transform:uppercase;"><%= t(:map) %></a>
+          </span>
         </li>
       <% end %>
       <li>

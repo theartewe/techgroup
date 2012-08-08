@@ -23,7 +23,6 @@ style.media = "screen"
 style.href  = "/jcarousel/skins/tango/skin.css"
 document.head.appendChild(style)
 
-
 # Application
 
 $ ->
@@ -57,4 +56,11 @@ $ ->
                     editors[index].dom.addClass(img.parentNode, 'image')
 
         add_gallery_after('#post_excerpt_input')
+
+
+# Fix navigation
+$ ->
+  if $('.admin_company_sections, .admin_company_section_items').length > 0
+    $('#header #companies').addClass("current")
+
 

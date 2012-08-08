@@ -77,3 +77,12 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
         cursor: pointer;
     }
 }
+
+.show-page {
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  .links {
+    margin-bottom:10px;
+  }
+}

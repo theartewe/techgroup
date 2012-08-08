@@ -6,7 +6,7 @@ class CompanySection
   
   belongs_to :company
 
-  has_many :company_subsections
+  has_many :company_section_items
 
   translates do
     field :title

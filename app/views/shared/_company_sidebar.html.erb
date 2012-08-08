@@ -1,13 +1,13 @@
 <aside class="sidebar">
   <div class="sections">
     <ul>
-      <li class="active"> 
-        <a href="<%= company_path(:locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
+      <li class="<% if @current_section.empty? %>active<% end %>"> 
+        <a href="<%= company_path(company, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
           <%= t(:overview) %>
         </a>
       </li>
       <% sections.each do |section| %>
-        <li class=""> 
+        <li class="<% if @current_section == section.slug %>active<% end %>">
           <a href="<%= company_section_path(section, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
             <%= section.title %>
           </a>
@@ -21,31 +21,31 @@
   <div class="contact-info">
     <ul>
       <li>
-        <% if @object.contact_title %>
-		      <span class="contact-title"><%= @object.contact_title %></span>
+        <% if company.contact_title %>
+		      <span class="contact-title"><%= company.contact_title %></span>
         <% end %>
       </li>
       <li>
         <span><%= t(:address) %></span>
-		    <span><%= @object.address %></span>
+		    <span><%= company.address %></span>
       </li>
       <li>
         <span><%= t(:telephone) %></span>
-		    <span><%= @object.phone %></span>
+		    <span><%= company.phone %></span>
       </li>
       <li>
         <span><%= t(:fax) %></span>
-		    <span><%= @object.fax %></span>
+		    <span><%= company.fax %></span>
       </li>
       <li>
         <span><%= t(:email) %></span>
-		    <span><a href="mailto:<%= @object.email %>"><%= @object.email %></a></span>
+		    <span><a href="mailto:<%= company.email %>"><%= company.email %></a></span>
       </li>
 
-      <% if !@object.brochure.path.nil? %>
+      <% if !company.brochure.path.nil? %>
       <li>
         <span><%= t(:brochure) %></span>
-		    <span><a href="<%= @object.brochure %>"><%= t(:download) %></a></span>
+		    <span><a href="<%= company.brochure %>"><%= t(:download) %></a></span>
       </li>
       <% end %>
     </ul>
@@ -53,27 +53,27 @@
 
 
 
-  <% if @object.contact_title2 %>
+  <% if company.contact_title2 %>
     <div class="contact-info">
       <ul>
         <li>
-  		    <span class="contact-title"><%= @object.contact_title2 %></span>
+  		    <span class="contact-title"><%= company.contact_title2 %></span>
         </li>
         <li>
           <span><%= t(:address) %></span>
-  		    <span><%= @object.address2 %></span>
+  		    <span><%= company.address2 %></span>
         </li>
         <li>
           <span><%= t(:telephone) %></span>
-  		    <span><%= @object.phone2 %></span>
+  		    <span><%= company.phone2 %></span>
         </li>
         <li>
           <span><%= t(:fax) %></span>
-  		    <span><%= @object.fax2 %></span>
+  		    <span><%= company.fax2 %></span>
         </li>
         <li>
           <span><%= t(:email) %></span>
-  		    <span><a href="mailto:<%= @object.email2 %>"><%= @object.email2 %></a></span>
+  		    <span><a href="mailto:<%= company.email2 %>"><%= company.email2 %></a></span>
         </li>
       </ul>
     </div>
@@ -81,27 +81,27 @@
 
 
 
-  <% if @object.contact_title3 %>
+  <% if company.contact_title3 %>
     <div class="contact-info">
       <ul>
         <li>
-  		    <span class="contact-title"><%= @object.contact_title3 %></span>
+  		    <span class="contact-title"><%= company.contact_title3 %></span>
         </li>
         <li>
           <span><%= t(:address) %></span>
-  		    <span><%= @object.address3 %></span>
+  		    <span><%= company.address3 %></span>
         </li>
         <li>
           <span><%= t(:telephone) %></span>
-  		    <span><%= @object.phone3 %></span>
+  		    <span><%= company.phone3 %></span>
         </li>
         <li>
           <span><%= t(:fax) %></span>
-  		    <span><%= @object.fax3 %></span>
+  		    <span><%= company.fax3 %></span>
         </li>
         <li>
           <span><%= t(:email) %></span>
-  		    <span><a href="mailto:<%= @object.email3 %>"><%= @object.email3 %></a></span>
+  		    <span><a href="mailto:<%= company.email3 %>"><%= company.email3 %></a></span>
         </li>
       </ul>
     </div>

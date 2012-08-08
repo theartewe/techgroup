@@ -5,8 +5,9 @@ class CompaniesController < WebsiteController
   end
   
   def show
-    @object = Company.find_by_slug!(params[:id])
-    @sections = @object.company_sections
+    @object           = Company.find_by_slug!(params[:id])
+    @sections         = @object.company_sections
+    @current_section  = ""
   end
   
   def inject_current_page

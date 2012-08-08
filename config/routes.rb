@@ -29,11 +29,6 @@ Techgroup::Application.routes.draw do
     resources :company_sections, :except => [:new,:edit,:delete] do
         
     end
-    
-    resources :company_subsections, :except => [:new,:edit,:delete] do
-        
-    end
-    
 
     resources :portfolio, :except => [:new,:edit,:delete] do
       collection do

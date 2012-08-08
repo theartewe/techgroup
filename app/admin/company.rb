@@ -1,19 +1,26 @@
 ActiveAdmin.register Company do
-  menu :parent 	=> "Company", :priority => 1
+  menu :label => "Companies"
   
   controller do
     defaults :finder => :find_by_slug
   end
   
-  index do 
-    column :title do |obj|
-      link_to obj.title, edit_admin_company_path(obj)
-    end
-    column :description
-    column :logo do |obj|
+  index do
+    column :company do |obj|
       image_tag obj.logo
     end
-    column :url
+    column :description do |o|
+      html = ""
+      html << o.description
+      html << "<br/>"
+      html << link_to( o.url, o.url, :target => "_blank")
+      html.html_safe
+    end
+    column "" do |o|
+      link_to("Sections", admin_company_path(o), :class => "member_link") +
+      link_to("Edit",     edit_admin_company_path(o), :class => "member_link") +
+      link_to("Delete",   admin_company_path(o), :method => :delete, :confirm => "Are you sure?", :class => "member_link")
+    end
   end
 
   form do |f|
@@ -22,7 +29,7 @@ ActiveAdmin.register Company do
       f.input :description, :as => :text, :required => true
       f.input :url, :required => true
     end
-      
+
     f.inputs "Address 1" do
       f.input :contact_title
       f.input :address
@@ -30,7 +37,7 @@ ActiveAdmin.register Company do
       f.input :fax
       f.input :email, :required => true
     end
-      
+
     f.inputs "Address 2" do
       f.input :contact_title2
       f.input :address2
@@ -60,19 +67,37 @@ ActiveAdmin.register Company do
   end
 
   show :title => :title do
-    h1 resource.title
-    div resource.description
-    div do
-      img :src=>resource.logo
+    ul :id => "company_section_page", :class => "show-page" do
+      li :class => "links" do
+        ( "Back to <strong>" +
+          link_to("All Companies", admin_companies_path)+
+          "</strong>" ).html_safe
+      end
+      li do
+        if company.company_sections.size > 0
+          table_for(company.company_sections, {:class => "index_table company_sections"}) do |t|
+            t.column :title
+            t.column :description
+
+            t.column "" do |p|
+              link_to("Items",  admin_company_section_path(p), :class => "member_link") +
+              link_to("Edit",   edit_admin_company_section_path(p), :class => "member_link") +
+              link_to("Delete", admin_company_section_path(p),      :class => "member_link", :method => :delete, :confirm => "Are you sure?")
+            end
+          end
+        else
+          p "No sections for this company."
+        end
+      end
     end
-    div do
-      img :src=>resource.banner.banner
-    end
-    div resource.url
   end
-  
+
+  action_item :only => :show do
+    link_to('New Company Section', new_admin_company_section_path + "?company=#{resource.slug}")
+  end
+
   #why here? I don't have a better place yet
   collection_action :change_locale, :method => :get do
-    
   end
+
 end

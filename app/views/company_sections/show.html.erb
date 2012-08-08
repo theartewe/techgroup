@@ -8,14 +8,18 @@
 
 <section class="main company company-section">
   <%= render :partial => "header", :locals => {:object => @object} %>
+
   <div class="content clear"> 
-    <%= render "sidebar", :subsections => @subsections, :locals => {:object => @object} %>
+    <%= render :partial => "shared/company_sidebar", :locals => { :company => @company, :sections => @sections } %>
+
     <section class="overview">
       <div class="logo"><%= image_tag(@object.company.logo, :height=>38) %></div>
       <h2><%= @object.title %></h2>
+
       <section class="company-section-detail-wrapper">
-        <%= render :partial => "subsection", :collection => @subsections %>
+        <%= render :partial => "item", :collection => @items %>
       </section>
     </section>
+
   </div>
 </section>

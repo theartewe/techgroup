@@ -60,8 +60,13 @@
   h2{
     margin-bottom:40px;
   }
+
+  .item {
+    display:inline-table;
+    margin-bottom:30px;
+  }
   
-  a{
+  a, .item{
     .image{
       float:left;
       width:33%;
@@ -98,6 +103,7 @@
   .company-section-detail-wrapper{
     margin-bottom:30px;
     a{
+    margin-bottom:30px;
       h3{
         border-bottom:none;
         padding-bottom:5px;

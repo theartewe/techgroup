@@ -17,14 +17,26 @@ if navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)
     document.body.addEventListener('gesturestart', ( -> viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6' ), false)
 
 $ ->
+  $(".fancybox-map").fancybox
+    maxWidth    : 800
+    maxHeight   : 600
+    fitToView   : false
+    width       : '70%'
+    height      : '70%'
+    autoSize    : false
+    closeClick  : false
+    openEffect  : 'elastic'
+    closeEffect : 'none'
+
   $('.fancybox-media').fancybox 
   	openEffect  : 'none'
   	closeEffect : 'none'
   	helpers : {
   		media : {}
   	}
+
   $('img.retina').retina()
-  
+
   $('#mobile-nav > .nav-button').click (event) =>
     event.stopPropagation()
     event.preventDefault()

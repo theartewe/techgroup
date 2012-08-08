@@ -3,6 +3,7 @@ class CompanySection
   include Mongoid::Timestamps
   include Mongoid::Globalize
   include Mongoid::Slug
+  include Mongoid::Reorder
   
   belongs_to :company
 

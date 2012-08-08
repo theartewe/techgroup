@@ -35,7 +35,7 @@ ActiveAdmin.register CompanySection do
   end
 
   show :title => :title do
-    ul :id => "company_section_page", :class => "show-page" do
+    ul :id => "company_section_page", :class => "show-page index_as_reorder_table" do
       li :class => "links" do
         ( "Back to <strong>" +
           link_to(company_section.company.title, admin_company_path(company_section.company))+
@@ -43,7 +43,7 @@ ActiveAdmin.register CompanySection do
       end
       li do
         if company_section.company_section_items.size > 0
-          table_for(company_section.company_section_items, {:class => "index_table company_section_items"}) do |t|
+          table_for(company_section.company_section_items, {:id => "company_section_items", :class => "index_table company_section_items reorder"}) do |t|
             t.column "" do |o|
               img :src=>o.image.thumbnail
             end
@@ -66,5 +66,9 @@ ActiveAdmin.register CompanySection do
 
   action_item :only => :show do
     link_to('New Company Section Item', new_admin_company_section_item_path + "?section=#{resource.id}")
+  end
+
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
   end
 end

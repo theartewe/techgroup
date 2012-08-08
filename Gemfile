@@ -40,8 +40,8 @@ gem 'activeadmin-mongoid'
 # Active Admin Settings
 gem "carrierwave-mongoid", :require => "carrierwave/mongoid"
 gem "mini_magick"
-gem 'activeadmin-settings'
-gem 'activeadmin-mongoid-reorder'
+gem "activeadmin-settings"
+gem "activeadmin-mongoid-reorder"
 
 # Pagination
 gem 'kaminari'

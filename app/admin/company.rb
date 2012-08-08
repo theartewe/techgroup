@@ -5,7 +5,7 @@ ActiveAdmin.register Company do
     defaults :finder => :find_by_slug
   end
   
-  index do
+  index :as => :reorder_table do
     column :company do |obj|
       image_tag obj.logo
     end
@@ -67,7 +67,7 @@ ActiveAdmin.register Company do
   end
 
   show :title => :title do
-    ul :id => "company_section_page", :class => "show-page" do
+    ul :id => "company_section_page", :class => "show-page index_as_reorder_table" do
       li :class => "links" do
         ( "Back to <strong>" +
           link_to("All Companies", admin_companies_path)+
@@ -75,7 +75,7 @@ ActiveAdmin.register Company do
       end
       li do
         if company.company_sections.size > 0
-          table_for(company.company_sections, {:class => "index_table company_sections"}) do |t|
+          table_for(company.company_sections, {:id => "company_sections", :class => "index_table company_sections reorder"}) do |t|
             t.column :title
             t.column :description
 
@@ -100,4 +100,7 @@ ActiveAdmin.register Company do
   collection_action :change_locale, :method => :get do
   end
 
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
+  end
 end

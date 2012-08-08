@@ -42,4 +42,8 @@ ActiveAdmin.register CompanySectionItem do
       img :src=>resource.image.thumbnail
     end
   end
+
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
+  end
 end

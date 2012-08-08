@@ -6,7 +6,7 @@
           <%= t(:overview) %>
         </a>
       </li>
-      <%- sections.each do |section| %>
+      <% sections.each do |section| %>
         <li class=""> 
           <a href="<%= company_section_path(section, :locale=>I18n.locale) %>" alt="<%= t(:overview) %>">
             <%= section.title %>
@@ -24,6 +24,13 @@
         <% if @object.contact_title %>
 		      <span class="contact-title"><%= @object.contact_title %></span>
         <% end %>
+<<<<<<< HEAD
+=======
+      </li>
+      <li>
+        <span><%= t(:address) %></span>
+		    <span><%= @object.address %></span>
+>>>>>>> b911ed753db310fda4b189b16a58e3d414c630aa
       </li>
       <li>
         <span><%= t(:telephone) %></span>
@@ -56,6 +63,10 @@
   		    <span class="contact-title"><%= @object.contact_title2 %></span>
         </li>
         <li>
+          <span><%= t(:address) %></span>
+  		    <span><%= @object.address2 %></span>
+        </li>
+        <li>
           <span><%= t(:telephone) %></span>
   		    <span><%= @object.phone2 %></span>
         </li>
@@ -78,6 +89,10 @@
       <ul>
         <li>
   		    <span class="contact-title"><%= @object.contact_title3 %></span>
+        </li>
+        <li>
+          <span><%= t(:address) %></span>
+  		    <span><%= @object.address3 %></span>
         </li>
         <li>
           <span><%= t(:telephone) %></span>

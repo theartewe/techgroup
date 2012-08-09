@@ -1,0 +1,20 @@
+@import "compass/css3";
+@import "shared_vars";
+
+.error {
+  text-align:center;
+  font-family:$proximanova;
+  width: 30%;
+  margin:auto;
+  h1{
+    clear:both;
+    color:#999;
+    margin-top:30%;
+    font-size:5em;
+    border-bottom:1px solid #999;
+  }
+  h2{
+    margin-top:20px;
+    margin-bottom:30%;
+  }
+}

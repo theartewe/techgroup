@@ -37,3 +37,27 @@
 
 // Media should come last
 @include h5bp-media;
+
+
+footer {
+  .facebook a {
+    background: image-url("icons/facebook.png");
+    display:block;
+    width:24px;
+    height: 0; overflow: hidden; padding-top: 24px;
+  }
+
+  .twitter a {
+    background: image-url("icons/twitter.png");
+    display:block;
+    width:24px;
+    height: 0; overflow: hidden; padding-top: 24px;
+  }
+
+  .linkedin a {
+    background: image-url("icons/linkedin.png");
+    display:block;
+    width:24px;
+    height: 0; overflow: hidden; padding-top: 24px;
+  }
+}

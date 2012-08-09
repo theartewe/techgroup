@@ -127,7 +127,19 @@ Pages:
                       <p>Allied with strategic partnership, the R Holding Group of Companies has positioned at the right place in the right time with the right people. Its vast resources and expertise provide the ability to meet the ever changing needs of the market.</p>
                       <p>R Holdings is committed at the forefront of this exciting growth and expansion, deploying its investors’ capital allows it to generate exceptional returns by providing first-class products and services for clients. Although every member-companies of Tech Group has separate and independent management structures, they all complement to each other and work together in order to develop strategic partnership that increases return-on-investment and success completely.</p>
 
+# Social
+Social:
+  Facebook:
+    description:    TechGroup facebook page link
+    default_value:  https://www.facebook.com/techgroupUAE
 
+  Twitter:
+    description:    TechGroup twitter account link
+    default_value:  https://twitter.com/techgroupUAE
+
+  LinkedIn:
+    description:    TechGroup linked in profile link
+    default_value:  https://www.linkedin.com/
 
 
 

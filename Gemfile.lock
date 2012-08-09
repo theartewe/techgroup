@@ -122,6 +122,7 @@ GEM
       rubyzip
     heroku-api (0.3.2)
       excon (~> 0.15.5)
+    heroku-mongo-backup (0.3.8)
     heroku-rails (0.4.4)
       heroku (>= 2.15.0)
     hike (1.2.1)
@@ -258,6 +259,7 @@ DEPENDENCIES
   fog
   foreman
   formtastic (~> 2.1.1)
+  heroku-mongo-backup
   heroku-rails
   jquery-rails
   kaminari

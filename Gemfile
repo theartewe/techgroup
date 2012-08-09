@@ -43,6 +43,10 @@ gem "mini_magick"
 gem "activeadmin-settings"
 gem "activeadmin-mongoid-reorder"
 
+
+# Backup
+gem "heroku-mongo-backup"
+
 # Pagination
 gem 'kaminari'
 

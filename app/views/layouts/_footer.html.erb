@@ -39,6 +39,21 @@
           <%= t(:feedback) %>
         </a>
       </li>
+      <li class="facebook">
+        <a  href="<%= settings_value('Facebook') %>"
+            title="Facebook"
+            target="_blank">Facebook</a>
+      </li>
+      <li class="twitter">
+        <a  href="<%= settings_value('Twitter') %>"
+            title="Twitter"
+            target="_blank">Twitter</a>
+      </li>
+      <li class="linkedin">
+        <a  href="<%= settings_value('LinkedIn') %>"
+            title="LinkedIn"
+            target="_blank">LinkedIn</a>
+      </li>
     </ul>
     <p class="copyright"><%= DateTime.current().strftime("%Y") %> <%= t(:tech_group_all_rights_reserved) %></p>
   </div>

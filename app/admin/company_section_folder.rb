@@ -43,6 +43,9 @@ ActiveAdmin.register CompanySectionFolder do
            " / " + link_to(company_section_folder.company_section.title, admin_company_section_path(company_section_folder.company_section)) +
            " / #{company_section_folder.title}" ).html_safe
       end
+      li :class => "table-caption" do
+        h3 "Folder Items"
+      end
       li do
         if company_section_folder.company_section_items.size > 0
           table_for(company_section_folder.company_section_items, {:id => "company_section_items", :class => "index_table reorder"}) do |t|

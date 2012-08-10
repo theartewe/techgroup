@@ -6,6 +6,7 @@ class Company
   include Mongoid::Reorder
   
   has_many :company_sections
+  has_many :company_cert_logos
   
   translates do
     field :title

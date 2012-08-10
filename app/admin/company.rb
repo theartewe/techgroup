@@ -73,6 +73,9 @@ ActiveAdmin.register Company do
         ( link_to("All Companies", admin_companies_path) +
           " / #{company.title}" ).html_safe
       end
+      li :class => "table-caption" do
+        h3 "Sections"
+      end
       li do
         if company.company_sections.size > 0
           table_for(company.company_sections, {:id => "company_sections", :class => "index_table company_sections reorder"}) do |t|
@@ -90,11 +93,33 @@ ActiveAdmin.register Company do
           p "No sections for this company."
         end
       end
+      li :class => "table-caption" do
+        h3 "Certs Logos"
+      end
+      li do
+        if company.company_cert_logos.size > 0
+          table_for(company.company_cert_logos, {:id => "company_certs_logos", :class => "index_table reorder"}) do |t|
+            t.column :logo do |o|
+              image_tag o.image.cert_logo
+            end
+            t.column "" do |p|
+              link_to("Edit",     edit_admin_company_cert_logo_path(p), :class => "member_link") +
+              link_to("Delete",   admin_company_cert_logo_path(p),      :class => "member_link", :method => :delete, :confirm => "Are you sure?")
+            end
+          end
+        else
+          p "No certs logos for #{company.title}."
+        end
+      end
     end
   end
 
   action_item :only => :show do
     link_to('New Company Section', new_admin_company_section_path + "?company_id=#{resource.id}")
+  end
+
+  action_item :only => :show do
+    link_to('New Cert Logo', new_admin_company_cert_logo_path + "?company_id=#{resource.id}")
   end
 
   #why here? I don't have a better place yet

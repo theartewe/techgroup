@@ -53,9 +53,7 @@ Techgroup::Application.routes.draw do
   # Generic
   post  'submit'    => "contact#submit"
   
-  if Rails.application.config.consider_all_requests_local
-    match '*not_found', to: 'errors#error_404'
-  end
+  match '*not_found', to: 'errors#error_404'
   
   match '500-error'     => 'errors#error_500'
 

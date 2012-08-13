@@ -13,10 +13,18 @@
     <%= render :partial => "shared/company_sidebar", :locals => { :company => @object, :sections => @sections} %>
 
     <section class="overview">
-      <div class="logo"><%= image_tag(@object.logo, :height=>38) %></div>
+      <div class="description-wrapper">
+        <div class="logo"><%= image_tag(@object.logo, :height=>38) %></div>
 
-      <h2><%= t(:overview) %></h2>
-      <p class="description"><%= @object.description %></p>
+        <h2><%= t(:overview) %></h2>
+        <p class="description"><%= @object.description %></p>
+
+        <ul class="cert-logos">
+          <% @object.company_cert_logos.each do |o| %>
+          <li><%= image_tag o.image.cert_logo %></li>
+          <% end %>
+        </ul>
+      </div>
 
       <section class="company-section-wrapper clear">
         <%= render :partial => "section",:collection => @sections %>

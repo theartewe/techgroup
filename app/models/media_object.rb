@@ -6,6 +6,7 @@ class MediaObject
   
   belongs_to :media_category
   
+  default_scope order_by(:created_at => :desc)
   scope :is_published, where(:published => true)
   
   field :published,     :type       => Boolean,

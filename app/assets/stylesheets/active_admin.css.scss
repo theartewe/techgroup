@@ -123,7 +123,7 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
   }
 }
 
-#media_objects {
+#posts {
   tr th:first-child {
     width:20%;
   }
@@ -148,6 +148,12 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
   tr th:first-child {
     width:20%;
   }  
+  tr th:last-child {
+    width:15%;
+  }  
+}
+
+#categories, #posts, #companies, #company_sections, #company_section_folders, #clients, #entries {
   tr th:last-child {
     width:15%;
   }  

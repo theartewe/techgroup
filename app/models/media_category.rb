@@ -3,7 +3,8 @@ class MediaCategory
   include Mongoid::Timestamps
   include Mongoid::Globalize
   include Mongoid::Slug
-  
+  include Mongoid::Reorder
+
   has_many :media_objects
   
   translates do

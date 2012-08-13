@@ -3,7 +3,7 @@ ActiveAdmin.register Client do
 
   actions :all, :except => [:show]
   
-  index do 
+  index :as => :reorder_table do 
     column "" do |obj|
       image_tag(obj.image.thumbnail)
     end
@@ -30,5 +30,9 @@ ActiveAdmin.register Client do
     div do
      img :src=>resource.image.thumbnail
     end
+  end
+
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
   end
 end

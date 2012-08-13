@@ -1,5 +1,5 @@
 ActiveAdmin.register MediaCategory do
-  menu :parent 	=> "Media"
+  menu :parent 	=> "Media", :label => "Categories"
   
   controller do
     defaults :finder => :find_by_slug

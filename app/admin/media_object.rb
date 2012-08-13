@@ -1,5 +1,5 @@
 ActiveAdmin.register MediaObject do
-  menu :parent 	=> "Media"
+  menu :parent 	=> "Media", :label => "Objects"
   
   controller do
     defaults :finder => :find_by_slug
@@ -21,6 +21,7 @@ ActiveAdmin.register MediaObject do
       f.input :title, :required => true
       f.input :description, :as => :text, :required => true
       f.input :media_category, :required => true, :as => :select, :collection => MediaCategory.order_by("title ASC").all
+      f.input :created_at, :label => "Date", :input_html => { :class => "datepicker", :placeholder => "Click field to pick date" }
       f.input :pdf, :as => :file, :required => true
       f.input :image, :as => :file, :required => true
       f.input :read_more_title1

@@ -6,14 +6,13 @@ ActiveAdmin.register Director, :as=>"Directors" do
   end
   
   index do 
+    column "" do |obj|
+      image_tag obj.image.thumbnail
+    end
     column :name do |obj|
-      link_to obj.name, edit_admin_director_path(obj)
+      "#{link_to(obj.name, edit_admin_director_path(obj))}<br/>#{obj.title}".html_safe
     end
-    column :title
     column :description
-    column :image do |obj|
-      img :src=>obj.image.thumbnail
-    end
   end
 
   form do |f|

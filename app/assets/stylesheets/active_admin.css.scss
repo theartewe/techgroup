@@ -122,3 +122,15 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
     width:15%;
   }
 }
+
+#media_objects {
+  tr th:first-child {
+    width:20%;
+  }
+}
+
+#directors {
+  tr th:first-child {
+    width:290px;
+  }
+}

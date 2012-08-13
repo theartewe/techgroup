@@ -5,9 +5,6 @@ ActiveAdmin.register Client do
   
   index do 
     column "" do |obj|
-      
-    end
-    column "" do |obj|
       image_tag(obj.image.thumbnail)
     end
     column :description do |obj|

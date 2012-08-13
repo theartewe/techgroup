@@ -64,6 +64,7 @@ Techgroup::Application.configure do
     'corporation.css',
     'flatpages.css',
     'contact.css',
+    'errors.css',
     'jquery.fancybox.css',
     'redactor/css/style.css'
   ]

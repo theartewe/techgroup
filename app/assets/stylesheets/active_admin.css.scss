@@ -134,3 +134,21 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
     width:290px;
   }
 }
+
+#projects, #operations {
+  tr th:first-child {
+    width:300px;
+  }
+  tr th:last-child {
+    width:15%;
+  }
+}
+
+#contacts {
+  tr th:first-child {
+    width:20%;
+  }  
+  tr th:last-child {
+    width:15%;
+  }  
+}

@@ -1,5 +1,5 @@
 ActiveAdmin.register CorporationHistoryEntry, :as => "History Entries" do
-  menu :parent 	=> "Corporation"
+  menu :parent 	=> "Corporation", :label => "History"
   
   index do 
     column :title do |obj|

@@ -1,13 +1,17 @@
-ActiveAdmin.register PortfolioOperation, :as=> "Operation" do
+ActiveAdmin.register PortfolioOperation, :as => "Operation" do
   menu :parent 	=> "Portfolio"
 
-  index do
-    column :id do |obj|
-      link_to obj.id, edit_admin_operation_path(obj)
+  actions :all, :except => [:show]
+
+  index :as => :reorder_table do
+    column "" do |obj|
+      image_tag obj.image.thumbnail
     end
-    column :title do |obj|
-      link_to obj.title, edit_admin_operation_path(obj)
+    column :operation do |obj|
+      "<p>#{link_to(obj.title, edit_admin_operation_path(obj))}</p>#{obj.description}".html_safe
     end
+
+    default_actions
   end
 
   form do |f|
@@ -18,16 +22,8 @@ ActiveAdmin.register PortfolioOperation, :as=> "Operation" do
     end
     f.buttons
   end
-  
-  show :title => :title do
-    h1 do 
-      resource.title
-    end
-    div :id => "description" do 
-      resource.description
-    end
-    div do
-      img :src=>resource.image.thumbnail
-    end
+
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
   end
 end

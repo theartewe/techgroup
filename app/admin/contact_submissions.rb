@@ -3,8 +3,10 @@ ActiveAdmin.register ContactSubmission, :as => "Contact" do
       column :from do |c|
         link_to "#{c.name} <#{c.email}>", "mailto:#{c.email}"
       end
+      column "Date" do |c|
+        c.created_at.strftime('%B %d, %Y')
+      end
       column :message
-      column :created_at
 
       default_actions
     end

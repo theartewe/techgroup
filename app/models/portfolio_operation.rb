@@ -2,6 +2,7 @@ class PortfolioOperation
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Globalize
+  include Mongoid::Reorder
   
   translates do
     field :title

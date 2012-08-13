@@ -3,7 +3,7 @@ ActiveAdmin.register Client do
   
   index do 
     column :title do |obj|
-      link_to obj.title, edit_admin_company_subsection_item_path(obj)
+      link_to obj.title, edit_admin_client_path(obj)
     end
     column :description
     column :image do |obj|

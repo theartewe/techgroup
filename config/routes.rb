@@ -56,5 +56,7 @@ Techgroup::Application.routes.draw do
   if Rails.application.config.consider_all_requests_local
     match '*not_found', to: 'errors#error_404'
   end
+  
+  match '500-error'     => 'errors#error_500'
 
 end

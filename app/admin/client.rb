@@ -7,7 +7,7 @@ ActiveAdmin.register Client do
     column "" do |obj|
       
     end
-    column :title do |obj|
+    column "" do |obj|
       image_tag(obj.image.thumbnail)
     end
     column :description do |obj|

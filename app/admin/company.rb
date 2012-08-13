@@ -59,10 +59,14 @@ ActiveAdmin.register Company do
       f.input :map_address
     end
 
+    f.inputs "Logo" do
+      f.input :logo,        :as => :file, :label => "SVG Logo", :required => true, :hint => f.object.logo.to_s
+      f.input :logo_image,  :as => :file, :label => "PNG Logo", :required => true, :hint => f.object.logo_image.to_s
+    end
+    
     f.inputs "Assets" do
-      f.input :logo, :as => :file, :required => true
-      f.input :banner, :as => :file, :required => true
-      f.input :brochure, :as => :file
+      f.input :banner,      :as => :file, :required => true
+      f.input :brochure,    :as => :file
     end
     f.buttons
   end

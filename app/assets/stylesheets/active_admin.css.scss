@@ -113,3 +113,12 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
   margin-top: 20px;
 }
 
+
+#slides {
+  tr th:first-child {
+    width:290px;
+  }
+  tr th:last-child {
+    width:15%;
+  }
+}

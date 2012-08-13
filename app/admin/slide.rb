@@ -1,9 +1,12 @@
 ActiveAdmin.register Slide do
 
-  index do
+  actions :all, :except => [:show]
+
+  index  :as => :reorder_table do
     column :name do |slide|
       link_to slide.title, edit_admin_slide_path(slide)
     end
+    default_actions
   end
 
   show do
@@ -22,5 +25,9 @@ ActiveAdmin.register Slide do
     end
 
     f.buttons
+  end
+
+  collection_action :reorder, :method => :put do
+    render :text => resource_class.reorder_objects(params[:ids])
   end
 end

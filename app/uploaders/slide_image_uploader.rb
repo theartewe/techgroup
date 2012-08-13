@@ -4,6 +4,10 @@ class SlideImageUploader < CarrierWave::Uploader::Base
   def store_dir
     "slide-images/#{model.id}"
   end
+
+  version :thumb do
+    
+  end
   
   version :full do
     process :resize_to_fill => [1500, 703]
